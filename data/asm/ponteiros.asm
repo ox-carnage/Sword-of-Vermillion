@@ -1,7 +1,7 @@
 
 
 
-//Tabela de ponteiros ordenados por categoria.
+//Tabela de ponteiros ordenados por categoria..
 
 //Aneis
 origin $00021B32
