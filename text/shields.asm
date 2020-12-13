@@ -20,39 +20,39 @@
 	
 origin $B000A02B1 // ----> Endereço de onde será gravado os textos
 
-texto_armadura_1:
-	script_armory("Leather Armor") 
-texto_armadura_2:
-	script_armory("Bronze Armor")
-texto_armadura_3:
-	script_armory("Metal Armor")
-texto_armadura_4:	
-	script_armory("Scale Armor")
-texto_armadura_5:
-	script_armory("Plate Armor")
-texto_armadura_6:
-	script_armory("Silver Armor")
-texto_armadura_7:
-	script_armory("Gold Armor")
-texto_armadura_8:
-	script_armory("Crystal Armor")
-texto_armadura_9:
-	script_armory("Emerald Armor")
-texto_armadura_10:
-	script_armory("Diamond Armor")
-texto_armadura_11:
-	script_armory("Knight Armor")		
-texto_armadura_12:
-	script_armory("Ultimate Armor")		
-texto_armadura_13:
-	script_armory("Odin Armor")		
-texto_armadura_14:
-	script_armory("Secret Armor")		
-texto_armadura_15:
-	script_armory("Skeleton Armor")		
-texto_armadura_16:
-	script_armory("Crimson Armor")		
-texto_armadura_17:
-	script_armory("Old Nick Armor")
+texto_escudos_0:
+	script_shield("Leather Shield") 
+texto_escudos_1:
+	script_shield("Small Shield")
+texto_escudos_2:
+	script_shield("Large Shield")
+texto_escudos_3:	
+	script_shield("Silver Shield")
+texto_escudos_4:
+	script_shield("Gold Shield")
+texto_escudos_5:
+	script_shield("Platinum Shield")
+texto_escudos_6:
+	script_shield("Gem Shield")
+texto_escudos_7:
+	script_shield("Sapphire Shield")
+texto_escudos_8:
+	script_shield("Diamond Shield")
+texto_escudos_09:
+	script_shield("Dragon Shield")
+texto_escudos_10:
+	script_shield("Magic Shield")		
+texto_escudos_11:
+	script_shield("Phantom Shield")		
+texto_escudos_12:
+	script_shield("Grizzly Shield")		
+texto_escudos_13:
+	script_shield("Carmine Shield")		
+texto_escudos_14:
+	script_shield("Royal Shield")		
+texto_escudos_15:
+	script_shield("Poison Shield")		
+texto_escudos_16:
+	script_shield("Knight Shield")
 
 

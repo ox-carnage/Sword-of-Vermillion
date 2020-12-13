@@ -13,10 +13,8 @@
 // *  - A cada 3 linhas de textos, insere uma janela *
 // *  - Sem limitação de próxima janela				 *
 // ***************************************************
-	include "data/asm/macros.asm"
-	include "data/asm/ponteiros.asm"
-	table 	"tabela/vermillion_tabela.tbl"
 	
+		
 origin $000A0351  // ---> Endereço de onde sera gravado os blocos de textos.
 
 texto_intro_01:

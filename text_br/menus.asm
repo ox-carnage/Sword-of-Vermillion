@@ -14,9 +14,7 @@
 // *  - Sem limitação de próxima janela				 *
 // ***************************************************
 
-	include "data/asm/macros.asm"
-	include "data/asm/ponteiros.asm"
-	table 	"tabela/vermillion_tabela.tbl"
+	
 
 
 origin $000A0661  // ----> Endereço de onde será gravado os textos

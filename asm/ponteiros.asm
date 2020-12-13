@@ -83,6 +83,44 @@ origin $0025F60
 	dl texto_armadura_16
 	dl texto_armadura_17
 
+//Shields
+origin $0025F10
+	dl texto_escudos_0
+	dl texto_escudos_1
+	dl texto_escudos_2
+	dl texto_escudos_4
+	dl texto_escudos_5
+	dl texto_escudos_6
+	dl texto_escudos_7
+	dl texto_escudos_8
+	dl texto_escudos_9
+	dl texto_escudos_10
+	dl texto_escudos_11
+	dl texto_escudos_12
+	dl texto_escudos_13
+	dl texto_escudos_14
+	dl texto_escudos_15
+	dl texto_escudos_16
+
+// Swords
+origin $0025EC0
+	dl texto_espadas_0
+	dl texto_espadas_1
+	dl texto_espadas_2
+	dl texto_espadas_3
+	dl texto_espadas_4
+	dl texto_espadas_5
+	dl texto_espadas_7
+	dl texto_espadas_8
+	dl texto_espadas_9
+	dl texto_espadas_10
+	dl texto_espadas_11
+	dl texto_espadas_12
+	dl texto_espadas_13
+	dl texto_espadas_14
+	dl texto_espadas_15
+	dl texto_espadas_16
+	dl texto_espadas_17
 
 
 // Texto introdução
