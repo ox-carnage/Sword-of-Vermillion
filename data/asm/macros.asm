@@ -1,4 +1,4 @@
-
+//Macros de controle
 
 macro script_itens(TEXT) {
   db {TEXT}
