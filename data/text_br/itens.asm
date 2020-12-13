@@ -5,8 +5,7 @@
 // * Tradutor: OX-Carnage                           *
 // **************************************************
 // * Modificações:                                  *
-// *  - Textos dos Menus                            *
-// *  - Textos dos Diálogos                         *
+// *  - Textos dos Itens                            *
 // ***************************************************
 // * Informações:                                    *
 // *  - 30 caracteres por linha                      *
@@ -17,10 +16,12 @@
 
 
 
-	include "macros.asm"
-	include "ponteiros.asm"
+	include "data/asm/macros.asm"
+	include "data/asm/ponteiros.asm"
+	table	"tabela/vermillion_tabela.tbl"
 	
-origin $0009FF83
+origin $0009FF83 // ----> Endereço de onde será gravado os textos
+
 // Itens, Espadas, Acessórios, Armaduras, etc...
 
 texto_itens_01:

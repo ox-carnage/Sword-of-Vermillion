@@ -5,8 +5,7 @@
 // * Tradutor: OX-Carnage                           *
 // **************************************************
 // * Modificações:                                  *
-// *  - Textos dos textos                            *
-// *  - Textos dos Diálogos                         *
+// *  - Textos dos tMenus                           *
 // ***************************************************
 // * Informações:                                    *
 // *  - 30 caracteres por linha                      *
@@ -15,12 +14,12 @@
 // *  - Sem limitação de próxima janela				 *
 // ***************************************************
 
-	include "macros.asm"
-	include "ponteiros.asm"
-	table 	"vermillion_tabela.tbl"
+	include "data/asm/macros.asm"
+	include "data/asm/ponteiros.asm"
+	table 	"tabela/vermillion_tabela.tbl"
 
-// textos
-origin $000A0661
+
+origin $000A0661  // ----> Endereço de onde será gravado os textos
 
 texto_menu_01:
     script_menu("Iniciar"           )

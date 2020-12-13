@@ -26,10 +26,10 @@ origin $0000000
 insert "Sword of Vermilion (UE) [!].gen"
     include "intro.asm"
     include "itens.asm"
-    include "menus.asm"
-    include "macros.asm"
-    include "ponteiros.asm"
-	include "constants.asm"
+    include "data/asm/text/menus.asm"
+    include "data/asm/macros.asm"
+    include "data/asm/ponteiros.asm"
+	include "data/asm/constants.asm"
 
 constant font_original_vram($9C00)
 constant font_original_ram($FFA400)
@@ -77,5 +77,5 @@ new_fonte:
 	
 	
 gfx_new_font:
-	insert "gfx/font.bin"
+	insert "data/gfx/font.bin"
 gfx_new_font_end:
