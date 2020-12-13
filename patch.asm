@@ -24,9 +24,10 @@ output "Sword of Vermillion (BR) [!] V3.0.bin",create
 // ROM Original
 origin $0000000
 insert "Sword of Vermilion (UE) [!].gen"
-    include "data/textbr/intro.asm"
-    include "data/textbr/itens.asm"
-    include "data/textbr/menus.asm"
+    include "scripts_br/intro.asm"
+    include "scripts_br/itens.asm"
+    include "scripts_br/armory.asm"
+    include "scripts_br/menus.asm"
     include "data/asm/macros.asm"
     include "data/asm/ponteiros.asm"
 	include "data/asm/constants.asm"

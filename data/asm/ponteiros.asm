@@ -63,6 +63,27 @@ origin $0001E63A
     dl texto_itens_53
     dl texto_itens_54
 
+// Armaduras / Armory
+origin $0025F60
+	dl texto_armadura_1
+	dl texto_armadura_2
+	dl texto_armadura_3
+	dl texto_armadura_4
+	dl texto_armadura_5
+	dl texto_armadura_6
+	dl texto_armadura_7
+	dl texto_armadura_8
+	dl texto_armadura_9
+	dl texto_armadura_10
+	dl texto_armadura_11
+	dl texto_armadura_12
+	dl texto_armadura_13
+	dl texto_armadura_14
+	dl texto_armadura_15
+	dl texto_armadura_16
+	dl texto_armadura_17
+
+
 
 // Texto introdução
 origin $00015996

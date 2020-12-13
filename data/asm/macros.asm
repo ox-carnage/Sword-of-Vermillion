@@ -4,6 +4,10 @@ macro script_itens(TEXT) {
   db {TEXT}
   db NEWPAGE
 }
+macro script_armory(TEXT) {
+  db {TEXT}
+  db NEWPAGE
+}
 macro script_jogo(TEXT) {
   db {TEXT}
   db ENDSTRING

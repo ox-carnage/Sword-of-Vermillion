@@ -14,8 +14,6 @@
 // *  - Sem limitação de próxima janela				 *
 // ***************************************************
 
-
-
 	include "data/asm/macros.asm"
 	include "data/asm/ponteiros.asm"
 	table	"tabela/vermillion_tabela.tbl"
@@ -26,7 +24,6 @@ origin $0009FF83 // ----> Endereço de onde será gravado os textos
 
 texto_itens_01:
 	script_itens("Anel da Sabedoria") 
-	final_script()
 texto_itens_02:
 	script_itens("Anel do Céu")
 texto_itens_03:
