@@ -42,10 +42,11 @@ if (traducao) {
 } else {
    // include "text/intro.asm"
    // include "text/itens.asm"
-   // include "text/armory.asm"
+    include "text/armor.asm"
    // include "text/menus.asm"
-   // include "text/swords.asm"
+    include "text/swords.asm"
     include "text/spells.asm"
+    include "text/shields.asm"
     include "text/kingdom.asm"
 }
    

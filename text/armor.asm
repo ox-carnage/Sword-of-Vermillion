@@ -5,7 +5,7 @@
 // * Tradutor: OX-Carnage                           *
 // **************************************************
 // * Modificações:                                  *
-// *  - Textos dos armory                            *
+// *  - Textos dos armor                            *
 // ***************************************************
 // * Informações:                                    *
 // *  - 30 caracteres por linha                      *
@@ -18,38 +18,38 @@
 origin $000A02B1  // ----> Endereço de onde será gravado os textos
 
 texto_armadura_01:
-	script_armory("Leather Armor") 
+	script_armor("Leather Armor") 
 texto_armadura_02:
-	script_armory("Bronze Armor")
+	script_armor("Bronze Armor")
 texto_armadura_03:
-	script_armory("Metal Armor")
+	script_armor("Metal Armor")
 texto_armadura_04:	
-	script_armory("Scale Armor")
+	script_armor("Scale Armor")
 texto_armadura_05:
-	script_armory("Plate Armor")
+	script_armor("Plate Armor")
 texto_armadura_06:
-	script_armory("Silver Armor")
+	script_armor("Silver Armor")
 texto_armadura_07:
-	script_armory("Gold Armor")
+	script_armor("Gold Armor")
 texto_armadura_08:
-	script_armory("Crystal Armor")
+	script_armor("Crystal Armor")
 texto_armadura_09:
-	script_armory("Emerald Armor")
+	script_armor("Emerald Armor")
 texto_armadura_10:
-	script_armory("Diamond Armor")
+	script_armor("Diamond Armor")
 texto_armadura_11:
-	script_armory("Knight Armor")		
+	script_armor("Knight Armor")		
 texto_armadura_12:
-	script_armory("Ultimate Armor")		
+	script_armor("Ultimate Armor")		
 texto_armadura_13:
-	script_armory("Odin Armor")		
+	script_armor("Odin Armor")		
 texto_armadura_14:
-	script_armory("Secret Armor")		
+	script_armor("Secret Armor")		
 texto_armadura_15:
-	script_armory("Skeleton Armor")		
+	script_armor("Skeleton Armor")		
 texto_armadura_16:
-	script_armory("Crimson Armor")		
+	script_armor("Crimson Armor")		
 texto_armadura_17:
-	script_armory("Old Nick Armor")
+	script_armor("Old Nick Armor")
 
 

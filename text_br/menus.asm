@@ -17,7 +17,7 @@
 	
 
 
-origin $000A0B91 // ----> Endereço de onde será gravado os textos
+origin $000A07E1 // ----> Endereço de onde será gravado os textos
 
 texto_menu_01:
     script_menu("Iniciar"           )
@@ -93,12 +93,16 @@ texto_menu_13:
 	final_script()
 texto_menu_14:
 	script_menu("Equipamento (Combate)")
+	final_script()
 texto_menu_15:
-	script_menu("Gear (Magic)")
+	script_menu("Equipamento (Mágico)")
+	final_script()
 texto_menu_16:
-	script_menu("Gear (Item)")
+	script_menu("Equipamento (Item)")
+	final_script()
 texto_menu_17:
-	script_menu("Rings")
+	script_menu("Anéis")
+	final_script()
 
 
 

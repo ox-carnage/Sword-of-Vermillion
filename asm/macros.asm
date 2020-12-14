@@ -4,7 +4,7 @@ macro script_itens(TEXT) {
   db {TEXT}
   final_script()
   }
-macro script_armory(TEXT) {
+macro script_armor(TEXT) {
   db {TEXT}
   final_script()
 }
