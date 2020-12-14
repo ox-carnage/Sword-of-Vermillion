@@ -10,5 +10,6 @@ constant VDP_DATA($C00000)
 constant VDP_CTRL($C00004)
 constant M68K_RAM($FF0000)
 
+// Chamado do If caso escolhendo a opção 1 aplica o pacth BR, opção 0 Pacth original
 constant fonte_acentuada(1)
 constant traducao(1)

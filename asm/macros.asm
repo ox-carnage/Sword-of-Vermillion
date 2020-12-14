@@ -16,6 +16,15 @@ macro script_sword(TEXT) {
   db {TEXT}
   final_script()
 }
+
+macro script_spells(TEXT) {
+  db {TEXT}
+  final_script()
+}
+macro script_kingdom(TEXT) {
+  db {TEXT}
+  final_script()
+}
 macro script_jogo(TEXT) {
   db {TEXT}
   final_script()

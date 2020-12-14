@@ -123,6 +123,48 @@ origin $0025EC0
 	dl texto_espadas_17
 
 
+// Spells / Magias
+origin $0025E64
+	dl pointer_spells_01
+	dl pointer_spells_02
+	dl pointer_spells_03
+	dl pointer_spells_04
+	dl pointer_spells_05
+	dl pointer_spells_06
+	dl pointer_spells_07
+	dl pointer_spells_08
+	dl pointer_spells_09
+	dl pointer_spells_10
+	dl pointer_spells_11
+	dl pointer_spells_12
+	dl pointer_spells_13
+	dl pointer_spells_14
+	dl pointer_spells_15
+	dl pointer_spells_16
+	dl pointer_spells_17
+	dl pointer_spells_18
+	dl pointer_spells_19
+	dl pointer_spells_20
+	dl pointer_spells_21
+	dl pointer_spells_22
+	dl pointer_spells_23
+
+//Reinos / Kingdom
+origin $001FBD4
+	dl pointer_kingdom_01
+	dl pointer_kingdom_02
+	dl pointer_kingdom_03
+	dl pointer_kingdom_04
+	dl pointer_kingdom_05
+	dl pointer_kingdom_06
+	dl pointer_kingdom_07
+	dl pointer_kingdom_09
+	dl pointer_kingdom_10
+	dl pointer_kingdom_11
+	dl pointer_kingdom_12
+	dl pointer_kingdom_13
+	dl pointer_kingdom_14
+
 // Texto introdução
 origin $00015996
     dl texto_intro_01

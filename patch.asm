@@ -32,16 +32,21 @@ insert "Sword of Vermilion (UE) [!].gen"
 if (traducao) {  
     include "text_br/intro.asm"
     include "text_br/itens.asm"
-    include "text_br/armory.asm"
+    include "text_br/armaduras.asm"
     include "text_br/menus.asm"
-    include "text_br/swords.asm"
-    include "text_br/shields.asm"
+    include "text_br/espadas.asm"
+    include "text_br/escudos.asm"
+    include "text_br/magias.asm"
+    include "text_br/reinos.asm"
+    
 } else {
    // include "text/intro.asm"
    // include "text/itens.asm"
    // include "text/armory.asm"
    // include "text/menus.asm"
    // include "text/swords.asm"
+    include "text/spells.asm"
+    include "text/kingdom.asm"
 }
    
 origin $00016BD8 
