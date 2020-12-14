@@ -15,7 +15,7 @@
 // ***************************************************
 	
 		
-origin $000A0351  // ---> Endereço de onde sera gravado os blocos de textos.
+origin $000A1043 // ---> Endereço de onde sera gravado os blocos de textos.
 
 texto_intro_01:
 	script_intro("Tempos atrás, o Rei"  )

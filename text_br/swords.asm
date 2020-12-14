@@ -16,7 +16,7 @@
 
 	
 	
-origin $B000A26F0 // ----> Endereço de onde será gravado os textos
+origin $000A0411 // ----> Endereço de onde será gravado os textos
 
 texto_espadas_0:
 	script_sword("Espada de Bronze") 

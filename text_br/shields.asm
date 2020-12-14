@@ -16,7 +16,7 @@
 
 	
 	
-origin $B000A02B1 // ----> Endereço de onde será gravado os textos
+origin $000A0551 // ----> Endereço de onde será gravado os textos
 
 texto_escudos_0:
 	script_shield("Escudo de Couro") 

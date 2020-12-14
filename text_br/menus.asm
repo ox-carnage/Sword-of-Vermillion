@@ -17,7 +17,7 @@
 	
 
 
-origin $000A0661  // ----> Endereço de onde será gravado os textos
+origin $000A0B91 // ----> Endereço de onde será gravado os textos
 
 texto_menu_01:
     script_menu("Iniciar"           )

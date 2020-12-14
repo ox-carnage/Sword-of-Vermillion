@@ -35,6 +35,7 @@ if (traducao) {
     include "text_br/armory.asm"
     include "text_br/menus.asm"
     include "text_br/swords.asm"
+    include "text_br/shields.asm"
 } else {
    // include "text/intro.asm"
    // include "text/itens.asm"
