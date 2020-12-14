@@ -9,3 +9,6 @@ constant font_original_ram($FFA400)
 constant VDP_DATA($C00000)
 constant VDP_CTRL($C00004)
 constant M68K_RAM($FF0000)
+
+constant fonte_acentuada(1)
+constant traducao(1)

@@ -6,19 +6,19 @@ macro script_itens(TEXT) {
   }
 macro script_armory(TEXT) {
   db {TEXT}
-  db ENDSTRING
+  final_script()
 }
 macro script_shield(TEXT) {
   db {TEXT}
-  db ENDSTRING
+  final_script()
 }
 macro script_sword(TEXT) {
   db {TEXT}
-  db ENDSTRING
+  final_script()
 }
 macro script_jogo(TEXT) {
   db {TEXT}
-  db ENDSTRING
+  final_script()
   db NULL
 }
 macro script_intro(TEXT) {
@@ -32,7 +32,7 @@ macro script_menu(TEXT) {
  }
 macro final_script() {
   db ENDSTRING
-  }
+}
 macro quebra_linha() {
   db BREAKLINE
 }

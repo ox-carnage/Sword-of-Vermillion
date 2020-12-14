@@ -14,10 +14,7 @@
 // *  - Sem limitação de próxima janela				 *
 // ***************************************************
 
-	include "data/asm/macros.asm"
-	include "data/asm/ponteiros.asm"
-	table	"tabela/vermillion_tabela.tbl"
-	
+		
 origin $B000A26F0 // ----> Endereço de onde será gravado os textos
 
 texto_espadas_0:
