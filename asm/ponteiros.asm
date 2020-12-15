@@ -64,16 +64,16 @@ origin $0001E63A
     dl texto_itens_54
 
 // Armaduras / Armory
-origin $0025F60
-	dl texto_armadura_1
-	dl texto_armadura_2
-	dl texto_armadura_3
-	dl texto_armadura_4
-	dl texto_armadura_5
-	dl texto_armadura_6
-	dl texto_armadura_7
-	dl texto_armadura_8
-	dl texto_armadura_9
+origin $00025F60
+	dl texto_armadura_01
+	dl texto_armadura_02
+	dl texto_armadura_03
+	dl texto_armadura_04
+	dl texto_armadura_05
+	dl texto_armadura_06
+	dl texto_armadura_07
+	dl texto_armadura_08
+	dl texto_armadura_09
 	dl texto_armadura_10
 	dl texto_armadura_11
 	dl texto_armadura_12
@@ -84,16 +84,16 @@ origin $0025F60
 	dl texto_armadura_17
 
 //Shields
-origin $0025F10
-	dl texto_escudos_0
-	dl texto_escudos_1
-	dl texto_escudos_2
-	dl texto_escudos_4
-	dl texto_escudos_5
-	dl texto_escudos_6
-	dl texto_escudos_7
-	dl texto_escudos_8
-	dl texto_escudos_9
+origin $00025F10
+	dl texto_escudos_01
+	dl texto_escudos_02
+	dl texto_escudos_03
+	dl texto_escudos_04
+	dl texto_escudos_05
+	dl texto_escudos_06
+	dl texto_escudos_07
+	dl texto_escudos_08
+	dl texto_escudos_09
 	dl texto_escudos_10
 	dl texto_escudos_11
 	dl texto_escudos_12
@@ -104,15 +104,15 @@ origin $0025F10
 
 // Swords
 origin $0025EC0
-	dl texto_espadas_0
-	dl texto_espadas_1
-	dl texto_espadas_2
-	dl texto_espadas_3
-	dl texto_espadas_4
-	dl texto_espadas_5
-	dl texto_espadas_7
-	dl texto_espadas_8
-	dl texto_espadas_9
+	dl texto_espadas_01
+	dl texto_espadas_02
+	dl texto_espadas_03
+	dl texto_espadas_04
+	dl texto_espadas_05
+	dl texto_espadas_06
+	dl texto_espadas_07
+	dl texto_espadas_08
+	dl texto_espadas_09
 	dl texto_espadas_10
 	dl texto_espadas_11
 	dl texto_espadas_12
@@ -124,7 +124,7 @@ origin $0025EC0
 
 
 // Spells / Magias
-origin $0025E64
+origin $00025E64
 	dl pointer_spells_01
 	dl pointer_spells_02
 	dl pointer_spells_03
@@ -150,7 +150,7 @@ origin $0025E64
 	dl pointer_spells_23
 
 //Reinos / Kingdom
-origin $001FBD4
+origin $0001FBD4
 	dl pointer_kingdom_01
 	dl pointer_kingdom_02
 	dl pointer_kingdom_03

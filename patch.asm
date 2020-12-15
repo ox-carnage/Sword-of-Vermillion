@@ -28,7 +28,44 @@ insert "Sword of Vermilion (UE) [!].gen"
     table   "tabela/geral.tbl"
     include "asm/macros.asm"
   	include "asm/constants.asm"
-    
+    include "asm/ponteiros.asm"
+
+//Desenha caixa do menu
+origin $00010C9E
+    move.w  #2,($FF9902).w       // Posição X
+    move.w  #2,($FF9908).w       // Posição Y
+    move.w  #$F,($FF9904).w      // Largura da caixa do menu
+    move.w  #$A,($FF990A).w      // Altura da caixa do menu
+
+//Limpa caixa do menu
+origin $000120CA
+    move.w  #2,($FFC220).w       // Posição X
+    move.w  #2,($FFC222).w       // Posição Y
+    move.w  #$F,($FFC228).w      // Largura da caixa do menu
+    move.w  #$A,($FFC22A).w      // Altura da caixa do menu
+
+
+//Desenha caixa do menu "Velocidade dos dialogos"
+origin $00010CE2
+    move.w  #$A,($FF9902).w     // Posição X   
+    move.w  #$A,($FF9908).w     // Posição Y
+    move.w  #$E,($FF9904).w     // Largura da caixa do menu
+    move.w  #$A,($FF990A).w     // Altura da caixa do menu
+
+//Limpa caixa do menu "Velocidade dos dialogos"
+origin $000120A8
+    move.w  #$A,($FFC220).w
+    move.w  #$A,($FFC222).w
+    move.w  #$E,($FFC228).w
+    move.w  #$A,($FFC22A).w
+
+//Alinhamento conteudo Menu velocidade dos dialogos
+origin $00010D0A
+    move.w  #1,($FF9906).w      //Posição X
+    move.w  #1,($FF990C).w      //Posição Y
+
+
+
 if (traducao) {  
     include "text_br/intro.asm"
     include "text_br/itens.asm"
@@ -42,12 +79,12 @@ if (traducao) {
 } else {
    // include "text/intro.asm"
    // include "text/itens.asm"
-    include "text/armor.asm"
+  //  include "text/armor.asm"
    // include "text/menus.asm"
-    include "text/swords.asm"
-    include "text/spells.asm"
-    include "text/shields.asm"
-    include "text/kingdom.asm"
+  //  include "text/swords.asm"
+  //  include "text/spells.asm"
+  //  include "text/shields.asm"
+   // include "text/kingdom.asm"
 }
    
 origin $00016BD8 
@@ -73,8 +110,11 @@ origin $0000107C
     new_tilemap_logo:
         jsr     $1325E
         tilecopy_to_vram(tilemap_logo, (tilemap_logo_end-tilemap_logo), $C000)
-        jmp 	$00016BDE
+        jmp 	$16BDE
 
     tilemap_logo:
         insert "tilemap/teste.bin"
     tilemap_logo_end:
+
+
+

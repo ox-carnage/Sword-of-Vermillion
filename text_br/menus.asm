@@ -31,58 +31,61 @@ texto_menu_02:
 	script_menu("Abrir Pegar"				)
 	final_script()
 texto_menu_03:
-    script_menu("Velocidade dos Diálogos"	)
-	script_menu("    Rápido"				)
-	script_menu("    Normal"				)
-	script_menu("    Lento"					)
+    db "  Velocidade ",$E5,$E3," dos Diálogos"
+	db BREAKLINE
+	db "             ",$E5,$E3,"     Rápido"
+	db BREAKLINE	
+	db "             ",$E5,$E3,"     Normal"
+	db BREAKLINE		
+	db "             ",$E5,$E3,"     Lento"		
 	final_script()
 texto_menu_04:
-	script_menu("Sim"						)
-	script_menu("Não"						)
+	script_menu("Sim"					)
+	script_menu("Não"					)
 	final_script()
 texto_menu_05:
-    script_menu("Usar"						)
-	script_menu("Descartar"					)
+    script_menu("Usar"					)
+	script_menu("Descartar"				)
 	final_script()
 texto_menu_06:
-    script_menu("Lançar"					)
-	script_menu("Preparar"					)
-	script_menu("Descartar"					)
+    script_menu("Lançar"				)
+	script_menu("Preparar"				)
+	script_menu("Descartar"				)
 	final_script()
 texto_menu_07:
-    script_menu("Colocar"					)
-	script_menu("Remover"					)
-	script_menu("Sair"						)
+    script_menu("Colocar"				)
+	script_menu("Remover"				)
+	script_menu("Sair"					)
 	final_script()
 texto_menu_08:
-	script_menu("Arma"						)
-	script_menu("Escudo"					)
-	script_menu("Armadura"					)	
+	script_menu("Arma"					)
+	script_menu("Escudo"				)
+	script_menu("Armadura"				)	
 	final_script()
 texto_menu_09:
-	script_menu("Remover uma maldição"		)
-	script_menu("Aplicar veneno bálsamo"	)
-	script_menu("Salvar o seu menu "		)
-	script_menu("Sair"						)
+	script_menu("Remover uma maldição"	)
+	script_menu("Aplicar veneno bálsamo")
+	script_menu("Salvar o seu menu "	)
+	script_menu("Sair"					)
 	final_script()
 texto_menu_10:
-	script_menu("Comprar"					)
-	script_menu("Vender"					)
-	script_menu("Sair"						)
+	script_menu("Comprar"				)
+	script_menu("Vender"				)
+	script_menu("Sair"					)
 	final_script()
 texto_menu_11:
-	script_menu("Kim"						)
+	script_menu("Kim"					)
 	final_script()
 texto_menu_12:
-    script_menu("Nome:"						)
-	script_menu("Condição:"					)
-	script_menu("Nível: EXP: "				)
-	script_menu("Próximo nível EXP: "		)
-	script_menu("PV: MPV: "					)
-	script_menu("PM: MPM: "					)
-	script_menu("FRÇ: AC: "					)
-	script_menu("INT: DEX: "				)
-	script_menu("SOT: KIM:"					)
+    script_menu("Nome:"					)
+	script_menu("Condição:"				)
+	script_menu("Nível:       EXP:"		)
+	script_menu("Próximo nível EXP:"	)
+	script_menu("PV:          MPV:"		)
+	script_menu("PM:          MPM:"		)
+	script_menu("FRÇ:          AC:"		)
+	script_menu("INT:         DEX:"		)
+	script_menu("SOT:         KIM:"		)
 	final_script()
 texto_menu_13:
 	script_menu("Preparar Equipamento"	)
@@ -103,8 +106,3 @@ texto_menu_16:
 texto_menu_17:
 	script_menu("Anéis")
 	final_script()
-
-
-
-
-

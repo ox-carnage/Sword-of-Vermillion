@@ -17,23 +17,23 @@
 	
 	
 origin $B000A02B1 // ----> Endereço de onde será gravado os textos
-texto_armadura_1:
+texto_armadura_01:
 	script_armor("Armadura de Couro") 
-texto_armadura_2:
+texto_armadura_02:
 	script_armor("Armadura de Bronze")
-texto_armadura_3:
+texto_armadura_03:
 	script_armor("Armadura de Metal")
-texto_armadura_4:	
+texto_armadura_04:	
 	script_armor("Armadura de Escama")
-texto_armadura_5:
+texto_armadura_05:
 	script_armor("Armadura de Aço")
-texto_armadura_6:
+texto_armadura_06:
 	script_armor("Armadura de Prata")
-texto_armadura_7:
+texto_armadura_07:
 	script_armor("Armadura de Ouro")
-texto_armadura_8:
+texto_armadura_08:
 	script_armor("Armadura de Cristal")
-texto_armadura_9:
+texto_armadura_09:
 	script_armor("Armadura de Esmeralda")
 texto_armadura_10:
 	script_armor("Armadura de Diamante")
