@@ -75,16 +75,18 @@ if (traducao) {
     include "text_br/escudos.asm"
     include "text_br/magias.asm"
     include "text_br/reinos.asm"
+    include "text_br/dialogos.asm"
     
 } else {
    // include "text/intro.asm"
    // include "text/itens.asm"
-  //  include "text/armor.asm"
+    include "text/armor.asm"
    // include "text/menus.asm"
-  //  include "text/swords.asm"
-  //  include "text/spells.asm"
-  //  include "text/shields.asm"
-   // include "text/kingdom.asm"
+    include "text/swords.asm"
+    include "text/spells.asm"
+    include "text/shields.asm"
+    include "text/kingdom.asm"
+    include "text/dialogos.asm"
 }
    
 origin $00016BD8 
@@ -95,7 +97,9 @@ origin $0000107C
     desvio_1:
         jmp     new_fonte
 
-    origin $00100000  // Endreço da rom expandida
+    origin $000A55D5  // ---> Endreço da rom expandida
+
+    
     new_fonte:
         jsr     $0000FCDC   
         tilecopy_to_vram(gfx_new_font, (gfx_new_font_end-gfx_new_font), font_original_vram)
@@ -113,7 +117,7 @@ origin $0000107C
         jmp 	$16BDE
 
     tilemap_logo:
-        insert "tilemap/teste.bin"
+        insert "gfx/logo.bin"
     tilemap_logo_end:
 
 

@@ -33,9 +33,12 @@ macro script_jogo(TEXT) {
 macro script_intro(TEXT) {
   db {TEXT}
   quebra_linha()
-  
- }
+}
 macro script_menu(TEXT) {
+  db {TEXT}
+  quebra_linha()
+ }
+macro scripts_dialogs(TEXT) {
   db {TEXT}
   quebra_linha()
  }
@@ -44,6 +47,9 @@ macro final_script() {
 }
 macro quebra_linha() {
   db BREAKLINE
+}
+macro new_page() {
+  db NEWPAGE
 }
 
 

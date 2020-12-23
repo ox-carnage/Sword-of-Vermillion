@@ -222,3 +222,365 @@ origin $00011E9E
     dl texto_menu_17
 origin $00011F0A
     dl texto_menu_17
+
+//Inicio dos dialogos in game / Star dialogs in game
+
+origin $01CEEE
+ 	move.l #scripts_dialogs_00,($FFC204).w	
+origin $00011F20
+	dl scripts_dialogs_01              
+origin $00011F2C
+	dl scripts_dialogs_02
+origin $00026028
+	dl scripts_dialogs_03
+origin $00025FF8
+	dl scripts_dialogs_04
+origin $00026010
+	dl scripts_dialogs_05
+origin $0001C302
+	dl scripts_dialogs_06
+//// Possivel frase Is 
+origin $001B374
+	dl scripts_dialogs_06
+origin $001BEAA
+	dl scripts_dialogs_06
+origin $00026004
+	dl scripts_dialogs_07
+origin $0002601C
+	dl scripts_dialogs_08
+origin $00025FB0
+	dl scripts_dialogs_09
+origin $00025FBC
+	dl scripts_dialogs_10
+origin $00025FC8
+	dl scripts_dialogs_11
+origin $00025FEC
+	dl scripts_dialogs_12
+origin $00025FD4
+	dl scripts_dialogs_13
+origin $00025FA4
+	dl scripts_dialogs_14
+origin $00025FE0
+	dl scripts_dialogs_15
+origin $00026030
+	dl scripts_dialogs_16
+origin $0002602C
+	dl scripts_dialogs_17
+origin $0001C33C
+	dl scripts_dialogs_18
+origin $0001B364
+	dl scripts_dialogs_19
+origin $0001C83C
+	dl scripts_dialogs_20
+origin $0001C92C
+	dl scripts_dialogs_21
+origin $0001C858
+	dl scripts_dialogs_22
+origin $0001C862
+	dl scripts_dialogs_23
+origin $0001D458
+	dl scripts_dialogs_24
+origin $0001D26C
+	dl scripts_dialogs_25
+origin $0001D2F6
+	dl scripts_dialogs_26
+origin $0001D1AA
+	dl scripts_dialogs_27
+origin $0001D196
+	dl scripts_dialogs_28
+origin $0001D29E
+	dl scripts_dialogs_29
+origin $0001D468
+	dl scripts_dialogs_30
+origin $0001D34A
+	dl scripts_dialogs_31
+origin $0001D354
+	dl scripts_dialogs_32
+origin $0001E0AC
+	dl scripts_dialogs_33
+origin $0001E05A
+	dl scripts_dialogs_34
+origin $0001E066
+	dl scripts_dialogs_35
+origin $0001E072
+	dl scripts_dialogs_36
+origin $0001E07E
+	dl scripts_dialogs_37
+origin $0001B3BE
+	dl scripts_dialogs_38
+origin $0001B3CE
+	dl scripts_dialogs_39
+origin $0001B3F8
+	dl scripts_dialogs_40
+origin $0001C662
+	dl scripts_dialogs_41
+origin $0001C66C
+	dl scripts_dialogs_42
+origin $0001B2BE
+	dl scripts_dialogs_43
+origin $0001CAAE
+	dl scripts_dialogs_44
+origin $0001CA06
+	dl scripts_dialogs_45
+origin $0001CA2C
+	dl scripts_dialogs_46
+origin $0001CD0C
+	dl scripts_dialogs_47
+origin $00018898
+	dl scripts_dialogs_48
+origin $0001CC1C
+	dl scripts_dialogs_49
+origin $0001CA4E
+	dl scripts_dialogs_50
+origin $0001ABCC
+	dl scripts_dialogs_51
+origin $0001CABE
+	dl scripts_dialogs_52   //Frase The poison has been/purged from your body
+origin $0001CDBA
+	dl scripts_dialogs_53   // Frase Don't even think of taking/back your donation.
+origin $0001C9EA
+	dl scripts_dialogs_54
+origin $000188A6
+	dl scripts_dialogs_55
+origin $000188B6
+	dl scripts_dialogs_56
+origin $00001D4A
+	dl scripts_dialogs_57
+origin $00001D28
+	dl scripts_dialogs_58
+origin $00001D36
+	dl scripts_dialogs_59
+origin $00001DD2
+	dl scripts_dialogs_60
+origin $00018744
+	dl scripts_dialogs_61
+origin $00002D30
+	dl scripts_dialogs_62
+origin $00002D52
+	dl scripts_dialogs_63
+origin $0001AC16
+	dl scripts_dialogs_64
+origin $0001AC2E
+	dl scripts_dialogs_65
+origin $0001AC56
+	dl scripts_dialogs_66
+origin $0001882E
+	dl scripts_dialogs_67
+origin $00018824
+	dl scripts_dialogs_68
+origin $0001AA8C
+	dl scripts_dialogs_69
+origin $0001AA7C
+	dl scripts_dialogs_70
+origin $0001AA68
+	dl scripts_dialogs_71
+origin $0001AA54
+	dl scripts_dialogs_72
+origin $0001ACA6
+	dl scripts_dialogs_73
+origin $0001ACEE
+	dl scripts_dialogs_74
+origin $0001AE70
+	dl scripts_dialogs_75
+origin $0001AE80
+	dl scripts_dialogs_76
+origin $0001AEA2
+	dl scripts_dialogs_77
+origin $0001AEB0
+	dl scripts_dialogs_78
+origin $00026CBE
+	dl scripts_dialogs_79
+origin $0001AF20
+	dl scripts_dialogs_80
+origin $0001AF30
+	dl scripts_dialogs_81
+origin $0001AFA4
+	dl scripts_dialogs_82
+origin $0001AFB4
+	dl scripts_dialogs_83
+origin $0001AFE4
+	dl scripts_dialogs_84
+origin $0001AFDA
+	dl scripts_dialogs_85
+origin $0001AAAE
+	dl scripts_dialogs_86
+origin $0001AB30
+	dl scripts_dialogs_87
+origin $0001AB4E
+	dl scripts_dialogs_88
+origin $0001AB06
+	dl scripts_dialogs_89
+origin $0001AB7A
+	dl scripts_dialogs_90
+origin $0001ABA6
+	dl scripts_dialogs_91
+origin $0001AADA
+	dl scripts_dialogs_92
+origin $0001B018
+	dl scripts_dialogs_93
+origin $0001B054
+	dl scripts_dialogs_94
+origin $0001B06E
+	dl scripts_dialogs_95
+origin $0001E508
+	dl scripts_dialogs_96
+origin $0001B078
+	dl scripts_dialogs_97
+origin $0001B082
+	dl scripts_dialogs_98
+origin $0001B08C
+	dl scripts_dialogs_99
+origin $0001B140
+	dl scripts_dialogs_100
+origin $0001B14A
+	dl scripts_dialogs_101
+origin $0001B130
+	dl scripts_dialogs_102
+origin $0001B154
+	dl scripts_dialogs_103
+origin $0001B15E
+	dl scripts_dialogs_104
+origin $0001DCD6
+	dl scripts_dialogs_105
+origin $0001E168
+	dl scripts_dialogs_106
+origin $0001E592
+	dl scripts_dialogs_107
+//origin $187B188
+//	dl scripts_dialogs_108
+origin $0001DDDE
+	dl scripts_dialogs_109
+origin $0001197C
+	dl scripts_dialogs_110
+origin $0001198C
+	dl scripts_dialogs_111
+origin $000119A6
+	dl scripts_dialogs_112
+origin $0001199E
+	dl scripts_dialogs_113
+origin $0000D0F8
+	dl scripts_dialogs_114
+origin $000272AC 
+	dl scripts_dialogs_115
+	dl scripts_dialogs_116
+	dl scripts_dialogs_117
+origin $0002C07C
+	dl scripts_dialogs_118
+origin $00007DF0
+	dl scripts_dialogs_119
+origin $0002C0A0
+	dl scripts_dialogs_120
+origin $0002C090
+	dl scripts_dialogs_121
+origin $0002C094
+	dl scripts_dialogs_122
+origin $0002C098
+	dl scripts_dialogs_123
+origin $0002C09C
+	dl scripts_dialogs_124
+origin $0002D424
+	dl scripts_dialogs_125
+origin $0002D45C
+	dl scripts_dialogs_125
+origin $0002D494
+	dl scripts_dialogs_126
+origin $0002D428
+	dl scripts_dialogs_127
+origin $0002D430
+	dl scripts_dialogs_127
+origin $0002D460
+	dl scripts_dialogs_128
+origin $0002D498
+	dl scripts_dialogs_129
+origin $0002D468
+	dl scripts_dialogs_130
+	dl scripts_dialogs_137
+	dl scripts_dialogs_140
+	dl scripts_dialogs_142
+	dl scripts_dialogs_143
+	dl scripts_dialogs_145
+	dl scripts_dialogs_147
+	dl scripts_dialogs_149
+	dl scripts_dialogs_152
+origin $0002D4A0
+	dl scripts_dialogs_131
+	dl scripts_dialogs_135
+	dl scripts_dialogs_138
+origin $0002D42C
+	dl scripts_dialogs_132
+origin $0002D464
+	dl scripts_dialogs_133
+origin $0002D49C
+	dl scripts_dialogs_134
+origin $0002D434
+	dl scripts_dialogs_136
+	dl scripts_dialogs_146
+	dl scripts_dialogs_139
+	dl scripts_dialogs_144
+	dl scripts_dialogs_141
+	dl scripts_dialogs_148
+
+
+origin $0002D4C0
+	dl scripts_dialogs_150
+	dl scripts_dialogs_151
+	dl scripts_dialogs_153
+	dl scripts_dialogs_154
+	dl scripts_dialogs_155
+	dl scripts_dialogs_156
+	dl scripts_dialogs_157
+	dl scripts_dialogs_160
+origin $00007038
+	dl scripts_dialogs_158
+	dl scripts_dialogs_161
+origin $00020CB4
+	dl scripts_dialogs_162
+origin $0008D20
+	dl scripts_dialogs_163
+origin $0002D504
+	dl scripts_dialogs_164
+origin $0002D514
+	dl scripts_dialogs_165
+origin $0002D528
+	dl scripts_dialogs_166
+origin $0002D530
+	dl scripts_dialogs_167
+origin $0002E400
+	dl scripts_dialogs_168
+origin $0002E3F0
+	dl scripts_dialogs_169
+origin $0002E3E0
+	dl scripts_dialogs_170
+origin $0002D4FC
+	dl scripts_dialogs_171
+	dl scripts_dialogs_172
+origin $0002D51C
+	dl scripts_dialogs_173	
+	dl scripts_dialogs_174
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+origin $0002D520
+	dl scripts_dialogs_174

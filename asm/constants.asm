@@ -2,6 +2,8 @@
   constant ENDSTRING($FF)
   constant BREAKLINE($FE)
   constant NULL($00)
+  constant NEWPAGE($FD)
+  
  
 
 constant font_original_vram($9C00)

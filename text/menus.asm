@@ -29,12 +29,24 @@ texto_menu_02:
 	script_menu("Str  Seek"			)
 	script_menu("Open Take"			)
 	final_script()
+	
 texto_menu_03:
     script_menu("Message Speed"		)
 	script_menu("     Fast"			)
 	script_menu("     Normal"		)
 	script_menu("     Slow"			)
 	final_script()
+// Expanded menu box if you need to use in another language
+; ; texto_menu_03:
+; ;     db "  Message ",$E5,$E3," Speed"
+; ; 	db BREAKLINE
+; ; 	db "             ",$E5,$E3,"     Fast"
+; ; 	db BREAKLINE	
+; ; 	db "             ",$E5,$E3,"     Normal"
+; ; 	db BREAKLINE		
+; ; 	db "             ",$E5,$E3,"     Slow"		
+; ; 	final_script()
+
 texto_menu_04:
 	script_menu("Yes"				)
 	script_menu("No"				)
