@@ -20,89 +20,89 @@
 origin $000A07E1 // ----> Endereço de onde será gravado os textos
 
 text_menu_01:
-    menu_text("Iniciar"           )
-	menu_text("Continuar"			)					
+    menu_text("INICIAR"           )
+	menu_text("CONTINUAR"			)					
 	end()
 	
 text_menu_02:
-    menu_text("Falar Magia"				)
-	menu_text("Item  Equipar"				)
-	menu_text("Str   Olhar"				)
-	menu_text("Abrir Pegar"				)
+    menu_text("FALAR MAGIA"				)
+	menu_text("ITEM  EQUIPAR"				)
+	menu_text("HEROI OLHAR"				)
+	menu_text("ABRIR PEGAR"				)
 	end()
 text_menu_03:
-    db "  Velocidade ",$E5,$E3," dos Diálogos"
+    db "  VELOCIDADE ",$E5,$E3," DOS DIALOGOS"
 	db BREAKLINE
-	db "             ",$E5,$E3,"     Rápido"
+	db "             ",$E5,$E3,"     RAPIDO"
 	db BREAKLINE	
-	db "             ",$E5,$E3,"     Normal"
+	db "             ",$E5,$E3,"     NORMAL"
 	db BREAKLINE		
-	db "             ",$E5,$E3,"     Lento"		
+	db "             ",$E5,$E3,"     LENTO"		
 	end()
 text_menu_04:
-	menu_text("Sim"					)
-	menu_text("Não"					)
+	menu_text("SIM"					)
+	menu_text("NAO"					)
 	end()
 text_menu_05:
-    menu_text("Usar"					)
-	menu_text("Descartar"				)
+    menu_text("USAR"					)
+	menu_text("DESCARTAR"				)
 	end()
 text_menu_06:
-    menu_text("Lançar"				)
-	menu_text("Preparar"				)
-	menu_text("Descartar"				)
+    menu_text("LANCAR"				)
+	menu_text("PREPARAR"				)
+	menu_text("DESCARTAR"				)
 	end()
 text_menu_07:
-    menu_text("Colocar"				)
-	menu_text("Remover"				)
-	menu_text("Sair"					)
+    menu_text("COLOCAR"				)
+	menu_text("REMOVER"				)
+	menu_text("SAIR"					)
 	end()
 text_menu_08:
-	menu_text("Arma"					)
-	menu_text("Escudo"				)
-	menu_text("Armadura"				)	
+	menu_text("ARMA"					)
+	menu_text("ESCUDO"				)
+	menu_text("ARMADURA"				)	
 	end()
 text_menu_09:
-	menu_text("Remover uma maldição"	)
-	menu_text("Aplicar veneno bálsamo")
-	menu_text("Salvar o seu menu "	)
-	menu_text("Sair"					)
+	menu_text("REMOVER MALDICAO"	)
+	menu_text("APLICAR BALSAMO")
+	menu_text("SALVAR "	)
+	menu_text("SAIR"					)
 	end()
 text_menu_10:
-	menu_text("Comprar"				)
-	menu_text("Vender"				)
-	menu_text("Sair"					)
+	menu_text("COMPRAR"				)
+	menu_text("VENDER"				)
+	menu_text("SAIR"					)
 	end()
 text_menu_11:
-	menu_text("Kim"					)
+	menu_text("KIM"					)
 	end()
 text_menu_12:
-    menu_text("Nome:"					)
-	menu_text("Condição:"				)
-	menu_text("Nível:       EXP:"		)
-	menu_text("Próximo nível EXP:"	)
+    menu_text("NOME:"					)
+	menu_text("CONDICAO:"				)
+	menu_text("NIVEL:       EXP:"		)
+	menu_text("PROXIMO NIVEL EXP:"	)
 	menu_text("PV:          MPV:"		)
 	menu_text("PM:          MPM:"		)
-	menu_text("FRÇ:          AC:"		)
+	menu_text("FRC:          AC:"		)
 	menu_text("INT:         DEX:"		)
 	menu_text("SOT:         KIM:"		)
 	end()
 text_menu_13:
-	menu_text("Preparar Equipamento"	)
-	menu_text("Arma:"					)
-	menu_text("Escudo:"				)
-	menu_text("Armadura:"				)
-	menu_text("Magia:"				)
+	menu_text("PREPARAR EQUIPAMENTO"	)
+	menu_text("ARMA:"					)
+	menu_text("ESCUDO:"				)
+	menu_text("ARMADURA:"				)
+	menu_text("MAGIA:"				)
 	end()
 text_menu_14:
-	menu_text("Equipamento (Combate)")
+	menu_text("EQUIPAMENTO (COMBATE)")
 	end()
 text_menu_15:
-	menu_text("Equipamento (Mágico)")
+	menu_text("EQUIPAMENTO (MAGICO)")
 	end()
 text_menu_16:
-	menu_text("Equipamento (Item)")
+	menu_text("EQUIPAMENTO (ITEM)")
 	end()
 text_menu_17:
-	menu_text("Anéis")
+	menu_text("ANEIS")
 	end()
