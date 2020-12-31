@@ -105,31 +105,31 @@ origin $000001F0
 
 // Draw Menu box
 origin ROM_MENU_BOX_ATTRIBUTES
-    move.w  #CONFIG_MENU_BOX_X,(MENU_BOX_POSITION_X).w                              // X
-    move.w  #CONFIG_MENU_BOX_Y,(MENU_BOX_POSITION_Y).w                              // Y
-    move.w  #CONFIG_MENU_BOX_WIDTH,(MENU_BOX_WIDTH).w                               // Width
-    move.w  #CONFIG_MENU_BOX_HEIGHT,(MENU_BOX_HEIGHT).w                             // Height
+    move.w  #CONFIG_MENU_BOX_X,BOX_POSITION_X.w                              // X
+    move.w  #CONFIG_MENU_BOX_Y,BOX_POSITION_Y.w                              // Y
+    move.w  #CONFIG_MENU_BOX_WIDTH,BOX_WIDTH.w                               // Width
+    move.w  #CONFIG_MENU_BOX_HEIGHT,BOX_HEIGHT.w                             // Height
 
 // Clear Menu box
 origin ROM_MENU_CLEAR_BOX_ATTRIBUTES
-    move.w  #CONFIG_MENU_BOX_CLEAR_X,(MENU_BOX_CLEAR_POSITION_X).w                  // X
-    move.w  #CONFIG_MENU_BOX_CLEAR_Y,(MENU_BOX_CLEAR_POSITION_Y).w                  // Y
-    move.w  #CONFIG_MENU_BOX_CLEAR_WIDTH,(MENU_BOX_CLEAR_WIDTH).w                   // Width
-    move.w  #CONFIG_MENU_BOX_CLEAR_HEIGHT,(MENU_BOX_CLEAR_HEIGHT).w                 // Height
+    move.w  #CONFIG_MENU_BOX_CLEAR_X,BOX_CLEAR_POSITION_X.w                  // X
+    move.w  #CONFIG_MENU_BOX_CLEAR_Y,BOX_CLEAR_POSITION_Y.w                  // Y
+    move.w  #CONFIG_MENU_BOX_CLEAR_WIDTH,BOX_CLEAR_WIDTH.w                   // Width
+    move.w  #CONFIG_MENU_BOX_CLEAR_HEIGHT,BOX_CLEAR_HEIGHT.w                 // Height
 
 // Draw Text Speed box
 origin ROM_MENU_TEXTSPEED_BOX_ATTRIBUTES
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_X,(MENU_BOX_POSITION_X).w                    // X   
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_Y,(MENU_BOX_POSITION_Y).w                    // Y
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_WIDTH,(MENU_BOX_WIDTH).w                     // Width
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_HEIGHT,(MENU_BOX_HEIGHT).w                   // Height
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_X,BOX_POSITION_X.w                    // X   
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_Y,BOX_POSITION_Y.w                    // Y
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_WIDTH,BOX_WIDTH.w                     // Width
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_HEIGHT,BOX_HEIGHT.w                   // Height
 
 // Clear Text Speed box
 origin ROM_MENU_TEXTSPEED_CLEAR_BOX_ATTRIBUTES
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_X,(MENU_BOX_CLEAR_POSITION_X).w        // X
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_Y,(MENU_BOX_CLEAR_POSITION_Y).w        // Y
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_WIDTH,(MENU_BOX_CLEAR_WIDTH).w         // Width
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_HEIGHT,(MENU_BOX_CLEAR_HEIGHT).w       // Heigth
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_X,BOX_CLEAR_POSITION_X.w        // X
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_Y,BOX_CLEAR_POSITION_Y.w        // Y
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_WIDTH,BOX_CLEAR_WIDTH.w         // Width
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_HEIGHT,BOX_CLEAR_HEIGHT.w       // Heigth
 
 // Text Speed Box Content Alignment
 origin ROM_MENU_TEXTSPEED_BOX_CONTENT_ATTRIBUTES
@@ -676,8 +676,8 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
     define CONFIG_ROM_SIZE(pc())
 
     // New font Injection Point
-    origin $0000107C
-        jmp  load_gfx_font_latin
+    //origin $0000107C
+    //    jmp  load_gfx_font_latin
 
     // New logo Injection Point
     origin $00016BD8 
