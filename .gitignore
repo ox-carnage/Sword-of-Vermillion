@@ -1,6 +1,6 @@
-.cfg
-.gs*
-.bin*
-.md
-.dat
-.dll
+*.cfg
+*.gs*
+*.bin*
+*.md
+*.dat
+*.dll
