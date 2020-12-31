@@ -1,58 +1,4 @@
-//Macros de controle
-
-macro script_itens(TEXT) {
-  db {TEXT}
-  final_script()
-  }
-macro script_armor(TEXT) {
-  db {TEXT}
-  final_script()
-}
-macro script_shield(TEXT) {
-  db {TEXT}
-  final_script()
-}
-macro script_sword(TEXT) {
-  db {TEXT}
-  final_script()
-}
-
-macro script_spells(TEXT) {
-  db {TEXT}
-  final_script()
-}
-macro script_kingdom(TEXT) {
-  db {TEXT}
-  final_script()
-}
-macro script_jogo(TEXT) {
-  db {TEXT}
-  final_script()
-  db NULL
-}
-macro script_intro(TEXT) {
-  db {TEXT}
-  quebra_linha()
-}
-macro script_menu(TEXT) {
-  db {TEXT}
-  quebra_linha()
- }
-macro scripts_dialogs(TEXT) {
-  db {TEXT}
-  quebra_linha()
- }
-macro final_script() {
-  db ENDSTRING
-}
-macro quebra_linha() {
-  db BREAKLINE
-}
-macro new_page() {
-  db NEWPAGE
-}
-
-
+// System Macros
 macro save_registers_to_sp() {
     movem.l #$FFFF,-(a7)
 }
@@ -79,4 +25,38 @@ macro tilecopy_to_vram(SRC, LENGTH, DEST) {
     dbf     d0,-
 
     load_registers_from_sp()
+}
+
+// Control Macros
+macro text(TEXT) {
+    table "tbl/global.tbl"
+    db {TEXT}
+    end()
+}
+macro intro_text(TEXT) {
+    table "tbl/global.tbl"
+    db {TEXT}
+    break_line()
+}
+macro menu_text(TEXT) {
+    table "tbl/global.tbl"
+    db {TEXT}
+    break_line()
+ }
+macro dialogue_text(TEXT) {
+    table "tbl/global.tbl
+    db {TEXT}
+    break_line()
+ }
+macro end() {
+    db ENDSTRING
+}
+macro break_line() {
+    db BREAKLINE
+}
+macro new_page() {
+    db NEWPAGE
+}
+macro align() {
+    db NULL
 }
