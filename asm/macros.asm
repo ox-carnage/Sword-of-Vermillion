@@ -14,14 +14,14 @@ macro tilecopy_to_vram(SRC, LENGTH, DEST) {
     clr.l   d0
     move.l  #(({LENGTH}/32)-3),d0
 -;
-    move.l  (a0)+,(VDP_DATA).l //; TILE LINE #1
-    move.l  (a0)+,(VDP_DATA).l //; TILE LINE #2
-    move.l  (a0)+,(VDP_DATA).l //; TILE LINE #3
-    move.l  (a0)+,(VDP_DATA).l //; TILE LINE #4
-    move.l  (a0)+,(VDP_DATA).l //; TILE LINE #5
-    move.l  (a0)+,(VDP_DATA).l //; TILE LINE #6
-    move.l  (a0)+,(VDP_DATA).l //; TILE LINE #7
-    move.l  (a0)+,(VDP_DATA).l //; TILE LINE #8
+    move.l  (a0)+,(VDP_DATA).l                              //; TILE LINE #1
+    move.l  (a0)+,(VDP_DATA).l                              //; TILE LINE #2
+    move.l  (a0)+,(VDP_DATA).l                              //; TILE LINE #3
+    move.l  (a0)+,(VDP_DATA).l                              //; TILE LINE #4
+    move.l  (a0)+,(VDP_DATA).l                              //; TILE LINE #5
+    move.l  (a0)+,(VDP_DATA).l                              //; TILE LINE #6
+    move.l  (a0)+,(VDP_DATA).l                              //; TILE LINE #7
+    move.l  (a0)+,(VDP_DATA).l                              //; TILE LINE #8
     dbf     d0,-
 
     load_registers_from_sp()
@@ -40,8 +40,8 @@ macro dma_copy_to_vram(START, END, DEST) {
     move.w #$9700+((({START}>>1)&$7F0000)>>16),(VDP_CTRL).l
     move.l #$40000080+(({DEST}&$3FFF)<<16)+(({DEST}&$C000)>>14),(VDP_CTRL).l
 -                    
-	move.w 	VDP_CTRL,d1          		// ; Read VDP status reg
-	btst   	#1,d1                 		// ; Check if DMA finished
+	move.w 	VDP_CTRL,d1          		                    // ; Read VDP status reg
+	btst   	#1,d1                 		                    // ; Check if DMA finished
 	bne  	-
     move.w #$8164,(VDP_CTRL).l
     load_registers_from_sp()
@@ -76,17 +76,17 @@ macro tilecopy_by_column(start, column_count, tile_count, src_column_count) {
 {start}_start_on_odd_column_check:
 {start}_start_odd_check_buffer_line_1:
     move.w  ({tile_count}).l,d0
-    cmp.w   #$200,d0                           // if not fullfill 16 tiles skip
+    cmp.w   #$200,d0                                        // if not fullfill 16 tiles skip
     bne     {start}_start_odd_check_buffer_line_2
-    add.w   #$200,({tile_count}).l            // if 16 tiles fullfilled add new line
+    add.w   #$200,({tile_count}).l                          // if 16 tiles fullfilled add new line
 {start}_start_odd_check_buffer_line_2:
     cmp.w   #$600,d0 
     bne     {start}_start_odd_check_buffer_line_3
-    add.w   #$200,({tile_count}).l            // if 16 tiles fullfilled add new line
+    add.w   #$200,({tile_count}).l                          // if 16 tiles fullfilled add new line
 {start}_start_odd_check_buffer_line_3:
     cmp.w   #$A00,d0 
     bne     {start}_start_odd_check_end
-    add.w   #$200,({tile_count}).l            // if 16 tiles fullfilled add new line
+    add.w   #$200,({tile_count}).l                          // if 16 tiles fullfilled add new line
 {start}_start_odd_check_end:
     nop
     nop
@@ -115,27 +115,27 @@ macro tilecopy_by_column(start, column_count, tile_count, src_column_count) {
     add.w   #1,({src_column_count}).l
     cmp.w   #8,({column_count}).l 
     bne     {start}_start_on_odd_skip_buffer_tile_increment
-    move.w  #0,({column_count}).l             // temp
-    add.w   #$0020,({tile_count}).l           // walk 1 tile   
+    move.w  #0,({column_count}).l                           // temp
+    add.w   #$0020,({tile_count}).l                         // increment 1 tile   
 {start}_start_on_odd_skip_buffer_tile_increment:
     dbf     d4,{start}_start_on_odd_column_check 
-    move.w  #0,({src_column_count}).l             // temp
+    move.w  #0,({src_column_count}).l                       // temp
     jmp     {start}_finish
 
 {start}_start_on_even_column_check:
 {start}_start_even_check_buffer_line_1:
     move.w  ({tile_count}).l,d0
-    cmp.w   #$200,d0                           // if not fullfill 16 tiles skip
+    cmp.w   #$200,d0                                        // if not fullfill 16 tiles skip
     bne     {start}_start_even_check_buffer_line_2
-    add.w   #$200,({tile_count}).l            // if 16 tiles fullfilled add new line
+    add.w   #$200,({tile_count}).l                          // if 16 tiles fullfilled add new line
 {start}_start_even_check_buffer_line_2:
     cmp.w   #$600,d0 
     bne     {start}_start_even_check_buffer_line_3
-    add.w   #$200,({tile_count}).l            // if 16 tiles fullfilled add new line
+    add.w   #$200,({tile_count}).l                          // if 16 tiles fullfilled add new line
 {start}_start_even_check_buffer_line_3:
     cmp.w   #$A00,d0 
     bne     {start}_start_even_check_end
-    add.w   #$200,({tile_count}).l            // if 16 tiles fullfilled add new line
+    add.w   #$200,({tile_count}).l                          // if 16 tiles fullfilled add new line
 {start}_start_even_check_end:
     nop
     nop

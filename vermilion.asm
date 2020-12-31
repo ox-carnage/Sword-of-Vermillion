@@ -53,6 +53,11 @@ constant CONFIG_MENU_TEXTSPEED_BOX_CLEAR_HEIGHT(CONFIG_MENU_TEXTSPEED_BOX_HEIGHT
 constant CONFIG_MENU_TEXTSPEED_BOX_CONTENT_X($01)
 constant CONFIG_MENU_TEXTSPEED_BOX_CONTENT_Y($01)
 
+constant CONFIG_DIALOGUE_BOX_X($04)
+constant CONFIG_DIALOGUE_BOX_Y($15)
+constant CONFIG_DIALOGUE_BOX_WIDTH($1F)
+constant CONFIG_DIALOGUE_BOX_HEIGHT($05)
+
 origin ROM_START
     // Original File
     insert "vermilion.md"
@@ -105,31 +110,31 @@ origin $000001F0
 
 // Draw Menu box
 origin ROM_MENU_BOX_ATTRIBUTES
-    move.w  #CONFIG_MENU_BOX_X,BOX_POSITION_X.w                              // X
-    move.w  #CONFIG_MENU_BOX_Y,BOX_POSITION_Y.w                              // Y
-    move.w  #CONFIG_MENU_BOX_WIDTH,BOX_WIDTH.w                               // Width
-    move.w  #CONFIG_MENU_BOX_HEIGHT,BOX_HEIGHT.w                             // Height
+    move.w  #CONFIG_MENU_BOX_X,(BOX_POSITION_X).w                                   // X
+    move.w  #CONFIG_MENU_BOX_Y,(BOX_POSITION_Y).w                                   // Y
+    move.w  #CONFIG_MENU_BOX_WIDTH,(BOX_WIDTH).w                                    // Width
+    move.w  #CONFIG_MENU_BOX_HEIGHT,(BOX_HEIGHT).w                                  // Height
 
 // Clear Menu box
 origin ROM_MENU_CLEAR_BOX_ATTRIBUTES
-    move.w  #CONFIG_MENU_BOX_CLEAR_X,BOX_CLEAR_POSITION_X.w                  // X
-    move.w  #CONFIG_MENU_BOX_CLEAR_Y,BOX_CLEAR_POSITION_Y.w                  // Y
-    move.w  #CONFIG_MENU_BOX_CLEAR_WIDTH,BOX_CLEAR_WIDTH.w                   // Width
-    move.w  #CONFIG_MENU_BOX_CLEAR_HEIGHT,BOX_CLEAR_HEIGHT.w                 // Height
+    move.w  #CONFIG_MENU_BOX_CLEAR_X,(BOX_CLEAR_POSITION_X).w                       // X
+    move.w  #CONFIG_MENU_BOX_CLEAR_Y,(BOX_CLEAR_POSITION_Y).w                       // Y
+    move.w  #CONFIG_MENU_BOX_CLEAR_WIDTH,(BOX_CLEAR_WIDTH).w                        // Width
+    move.w  #CONFIG_MENU_BOX_CLEAR_HEIGHT,(BOX_CLEAR_HEIGHT).w                      // Height
 
 // Draw Text Speed box
 origin ROM_MENU_TEXTSPEED_BOX_ATTRIBUTES
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_X,BOX_POSITION_X.w                    // X   
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_Y,BOX_POSITION_Y.w                    // Y
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_WIDTH,BOX_WIDTH.w                     // Width
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_HEIGHT,BOX_HEIGHT.w                   // Height
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_X,(BOX_POSITION_X).w                         // X   
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_Y,(BOX_POSITION_Y).w                         // Y
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_WIDTH,(BOX_WIDTH).w                          // Width
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_HEIGHT,(BOX_HEIGHT).w                        // Height
 
 // Clear Text Speed box
 origin ROM_MENU_TEXTSPEED_CLEAR_BOX_ATTRIBUTES
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_X,BOX_CLEAR_POSITION_X.w        // X
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_Y,BOX_CLEAR_POSITION_Y.w        // Y
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_WIDTH,BOX_CLEAR_WIDTH.w         // Width
-    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_HEIGHT,BOX_CLEAR_HEIGHT.w       // Heigth
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_X,(BOX_CLEAR_POSITION_X).w             // X
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_Y,(BOX_CLEAR_POSITION_Y).w             // Y
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_WIDTH,(BOX_CLEAR_WIDTH).w              // Width
+    move.w  #CONFIG_MENU_TEXTSPEED_BOX_CLEAR_HEIGHT,(BOX_CLEAR_HEIGHT).w            // Heigth
 
 // Text Speed Box Content Alignment
 origin ROM_MENU_TEXTSPEED_BOX_CONTENT_ATTRIBUTES
@@ -138,11 +143,11 @@ origin ROM_MENU_TEXTSPEED_BOX_CONTENT_ATTRIBUTES
 
 
 // Draw Dialogue Box
-origin $00010C70
-    move.w  #$04,($FF9902).w    // DIALOGUE X
-    move.w  #$15,($FF9908).w    // DIALOGUE Y
-    move.w  #$1F,($FF9904).w    // DIALOGUE W
-    move.w  #$05,($FF990A).w    // DIALOGUE H
+origin ROM_DIALOGUE_BOX_ATTRIBUTES
+    move.w  #CONFIG_DIALOGUE_BOX_X,(BOX_POSITION_X).w                            // X
+    move.w  #CONFIG_DIALOGUE_BOX_Y,(BOX_POSITION_Y).w                            // Y
+    move.w  #CONFIG_DIALOGUE_BOX_WIDTH,(BOX_WIDTH).w                             // Width
+    move.w  #CONFIG_DIALOGUE_BOX_HEIGHT,(BOX_HEIGHT).w                           // Height
 
 
 // VWF
@@ -167,26 +172,26 @@ vwf_add_newline:
     save_registers_to_sp()
     clr.w    d0
     move.w   (VWF_TILE_COUNT).l,d0
-    cmp.w    #$600,d0
+    cmp.w    #$600,d0                                       // If equal second line: 0x600 bytes
     ble      +
-    move.w   #$A00,(VWF_TILE_COUNT).l            // if 16 tiles fullfilled add new line
-    move.w   #$A00,(VWF_TILE_COUNT_2).l          // if 16 tiles fullfilled add new line
-    move.w   #$0,(VWF_COLUMN_COUNT).l          
-    move.w   #$0,(VWF_COLUMN_COUNT_2).l 
+    move.w   #$A00,(VWF_TILE_COUNT).l                       // add new line to upper tile count
+    move.w   #$A00,(VWF_TILE_COUNT_2).l                     // add new line to lower tile count
+    move.w   #$0,(VWF_COLUMN_COUNT).l                       // reset upper vwf column count
+    move.w   #$0,(VWF_COLUMN_COUNT_2).l                     // reset lower vwf column count
     bra      vwf_add_newline_end
 +
-    cmp.w    #$A00,d0
+    cmp.w    #$A00,d0                                       // If equal third line: 0xA00 bytes
     ble      +
-    move.w   #$E00,(VWF_TILE_COUNT).l            // if 16 tiles fullfilled add new line
-    move.w   #$E00,(VWF_TILE_COUNT_2).l          // if 16 tiles fullfilled add new line
-    move.w   #$0,(VWF_COLUMN_COUNT).l          
-    move.w   #$0,(VWF_COLUMN_COUNT_2).l 
+    move.w   #$E00,(VWF_TILE_COUNT).l                       // add new line to upper tile count
+    move.w   #$E00,(VWF_TILE_COUNT_2).l                     // add new line to lower tile count
+    move.w   #$0,(VWF_COLUMN_COUNT).l                       // reset upper vwf column count
+    move.w   #$0,(VWF_COLUMN_COUNT_2).l                     // reset lower vwf column count
     bra      vwf_add_newline_end
 +     
-    move.w   #$600,(VWF_TILE_COUNT).l            // if 16 tiles fullfilled add new line
-    move.w   #$600,(VWF_TILE_COUNT_2).l          // if 16 tiles fullfilled add new line
-    move.w   #$0,(VWF_COLUMN_COUNT).l          
-    move.w   #$0,(VWF_COLUMN_COUNT_2).l 
+    move.w   #$600,(VWF_TILE_COUNT).l                       // add new line to upper tile count
+    move.w   #$600,(VWF_TILE_COUNT_2).l                     // add new line to lower tile count
+    move.w   #$0,(VWF_COLUMN_COUNT).l                       // reset upper vwf column count
+    move.w   #$0,(VWF_COLUMN_COUNT_2).l                     // reset lower vwf column count
 vwf_add_newline_end:           
     load_registers_from_sp()
     jmp     ($00010BD8).l
@@ -194,15 +199,19 @@ vwf_add_newline_end:
 // VWF reset check
 vwf_reset:
 
+    // Copy Buffer to VRAM
     dma_copy_to_vram(VWF_FONT_BUFFER, (VWF_FONT_BUFFER+$C00), VWF_FONT_RENDER)
 
-    move.w  #$0000,(VWF_RESET_FLAG).l
-    move.w  #$0000,(VWF_TILE_COUNT).l
-    move.w  #$0000,(VWF_TILE_COUNT_2).l
-    move.w  #$0000,(VWF_COLUMN_COUNT).l  
-    move.w  #$0000,(VWF_COLUMN_COUNT_2).l  
-    move.w  #$0000,(VWF_SRC_COLUMN_COUNT).l  
-    move.w  #$0000,(VWF_SRC_COLUMN_COUNT_2).l    
+    // Reset VWF Flags
+    move.w  #$0000,(VWF_RESET_FLAG).l                       // VWF clear buffer flag
+    move.w  #$0000,(VWF_TILE_COUNT).l                       // VWF upper tile count
+    move.w  #$0000,(VWF_TILE_COUNT_2).l                     // VWF lower tile count
+    move.w  #$0000,(VWF_COLUMN_COUNT).l                     // VWF upper column count
+    move.w  #$0000,(VWF_COLUMN_COUNT_2).l                   // VWF lower column count
+    move.w  #$0000,(VWF_SRC_COLUMN_COUNT).l                 // VWF upper src column count
+    move.w  #$0000,(VWF_SRC_COLUMN_COUNT_2).l               // VWF lower src column count 
+
+    // Clear Font Buffer loop 
     lea     (VWF_FONT_BUFFER),a1
     move.w  #$1000,d1
 -
@@ -228,11 +237,11 @@ vwf_font:
     jsr     vwf_init
     save_registers_to_sp()
 
+    // Get PLANE_B position for rows
     move.w  ($FFC40E).w,d0
     lsr.w   #3,d0
     move.w  ($FFC410).w,d1
     lsr.w   #3,d1
-
     add.w   ($FFC234).w,d0
     add.w   ($FFC230).w,d0
     add.w   ($FFC232).w,d1
@@ -244,8 +253,8 @@ vwf_font:
     asl.w   #7,d1
     add.w   d1,d0
     andi.l  #$1FFF,d0
-    add.w   #4,d0       //padding 2 tiles
-    add.w   #$100,d0    //add 2 lines
+    add.w   #4,d0                                           // pad 2 tiles
+    add.w   #$100,d0                                        // add 2 rows
     move.l  d0,d1
     add.w   #$80,d1
     swap    d0
@@ -253,6 +262,7 @@ vwf_font:
     ori.l   #$40000003,d0
     ori.l   #$40000003,d1   
 
+    // Draw upper tilemap for first row
     move.l  d0,(VDP_CTRL).l
     move.l  #$85208521,(VDP_DATA).l
     move.l  #$85228523,(VDP_DATA).l
@@ -270,6 +280,7 @@ vwf_font:
     move.l  #$854A854B,(VDP_DATA).l
     move.w  #$854C,(VDP_DATA).l
 
+    // Draw lower tilemap for first row
     move.l  d1,(VDP_CTRL).l
     move.l  #$85308531,(VDP_DATA).l
     move.l  #$85328533,(VDP_DATA).l
@@ -287,6 +298,7 @@ vwf_font:
     move.l  #$855A855B,(VDP_DATA).l
     move.w  #$855C,(VDP_DATA).l
 
+    // Draw upper tilemap for second row
     add.l   #$01000000,d0  
     move.l  d0,(VDP_CTRL).l
     move.l  #$85608561,(VDP_DATA).l
@@ -304,6 +316,7 @@ vwf_font:
     move.l  #$85888589,(VDP_DATA).l
     move.l  #$858A858B,(VDP_DATA).l
 
+    // Draw lower tilemap for second row
     add.l   #$01000000,d1
     move.l  d1,(VDP_CTRL).l
     move.l  #$85708571,(VDP_DATA).l
@@ -330,49 +343,61 @@ vwf_init:
     save_registers_to_sp()
 
 vwf_continue:
-    cmp.w   #1,(VWF_RESET_FLAG).l
-    beq     vwf_skip_reset_buffer
-    move.w  #$0001,(VWF_RESET_FLAG).l   
-    lea     (VWF_FONT_BUFFER),a1
-    move.w  #$1000,d1
--
+    cmp.w   #1,(VWF_RESET_FLAG).l                           // Check VWF reset flag
+    beq     vwf_skip_reset_buffer                           // skip if setted
+    move.w  #$0001,(VWF_RESET_FLAG).l                       // if not setted presume it's first tile
+                                                            // so prepare for draw
+    lea     (VWF_FONT_BUFFER),a1                            // get VWF buffer location
+    move.w  #$1000,d1                                       // set buffer size
+-                                                           // start clear loop
     move.b  #$33,(a1)+
     dbf     d1,-
 
 vwf_skip_reset_buffer:
-    lea     (VWF_FONT_BUFFER).l,a1                  // get VRAM location
-    clr.l   d3                                  // clear Char ID
-    dl      $16302000
-    lea     (gfx_vwf_font).l,a0
+    lea     (VWF_FONT_BUFFER).l,a1                          // get VWF buffer location
 
 vwf_get_char_id:
+    clr.l   d3                                              // clear Char ID
+    dl      $16302000                                       // copy Char ID to d3
     clr.l   d1
-    move.b  d3,d1                             // get Char ID
+    move.b  d3,d1                                           
+    lea     (gfx_vwf_font).l,a0                             // get VWF font src location
+
 
 vwf_get_char_width:
-    lea     (vwf_table).l,a4
-    adda.w  d1,a4
-    move.b  (a4),d4                               // Total Columns
-    move.b  (a4),(VWF_CHAR_WIDTH) 
+    lea     (vwf_table).l,a4                                // get VWF width tbl location
+    adda.w  d1,a4                                           // set VWF width tbl at char position
+    move.b  (a4),d4                                         // get Char Width
+    move.b  (a4),(VWF_CHAR_WIDTH)                           // get Char Width and save on VAR
 
 vwf_get_char_tile:
-    mulu.w  #64,d1
-    adda.w  d1,a0
+    mulu.w  #64,d1                                          // Multiple by 2 tiles
+    adda.w  d1,a0                                           // Add multiplied char ID
+                                                            // to VWF vwf src location
+                                                            // now can copy tiles of char
 
+// Start Char tile draw
 vwf_draw_char_on_buffer:
+
+// Copy Upper Tile to VWF Font Buffer
 vwf_draw_char_upper:
     tilecopy_by_column(vwf_draw_char_upper, VWF_COLUMN_COUNT, VWF_TILE_COUNT, VWF_SRC_COLUMN_COUNT)
     clr.l   d4
-    move.b  (a4),d4                               // Total Columns
-    adda.l  #$20,a0
-    adda.l  #$200,a1
+    move.b  (a4),d4                                         // get Char Width saved on VAR
+    adda.l  #$20,a0                                         // increment a tile
+    adda.l  #$200,a1                                        // increment a row
+// Copy Lower Tile to VWF Font Buffer
 vwf_draw_char_lower:
     tilecopy_by_column(vwf_draw_char_lower, VWF_COLUMN_COUNT_2, VWF_TILE_COUNT_2, VWF_SRC_COLUMN_COUNT_2)
-    suba.l  #$200,a1   
+    suba.l  #$200,a1                                        // decrement a row
 
 vwf_end:
     load_registers_from_sp()
+
+    // At finish
+    // Copy all buffer to font render location on VRAM
     dma_copy_to_vram(VWF_FONT_BUFFER, (VWF_FONT_BUFFER+$1000), VWF_FONT_RENDER)
+
     rts
 
 vwf_skip:
