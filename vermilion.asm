@@ -162,6 +162,7 @@ if (ENABLE_VWF == 1) {
 
 origin $100000
 
+// VWF Newline check
 vwf_add_newline:
     save_registers_to_sp()
     clr.w    d0
@@ -190,6 +191,7 @@ vwf_add_newline_end:
     load_registers_from_sp()
     jmp     ($00010BD8).l
 
+// VWF reset check
 vwf_reset:
 
     dma_copy_to_vram(VWF_FONT_BUFFER, (VWF_FONT_BUFFER+$C00), VWF_FONT_RENDER)
@@ -220,6 +222,7 @@ vwf_reset_continue:
 
     jmp     ($00010BCC).l
 
+// VWF Tilemap Render
 vwf_font:
     move    #$FF,($9C)
     jsr     vwf_init
@@ -322,6 +325,7 @@ vwf_font:
     jmp     $10A6A
 
 
+// VWF Main Routine
 vwf_init:
     save_registers_to_sp()
 
@@ -374,11 +378,12 @@ vwf_end:
 vwf_skip:
     rts
 
+// VWF Font GFX
 gfx_vwf_font:
     insert  "gfx/vwf/font_16x8_4bpp.bin"
 gfx_vwf_font_end:
 
-// VWF CHARACTER WIDTH TABLE
+// VWF Char Width Table
 vwf_table:
     db      $00
     db      $00
@@ -643,7 +648,10 @@ vwf_table_end:
 
 db $00
 
+// Localization Hacks and Resources
+
 if (CONFIG_LANGUAGE == PORTUGUESE) {
+    origin  $180000
     gfx_font_latin:
         insert "gfx/br/font.bin"
         //insert "gfx/br/font_2.bin"
@@ -653,12 +661,13 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
         insert "tilemap/br/logo.bin"
     tilemap_logo_br_end:
 
-    // PT-BR ASM HACK
+    // Load new font for menus
     load_gfx_font_latin:
         jsr     ($0000FCDC).l
         dma_copy_to_vram(gfx_font_latin, gfx_font_latin_end, ORIGINAL_FONT_RENDER)
         jmp 	($00001082).l
         
+    // Load new logo
     load_gfx_logo_br:
         jsr     ($0001325E).l
         //tilecopy_to_vram(tilemap_logo_br, (tilemap_logo_br_end-tilemap_logo_br), PLANE_B)
@@ -666,9 +675,11 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
 
     define CONFIG_ROM_SIZE(pc())
 
+    // New font Injection Point
     origin $0000107C
         jmp  load_gfx_font_latin
 
+    // New logo Injection Point
     origin $00016BD8 
         jmp  load_gfx_logo_br
 }

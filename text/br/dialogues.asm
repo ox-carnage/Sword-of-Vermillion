@@ -14,11 +14,10 @@
 // *  - Sem limitação de próxima janela				 *
 // ***************************************************
 		
-origin $000A0A81 // ---> Endereço de onde sera gravado os blocos de textos.
+origin $110000 // ---> Endereço de onde sera gravado os blocos de textos.
 
 text_dialogue_00:
-	dialogue_text("Não há ninguém"  				)
-	dialogue_text("aqui para conversar." 			)
+	dialogue_text("Não há ninguém aqui para conversar...")
 	end()
 text_dialogue_01:
 	dialogue_text("nada"							)
@@ -603,9 +602,8 @@ text_dialogue_135:
 	dialogue_text("you. Good luck!"					)
 	end()
 text_dialogue_136:
-	dialogue_text("Todos estavamos procurando"		)
-	dialogue_text("por você. Seu pai está"			)
-	dialogue_text("prestes a morrer, vá logo."		)
+	dialogue_text("Todos estavamos procurando por você!"			)
+	dialogue_text("Seu pai está prestes a morrer, vá logo..."		)
 	end()
 text_dialogue_137:
 	dialogue_text("Blade will be missed"				)
