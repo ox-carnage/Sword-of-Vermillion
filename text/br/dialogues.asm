@@ -243,7 +243,7 @@ text_dialogue_58:
  	dialogue_text("uma voz que vem de dentro de")
  	dialogue_text("sua cabeça parecendo dizer:")
 	new_page()
-	dialogue_text("Nunca mais "brinque com"")
+	dialogue_text("Nunca mais \"brinque com\"")
  	dialogue_text("sua vida assim novamente.")
  	dialogue_text("Muitos depende de Você!")
 	end() 
@@ -337,7 +337,7 @@ text_dialogue_77:
 	end()
 text_dialogue_78:
 	dialogue_text("Talvez procurando boas piadas")
- 	dialogue_text("de "toc", "toc?"")
+ 	dialogue_text("de \"toc\", \"toc?\"")
  	dialogue_text("Desculpe, não existe tal coisa!")
 	end()
 text_dialogue_79:
@@ -461,7 +461,7 @@ text_dialogue_107:
 	dialogue_text("Você não pode aceitar,")
  	dialogue_text("é uma caixa!")
 	end() 
-//text_dialogue_108:
+text_dialogue_108:
 //	dialogue_text("Você pegou o tesouro.($F09).($00)($06)")
 text_dialogue_109:
 	dialogue_text("Você abriu o baú.")
@@ -494,6 +494,7 @@ text_dialogue_117:
 text_dialogue_118:
 	dialogue_text("Seja bem-vindo seu tolo!")
 	dialogue_text("Tsarkon esta na Caverna Thule")
+	new_page()
 	dialogue_text("ao extremo leste.")
 	new_page()
 	dialogue_text("Ele me pediu para lhe dar um ")
@@ -505,15 +506,18 @@ text_dialogue_118:
 text_dialogue_119:
 	dialogue_text("÷èVocê pode ter me derrotado,")
 	dialogue_text("mas você nunca irá")
+	new_page()
 	dialogue_text("derrotar Tsarkon!ø.S")
 	end()
 text_dialogue_120:
 	dialogue_text("÷, se o rei Erik pudesse te ver ")
 	dialogue_text("agora, sei que ele estaria muito ")
+	new_page()
 	dialogue_text("orgulhoso de Você! ")
 	new_page()
 	dialogue_text("Eu nunca quis me casar com Tsarkon,")
 	dialogue_text("quando eu recusei de ser a sua")
+	new_page()
 	dialogue_text("esposa ele me transformou em pedra.")
 	new_page()
 	dialogue_text("Mas a sua bravura me libertou ")
@@ -522,6 +526,7 @@ text_dialogue_120:
 text_dialogue_121:
 	dialogue_text("Por favor, fique na ")
 	dialogue_text("frente do trono e ")
+	new_page()
 	dialogue_text("use os anéis.")
 	new_page()
 	dialogue_text("O dia que ira curar as feridas")
@@ -530,6 +535,7 @@ text_dialogue_121:
 text_dialogue_122:
 	dialogue_text("Agora você deve ficar na")
 	dialogue_text("frente do trono e usar ")
+	new_page()
 	dialogue_text("os anéis.")
 	new_page()
 	dialogue_text("Somente você pode banir os ")
@@ -538,6 +544,7 @@ text_dialogue_122:
 text_dialogue_123:
 	dialogue_text("Agora que os anéis do bem e do")
 	dialogue_text("mal estão unidos, o mundo pode")
+	new_page()
 	dialogue_text("voltar a ser como era antes.")
 	new_page()
 	dialogue_text("Corra para o trono")
@@ -572,6 +579,7 @@ text_dialogue_129:
 text_dialogue_130:
 	dialogue_text("Não esqueça de comprar uma ")
 	dialogue_text("armadura, uma arma e um escudo")
+	new_page()
 	dialogue_text("antes de deixar a vila..")
 	end()
 text_dialogue_131:
@@ -579,12 +587,12 @@ text_dialogue_131:
 	dialogue_text("determinação! Aqui está um mapa")
 	dialogue_text("com a rota que leva a Parma.ù..A.P.Q.`.p")
 text_dialogue_132:
-	dialogue_text("Todos nós lamentamos muito")
-	dialogue_text("pelo Blade")
+	dialogue_text("Todos nós lamentamos pelo Blade!")
 	end()
 text_dialogue_133:
 	dialogue_text("Be careful! Evil roams")
 	dialogue_text("everywhere outside our")
+	new_page()
 	dialogue_text("village walls!")
 	end()
 text_dialogue_134:
@@ -594,10 +602,12 @@ text_dialogue_134:
 text_dialogue_135:
 	dialogue_text("Valuable items can be")
 	dialogue_text("found in remote parts")
+	new_page()
 	dialogue_text("of the wilderness.")
 	new_page()
 	dialogue_text("You are now strong enough")
 	dialogue_text("to face the tests ahead of")
+	new_page()
 	dialogue_text("you. Good luck!")
 	end()
 text_dialogue_136:
@@ -626,6 +636,7 @@ text_dialogue_141:
 text_dialogue_142:
 	dialogue_text("Be sure to have a map")
 	dialogue_text("before you leave a")
+	new_page()
 	dialogue_text("town or village!")
 	end()
 text_dialogue_143:
@@ -639,6 +650,7 @@ text_dialogue_144:
 text_dialogue_145:
 	dialogue_text("Visit churches often!")
 	dialogue_text("There you may save your")
+	new_page()
 	dialogue_text("journeys for later use.")
 	end()
 text_dialogue_146:
@@ -656,6 +668,7 @@ text_dialogue_148:
 text_dialogue_149:
 	dialogue_text("Evil has infected the")
 	dialogue_text("soldiers of Cartahena.")
+	new_page()
 	dialogue_text("Though they appear to be")
 	new_page()
 	dialogue_text("human, inside they are")
@@ -666,6 +679,7 @@ text_dialogue_150:
 	new_page()
 	dialogue_text("this must be the property")
 	dialogue_text("of the King's family.")
+	new_page()
 	dialogue_text("Why do you have it?")
 	end()
 text_dialogue_151:
@@ -675,6 +689,7 @@ text_dialogue_151:
 text_dialogue_152:
 	dialogue_text("Blade was once a mighty")
 	dialogue_text("warrior, but the wounds of")
+	new_page()
 	dialogue_text("long ago never healed.")
 	end()
 text_dialogue_153:
@@ -693,9 +708,8 @@ text_dialogue_156:
 	dialogue_text("have been proud of you.")
 	end()
 text_dialogue_157:
-	dialogue_text("Blade's health failed")
-	dialogue_text("so quickly that")
-	dialogue_text("nothing could be done.")
+	dialogue_text("A saúde de Blade piorou rapidamente...")
+	dialogue_text("Não há o que se fazer!")
 	end()
 text_dialogue_158:
 	dialogue_text("Go! You must find the ring!")
@@ -705,41 +719,38 @@ text_dialogue_159:
 	dialogue_text("in his grave.")
 	end()
 text_dialogue_160:
-	dialogue_text("÷, at last you are here!")
-	dialogue_text("I have much to tell you...I")
-	dialogue_text("am not your real father.")
+	dialogue_text("÷, finalmente você chegou!")
+	dialogue_text("Tenho uma coisa importante para contar!")
 	new_page()
-	dialogue_text("You are the son of Erik of")
-	dialogue_text("Excalabria...killed by")
-	dialogue_text("Tsarkon of Cartahena. As")
+	dialogue_text("Eu não sou seu pai!")
 	new_page()
-	dialogue_text("his castle burned...King")
-	dialogue_text("Erik bade me...take you and")
-	dialogue_text("raise you as my son.")
+	dialogue_text("Você é o filho de Erik de Excalabria")
+	dialogue_text("morto por Tsarkon de Cartahena!")
 	new_page()
-	dialogue_text("I hid the Ring of Wisdom in")
-	dialogue_text("a cave near the village....")
-	dialogue_text("Only this ring, your sole")
+	dialogue_text("Enquanto o castelo queimava, o rei Erik implorou")
+	dialogue_text("para salvar você e o criar como filho!")
 	new_page()
-	dialogue_text("inheritance...can save the")
-	dialogue_text("world. The armies of")
-	dialogue_text("Cartahena are....moving to")
+	dialogue_text("Eu escondi o anel da sabedoria em uma caverna bem")
+	dialogue_text("próxima à vila!")
 	new_page()
-	dialogue_text("conquer.... It is your")
-	dialogue_text("destiny to rescue the world")
-	dialogue_text("from Cartahena. I have")
+	dialogue_text("Somente o anel, sua única herança, pode salvar o")
+	dialogue_text("mundo!")
 	new_page()
-	dialogue_text("saved some money for this")
-	dialogue_text("moment. Arm yourself...your")
-	dialogue_text("road is dangerous.")
+	dialogue_text("Os exércitos de Cartahena estão marchando para")
+	dialogue_text("à conquista.")
 	new_page()
-	dialogue_text("I'm sorry I had to be")
-	dialogue_text("silent until now...I always")
-	dialogue_text("thought of you as my son.")
+	dialogue_text("Você deve salvar o mundo de Cartahena!")
 	new_page()
-	dialogue_text("King Erik would have been")
-	dialogue_text("as proud of you as I am.")
-	dialogue_text("Go now, and remember me....ù..")
+	dialogue_text("Eu guardei dinheiro para isso!")
+	dialogue_text("Equipe-se muito bem pois o caminho é perigoso!")
+	new_page()
+	dialogue_text("Sinto muito por ficar em silêncio até agora...")
+	dialogue_text("Eu gostei de ser seu pai!")
+	new_page()
+	dialogue_text("O Rei Erik teria orgulho de você assim como eu")
+	dialogue_text("tenho!")
+	new_page()
+	dialogue_text("Agora vá e lembre de mim.ù..")
 	end()
 text_dialogue_161:
 	dialogue_text("There is no answer.")
@@ -750,6 +761,7 @@ text_dialogue_162:
 	new_page()
 	dialogue_text("Here is the Ring of Wisdom,")
 	dialogue_text("which I received from")
+	new_page()
 	dialogue_text("Blade. It is rightfully")
 	new_page()
 	dialogue_text("yours; please accept it.ù.")
@@ -757,6 +769,7 @@ text_dialogue_162:
 text_dialogue_163:
 	dialogue_text("Only you can save us")
 	dialogue_text("from Cartahena.")
+	new_page()
 	dialogue_text("You must not fail!")
 	end()
 text_dialogue_164:
@@ -770,11 +783,13 @@ text_dialogue_165:
 text_dialogue_166:
 	dialogue_text("If you enter a cave without")
 	dialogue_text("candles, your task will be")
+	new_page()
 	dialogue_text("difficult indeed.")
 	end()
 text_dialogue_167:
 	dialogue_text("In the next town they sell")
 	dialogue_text("something even better")
+	new_page()
 	dialogue_text("than candles.")
 	end()
 text_dialogue_168:
@@ -796,6 +811,7 @@ text_dialogue_171:
 text_dialogue_172:
 	dialogue_text("Be strong and cast aside")
 	dialogue_text("your grief. You have an")
+	new_page()
 	dialogue_text("important task ahead!")
 	end()
 text_dialogue_173:
