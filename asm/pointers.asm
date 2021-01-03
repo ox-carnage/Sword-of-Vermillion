@@ -167,13 +167,13 @@ origin $0001FBD4
 origin $00015996
     dl text_intro_01
 origin $000159CC
-	dl text_intro_02
+    dl text_intro_02
 origin $00015A0C
-	dl text_intro_03
+    dl text_intro_03
 origin $00015A4C
-	dl text_intro_04
+    dl text_intro_04
 origin $00015A82
-	dl text_intro_05
+    dl text_intro_05
 origin $00015AA0
     dl text_intro_06    
 
