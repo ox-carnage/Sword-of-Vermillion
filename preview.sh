@@ -1,1 +1,1 @@
-retroarch --libretro=/usr/lib/libretro/picodrive_libretro.so vermilion_br.md
+retroarch --libretro=/usr/lib/libretro/genesis_plus_gx_libretro.so vermilion_br.md
