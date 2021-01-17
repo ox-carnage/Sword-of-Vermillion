@@ -263,79 +263,51 @@ vwf_font:
     ori.l   #$40000003,d1   
 
     // ; Draw upper tilemap for first row
-    move.l  d0,(VDP_CTRL).l
-    move.l  #$85208521,(VDP_DATA).l
-    move.l  #$85228523,(VDP_DATA).l
-    move.l  #$85248525,(VDP_DATA).l
-    move.l  #$85268527,(VDP_DATA).l
-    move.l  #$85288529,(VDP_DATA).l
-    move.l  #$852A852B,(VDP_DATA).l
-    move.l  #$852C852D,(VDP_DATA).l
-    move.l  #$852E852F,(VDP_DATA).l
-    move.l  #$85408541,(VDP_DATA).l
-    move.l  #$85428543,(VDP_DATA).l
-    move.l  #$85448545,(VDP_DATA).l
-    move.l  #$85468547,(VDP_DATA).l
-    move.l  #$85488549,(VDP_DATA).l
-    move.l  #$854A854B,(VDP_DATA).l
-    move.w  #$854C,(VDP_DATA).l
+    movea.l #(vwf_tilemap_1),a0
+    move.l  #$4A540003,d2
+    move.l  d0,d3
+    jsr     (vwf_tilemap_draw).l
 
     // ; Draw lower tilemap for first row
-    move.l  d1,(VDP_CTRL).l
-    move.l  #$85308531,(VDP_DATA).l
-    move.l  #$85328533,(VDP_DATA).l
-    move.l  #$85348535,(VDP_DATA).l
-    move.l  #$85368537,(VDP_DATA).l
-    move.l  #$85388539,(VDP_DATA).l
-    move.l  #$853A853B,(VDP_DATA).l
-    move.l  #$853C853D,(VDP_DATA).l
-    move.l  #$853E853F,(VDP_DATA).l
-    move.l  #$85508551,(VDP_DATA).l
-    move.l  #$85528553,(VDP_DATA).l
-    move.l  #$85548555,(VDP_DATA).l
-    move.l  #$85568557,(VDP_DATA).l
-    move.l  #$85588559,(VDP_DATA).l
-    move.l  #$855A855B,(VDP_DATA).l
-    move.w  #$855C,(VDP_DATA).l
+    movea.l #(vwf_tilemap_2),a0
+    move.l  d1,d2
+    move.l  d1,d3
+    jsr     (vwf_tilemap_draw).l
+
 
     // ; Draw upper tilemap for second row
+    movea.l #(vwf_tilemap_3),a0
     add.l   #$01000000,d0  
-    move.l  d0,(VDP_CTRL).l
-    move.l  #$85608561,(VDP_DATA).l
-    move.l  #$85628563,(VDP_DATA).l
-    move.l  #$85648565,(VDP_DATA).l
-    move.l  #$85668567,(VDP_DATA).l
-    move.l  #$85688569,(VDP_DATA).l
-    move.l  #$856A856B,(VDP_DATA).l
-    move.l  #$856C856D,(VDP_DATA).l
-    move.l  #$856E856F,(VDP_DATA).l
-    move.l  #$85808581,(VDP_DATA).l
-    move.l  #$85828583,(VDP_DATA).l
-    move.l  #$85848585,(VDP_DATA).l
-    move.l  #$85868587,(VDP_DATA).l
-    move.l  #$85888589,(VDP_DATA).l
-    move.l  #$858A858B,(VDP_DATA).l
+    move.l  d0,d2
+    move.l  d0,d3
+    jsr     (vwf_tilemap_draw).l
 
     // ; Draw lower tilemap for second row
-    add.l   #$01000000,d1
-    move.l  d1,(VDP_CTRL).l
-    move.l  #$85708571,(VDP_DATA).l
-    move.l  #$85728573,(VDP_DATA).l
-    move.l  #$85748575,(VDP_DATA).l
-    move.l  #$85768577,(VDP_DATA).l
-    move.l  #$85788579,(VDP_DATA).l
-    move.l  #$857A857B,(VDP_DATA).l
-    move.l  #$857C857D,(VDP_DATA).l
-    move.l  #$857E857F,(VDP_DATA).l
-    move.l  #$85908591,(VDP_DATA).l
-    move.l  #$85928593,(VDP_DATA).l
-    move.l  #$85948595,(VDP_DATA).l
-    move.l  #$85968597,(VDP_DATA).l
-    move.l  #$85988599,(VDP_DATA).l
-    move.l  #$859A859B,(VDP_DATA).l
+    movea.l #(vwf_tilemap_4),a0
+    add.l   #$01000000,d1 
+    move.l  d1,d2
+    move.l  d1,d3
+    jsr     (vwf_tilemap_draw).l
 
     load_registers_from_sp()
     jmp     $10A6A
+
+vwf_tilemap_draw:
+    move.l  #28,d7
+    andi.l  #$7E0000,d2
+-
+    move.l  d3,d4
+    move.l  d4,(VDP_CTRL).l
+    move.w  (a0)+,(VDP_DATA).l
+    cmp.l   #$7E0000,d2
+    bne     +
+    sub.l   #$00800000,d3
++
+    add.l   #$00020000,d3
+    move.l  d3,d2
+    andi.l  #$7E0000,d2
+    dbf     d7,-
+    rts
 
 
 // ; VWF Main Routine
@@ -671,12 +643,86 @@ vwf_table:
     db      $00
 vwf_table_end:
 
+    db $00
+
+vwf_tilemap_1:
+    dl $85208521
+    dl $85228523
+    dl $85248525
+    dl $85268527
+    dl $85288529
+    dl $852A852B
+    dl $852C852D
+    dl $852E852F
+    dl $85408541
+    dl $85428543
+    dl $85448545
+    dl $85468547
+    dl $85488549
+    dl $854A854B
+    dw $854C
+vwf_tilemap_1_end:
+
+vwf_tilemap_2:
+    dl $85308531
+    dl $85328533
+    dl $85348535
+    dl $85368537
+    dl $85388539
+    dl $853A853B
+    dl $853C853D
+    dl $853E853F
+    dl $85508551
+    dl $85528553
+    dl $85548555
+    dl $85568557
+    dl $85588559
+    dl $855A855B
+    dw $855C
+vwf_tilemap_2_end:
+
+vwf_tilemap_3:
+    dl $85608561
+    dl $85628563
+    dl $85648565
+    dl $85668567
+    dl $85688569
+    dl $856A856B
+    dl $856C856D
+    dl $856E856F
+    dl $85808581
+    dl $85828583
+    dl $85848585
+    dl $85868587
+    dl $85888589
+    dl $858A858B
+    dw $858C
+vwf_tilemap_3_end:
+
+vwf_tilemap_4:
+    dl $85708571
+    dl $85728573
+    dl $85748575
+    dl $85768577
+    dl $85788579
+    dl $857A857B
+    dl $857C857D
+    dl $857E857F
+    dl $85908591
+    dl $85928593
+    dl $85948595
+    dl $85968597
+    dl $85988599
+    dl $859A859B
+    dw $859C
+vwf_tilemap_4_end:
+
 db $00
 
 // ; Localization Hacks and Resources
 
 if (CONFIG_LANGUAGE == PORTUGUESE) {
-    origin  $180000
+    origin  $120000
     gfx_font_latin:
         insert "gfx/br/font.bin"
         //insert "gfx/br/font_2.bin"
