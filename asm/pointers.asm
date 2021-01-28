@@ -1,6 +1,5 @@
 
 
-
 // Rings
 origin $00021B32
     dl item_name_01
@@ -554,7 +553,124 @@ origin $0002D4FC
 origin $0002D51C
 	dl text_dialogue_173	
 	dl text_dialogue_174
+origin $000290AC
+	dl text_dialogue_175
+	dl text_dialogue_187
+	dl text_dialogue_191
+	dl text_dialogue_194
+	dl text_dialogue_196
+	dl text_dialogue_198
+	dl text_dialogue_176
+origin $000290DC
+	dl text_dialogue_177
+origin $0001F3B0
+	dl text_dialogue_178
+origin $0001F3E4
+	dl text_dialogue_179
+	dl text_dialogue_185
+origin $000290F4
+	dl text_dialogue_180
+	dl text_dialogue_188
+	dl text_dialogue_192
+	dl text_dialogue_195
+	dl text_dialogue_199
+origin $00007130
+	dl text_dialogue_181
+origin $00029128
+	dl text_dialogue_182
+	dl text_dialogue_186
+origin $0001F3B4
+	dl text_dialogue_183
+origin $00007114
+	dl text_dialogue_188
+origin $000071C0
+	dl text_dialogue_188
+origin $00029110
+	dl text_dialogue_189
+	dl text_dialogue_193
+origin $0002911C
+	dl text_dialogue_197
+origin $0002909C
+	dl text_dialogue_190
 
+origin $0002FB6A
+	dl text_dialogue_200
+origin $0002FB7A
+	dl text_dialogue_201
+origin $0002FB94
+	dl text_dialogue_202
+origin $0002FB84
+	dl text_dialogue_203
+origin $0002B6D6
+	dl text_dialogue_204
+	dl text_dialogue_206
+	dl text_dialogue_209
+	dl text_dialogue_205
+	dl text_dialogue_207
+	dl text_dialogue_210
+origin $0002B6F2
+	dl text_dialogue_208
+origin $00034016
+	dl text_dialogue_211
+	dl text_dialogue_212
+	dl text_dialogue_214
+	dl text_dialogue_216
+	dl text_dialogue_220
+	dl text_dialogue_221
+	dl text_dialogue_224
+	dl text_dialogue_226
+	dl text_dialogue_228
+	dl text_dialogue_231
+	dl text_dialogue_218
+origin $00034046
+	dl text_dialogue_213
+	dl text_dialogue_215
+	dl text_dialogue_217
+	dl text_dialogue_222
+origin $0003406A
+	dl text_dialogue_219
+origin $000340AA
+	dl text_dialogue_223
+	dl text_dialogue_225
+	dl text_dialogue_227
+	dl text_dialogue_230
+	dl text_dialogue_233
+	dl text_dialogue_234
+	dl text_dialogue_235
+	dl text_dialogue_237
+	dl text_dialogue_238
+	dl text_dialogue_236
+origin $00034062
+	dl text_dialogue_229
+	dl text_dialogue_232
+origin $000340E2
+	dl text_dialogue_239
+origin $0003410A
+	dl text_dialogue_240
+	dl text_dialogue_241
+	dl text_dialogue_246
+	dl text_dialogue_248
+	dl text_dialogue_249
+	dl text_dialogue_249
+	dl text_dialogue_250
+	dl text_dialogue_252
+	dl text_dialogue_254
+origin $00034B9E
+	dl text_dialogue_255
+origin $00021122
+	dl text_dialogue_256
+origin $0008E0C
+	dl text_dialogue_257
+origin $0008DFE
+	dl text_dialogue_258
+origin $0008DF4
+	dl text_dialogue_259
+origin $00034CEA
+	dl text_dialogue_260
+	dl text_dialogue_262
+	dl text_dialogue_262
+	dl text_dialogue_264
+	dl text_dialogue_267
 
 
 
