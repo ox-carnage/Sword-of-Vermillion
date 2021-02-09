@@ -1,39 +1,23 @@
-// **************************************************
-// *      [SMD] Sword of Vermilion				    *
-// *         Patch de Tradução v3.0                 *
-// **************************************************
-// * Tradutor: OX-Carnage                           *
-// **************************************************
-// * Modificações:                                  *
-// *  - Textos dos tMenus                           *
-// ***************************************************
-// * Informações:                                    *
-// *  - 30 caracteres por linha                      *
-// *  - Máximo de 3 linhas por caixa de dialogo      *
-// *  - A cada 3 linhas de textos, insere uma janela *
-// *  - Sem limitação de próxima janela				 *
-// ***************************************************
 
-	
 
 
 origin $000A07E1 // ----> Endereço de onde será gravado os textos
 
 text_menu_01:
     menu_text("INICIAR"           )
-	menu_text("CONTINUAR"			)					
+	menu_text("CONTINUAR"		  )					
 	end()
 	
 text_menu_02:
     menu_text("FALAR MAGIA"				)
-	menu_text("ITEM  EQUIPAR"				)
+	menu_text("ITEM  EQUIPAR"			)
 	menu_text("HEROI OLHAR"				)
 	menu_text("ABRIR PEGAR"				)
 	end()
 text_menu_03:
     db "  VELOCIDADE ",$E5,$E3," DOS DIALOGOS"
 	db BREAKLINE
-	db "             ",$E5,$E3,"     RAPIDO"
+	db "             ",$E5,$E3,"     RÁPIDO"
 	db BREAKLINE	
 	db "             ",$E5,$E3,"     NORMAL"
 	db BREAKLINE		
