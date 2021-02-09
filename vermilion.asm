@@ -20,7 +20,7 @@ arch    md.cpu
 endian  msb
 
 // ; Patched Output
-output  "bin/vermilion_br.md",create
+output  "bin/Sword of Vermillion (BR) [!] V3.0.bin",create
 
 // ; Configuration
 constant CONFIG_LANGUAGE(PORTUGUESE)
@@ -60,7 +60,7 @@ constant CONFIG_DIALOGUE_BOX_HEIGHT($05)
 
 origin ROM_START
     // ; Original File
-    insert "bin/vermilion.md"
+    insert "bin/Sword of Vermilion (UE) [!].gen"
     
     // ; Includes
     include "asm/macros.asm"
