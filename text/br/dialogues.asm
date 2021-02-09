@@ -1281,7 +1281,7 @@ text_dialogue_264:
     dialogue_text("Travel west to"                                        )
     dialogue_text("reach Tadcaster."                                      )
     dialogue_text("I have a map for you."    )
-	db $f9
+	db $F9
 	db $07
 	db $01
 	db $0E
