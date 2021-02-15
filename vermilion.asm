@@ -747,8 +747,8 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
     define CONFIG_ROM_SIZE(pc())
 
     // ; New font Injection Point
-    //origin $0000107C
-    // ;    jmp  load_gfx_font_latin
+    origin $0000107C
+        jmp  load_gfx_font_latin
 
     // ; New logo Injection Point
     origin $00016BD8 
