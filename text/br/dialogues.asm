@@ -654,7 +654,7 @@ text_dialogue_145:
 	dialogue_text("journeys for later use.")
 	end()
 text_dialogue_146:
-	dialogue_text("Corra para casa, ÷!")
+	dialogue_text("Corra para casa, agora mesmo seu malvado!")
 	dialogue_text("Seu pai precisa desperadamente te ver!")
 	end()
 text_dialogue_147:

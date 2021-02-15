@@ -85,6 +85,13 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
     define   CONFIG_ROM_NAME("VERMILION: A ESPADA DO CAVALEIRO VERMELHO       ")
     define   CONFIG_ROM_REGION("JUE")
 
+    constant CONFIG_DIALOGUE_BOX_X($08)
+    constant CONFIG_DIALOGUE_BOX_Y($15)
+    constant CONFIG_DIALOGUE_BOX_WIDTH($1A)
+    constant CONFIG_DIALOGUE_BOX_HEIGHT($05)
+
+    constant VWF_FONT_RENDER($A800)
+
     include "text/br/intro.asm"
     include "text/br/items.asm"
     include "text/br/armors.asm"
@@ -144,6 +151,10 @@ origin ROM_MENU_TEXTSPEED_BOX_CONTENT_ATTRIBUTES
 
 // ; Draw Dialogue Box
 origin ROM_DIALOGUE_BOX_ATTRIBUTES
+    move.w  #CONFIG_DIALOGUE_BOX_X+1,(BOX_CONTENT_POSITION_X).w
+    move.w  #CONFIG_DIALOGUE_BOX_Y,(BOX_CONTENT_POSITION_Y).w
+    move.w  #0,($FFC208).w
+    clr.w   ($FFC234).w
     move.w  #CONFIG_DIALOGUE_BOX_X,(BOX_POSITION_X).w                               // ; X
     move.w  #CONFIG_DIALOGUE_BOX_Y,(BOX_POSITION_Y).w                               // ; Y
     move.w  #CONFIG_DIALOGUE_BOX_WIDTH,(BOX_WIDTH).w                                // ; Width
@@ -188,8 +199,13 @@ vwf_add_newline:
     move.w   #$0,(VWF_COLUMN_COUNT_2).l                     // ; reset lower vwf column count
     bra      vwf_add_newline_end
 +     
-    move.w   #$600,(VWF_TILE_COUNT).l                       // ; add new line to upper tile count
-    move.w   #$600,(VWF_TILE_COUNT_2).l                     // ; add new line to lower tile count
+    if (CONFIG_LANGUAGE == PORTUGUESE) {
+        move.w   #$500,(VWF_TILE_COUNT).l                       // ; add new line to upper tile count
+        move.w   #$500,(VWF_TILE_COUNT_2).l                     // ; add new line to lower tile count
+    } else {
+        move.w   #$600,(VWF_TILE_COUNT).l                       // ; add new line to upper tile count
+        move.w   #$600,(VWF_TILE_COUNT_2).l                     // ; add new line to lower tile count
+    }
     move.w   #$0,(VWF_COLUMN_COUNT).l                       // ; reset upper vwf column count
     move.w   #$0,(VWF_COLUMN_COUNT_2).l                     // ; reset lower vwf column count
 vwf_add_newline_end:           
@@ -293,7 +309,11 @@ vwf_font:
     jmp     $10A6A
 
 vwf_tilemap_draw:
-    move.l  #28,d7
+    if (CONFIG_LANGUAGE == PORTUGUESE) {
+        move.l  #23,d7                                      //; Quantity of chars on line
+    } else {
+        move.l  #28,d7                                      //; Quantity of chars on line
+    }
     andi.l  #$7E0000,d2
 -
     move.l  d3,d4
@@ -368,7 +388,11 @@ vwf_end:
 
     // ; At finish
     // ; Copy all buffer to font render location on VRAM
-    dma_copy_to_vram(VWF_FONT_BUFFER, (VWF_FONT_BUFFER+$1000), VWF_FONT_RENDER)
+    if (CONFIG_LANGUAGE == PORTUGUESE) {
+        dma_copy_to_vram(VWF_FONT_BUFFER, (VWF_FONT_BUFFER+$C00), VWF_FONT_RENDER)
+    } else {
+      dma_copy_to_vram(VWF_FONT_BUFFER, (VWF_FONT_BUFFER+$1000), VWF_FONT_RENDER)  
+    }
 
     rts
 
@@ -644,79 +668,151 @@ vwf_table:
 vwf_table_end:
 
     db $00
+if (CONFIG_LANGUAGE == PORTUGUESE) {
+    vwf_tilemap_1:
+        dl $85408541
+        dl $85428543
+        dl $85448545
+        dl $85468547
+        dl $85488549
+        dl $854A854B
+        dl $854C854D
+        dl $854E854F
+        dl $85608561
+        dl $85628563
+        dl $85648565
+        dl $856684E0
+        dl $84E084E0
+        dl $84E084E0
+        dw $84E0
+    vwf_tilemap_1_end:
 
-vwf_tilemap_1:
-    dl $85208521
-    dl $85228523
-    dl $85248525
-    dl $85268527
-    dl $85288529
-    dl $852A852B
-    dl $852C852D
-    dl $852E852F
-    dl $85408541
-    dl $85428543
-    dl $85448545
-    dl $85468547
-    dl $85488549
-    dl $854A854B
-    dw $854C
-vwf_tilemap_1_end:
+    vwf_tilemap_2:
+        dl $85508551
+        dl $85528553
+        dl $85548555
+        dl $85568557
+        dl $85588559
+        dl $855A855B
+        dl $855C855D
+        dl $855E855F
+        dl $85708571
+        dl $85728573
+        dl $85748575
+        dl $857684E0
+        dl $84E084E0
+        dl $84E084E0
+        dw $84E0
+    vwf_tilemap_2_end:
 
-vwf_tilemap_2:
-    dl $85308531
-    dl $85328533
-    dl $85348535
-    dl $85368537
-    dl $85388539
-    dl $853A853B
-    dl $853C853D
-    dl $853E853F
-    dl $85508551
-    dl $85528553
-    dl $85548555
-    dl $85568557
-    dl $85588559
-    dl $855A855B
-    dw $855C
-vwf_tilemap_2_end:
+    vwf_tilemap_3:
+        dl $85688569
+        dl $856A856B
+        dl $856C856D
+        dl $856E856F
+        dl $85808581
+        dl $85828583
+        dl $85848585
+        dl $85868587
+        dl $85888589
+        dl $858A858B
+        dl $858C858D
+        dl $858E858F
+        dl $84E084E0
+        dl $84E084E0
+        dw $84E0
+    vwf_tilemap_3_end:
 
-vwf_tilemap_3:
-    dl $85608561
-    dl $85628563
-    dl $85648565
-    dl $85668567
-    dl $85688569
-    dl $856A856B
-    dl $856C856D
-    dl $856E856F
-    dl $85808581
-    dl $85828583
-    dl $85848585
-    dl $85868587
-    dl $85888589
-    dl $858A858B
-    dw $858C
-vwf_tilemap_3_end:
+    vwf_tilemap_4:
+        dl $85788579
+        dl $857A857B
+        dl $857C857D
+        dl $857E857F
+        dl $85908591
+        dl $85928593
+        dl $85948595
+        dl $85968597
+        dl $85988599
+        dl $859A859B
+        dl $859C859D
+        dl $859E859F
+        dl $84E084E0
+        dl $84E084E0
+        dw $84E0
+    vwf_tilemap_4_end:
+} else {
+    vwf_tilemap_1:
+        dl $85208521
+        dl $85228523
+        dl $85248525
+        dl $85268527
+        dl $85288529
+        dl $852A852B
+        dl $852C852D
+        dl $852E852F
+        dl $85408541
+        dl $85428543
+        dl $85448545
+        dl $85468547
+        dl $85488549
+        dl $854A854B
+        dw $854C
+    vwf_tilemap_1_end:
 
-vwf_tilemap_4:
-    dl $85708571
-    dl $85728573
-    dl $85748575
-    dl $85768577
-    dl $85788579
-    dl $857A857B
-    dl $857C857D
-    dl $857E857F
-    dl $85908591
-    dl $85928593
-    dl $85948595
-    dl $85968597
-    dl $85988599
-    dl $859A859B
-    dw $859C
-vwf_tilemap_4_end:
+    vwf_tilemap_2:
+        dl $85308531
+        dl $85328533
+        dl $85348535
+        dl $85368537
+        dl $85388539
+        dl $853A853B
+        dl $853C853D
+        dl $853E853F
+        dl $85508551
+        dl $85528553
+        dl $85548555
+        dl $85568557
+        dl $85588559
+        dl $855A855B
+        dw $855C
+    vwf_tilemap_2_end:
 
+    vwf_tilemap_3:
+        dl $85608561
+        dl $85628563
+        dl $85648565
+        dl $85668567
+        dl $85688569
+        dl $856A856B
+        dl $856C856D
+        dl $856E856F
+        dl $85808581
+        dl $85828583
+        dl $85848585
+        dl $85868587
+        dl $85888589
+        dl $858A858B
+        dw $858C
+    vwf_tilemap_3_end:
+
+    vwf_tilemap_4:
+        dl $85708571
+        dl $85728573
+        dl $85748575
+        dl $85768577
+        dl $85788579
+        dl $857A857B
+        dl $857C857D
+        dl $857E857F
+        dl $85908591
+        dl $85928593
+        dl $85948595
+        dl $85968597
+        dl $85988599
+        dl $859A859B
+        dw $859C
+    vwf_tilemap_4_end:
+}
 db $00
 
 // ; Localization Hacks and Resources
