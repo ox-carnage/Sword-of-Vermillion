@@ -278,15 +278,19 @@ macro intro_text(TEXT) {
     break_line()
 }
 macro menu_text(TEXT) {
-    table "tbl/global.tbl"
+    table "tbl/menus.tbl"
     db {TEXT}
     break_line()
- }
+}
+macro menu_textspeed(TEXT) {
+    table "tbl/menus.tbl"
+    db {TEXT}
+}
 macro dialogue_text(TEXT) {
     table "tbl/global.tbl"
     db {TEXT}
     break_line()
- }
+}
 macro end() {
     db ENDSTRING
 }

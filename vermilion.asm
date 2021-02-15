@@ -820,13 +820,29 @@ db $00
 if (CONFIG_LANGUAGE == PORTUGUESE) {
     origin  $120000
     gfx_font_latin:
-        //insert "gfx/br/font.bin"
-        insert "gfx/br/font_2.bin"
+        insert "gfx/br/font.bin"
+        //insert "gfx/br/font_2.bin"
     gfx_font_latin_end:
 
     tilemap_logo_br:
         insert "tilemap/br/logo.bin"
     tilemap_logo_br_end:
+
+    load_menubox_latin:
+        dma_copy_to_vram((gfx_font_latin+$C00), (gfx_font_latin_end-$200), ORIGINAL_FONT_RENDER+$800)
+        move.w  #CONFIG_MENU_BOX_X,(BOX_POSITION_X).w                                   // ; X
+        move.w  #CONFIG_MENU_BOX_Y,(BOX_POSITION_Y).w                                   // ; Y
+        move.w  #CONFIG_MENU_BOX_WIDTH,(BOX_WIDTH).w                                    // ; Width
+        move.w  #CONFIG_MENU_BOX_HEIGHT,(BOX_HEIGHT).w                                  // ; Height
+        rts
+
+    load_menubox_textspeed_latin:
+        dma_copy_to_vram((gfx_font_latin+$C00), (gfx_font_latin_end-$200), ORIGINAL_FONT_RENDER+$800)
+        move.w  #CONFIG_MENU_TEXTSPEED_BOX_X,(BOX_POSITION_X).w                         // ; X   
+        move.w  #CONFIG_MENU_TEXTSPEED_BOX_Y,(BOX_POSITION_Y).w                         // ; Y
+        move.w  #CONFIG_MENU_TEXTSPEED_BOX_WIDTH,(BOX_WIDTH).w                          // ; Width
+        move.w  #CONFIG_MENU_TEXTSPEED_BOX_HEIGHT,(BOX_HEIGHT).w                        // ; Height
+        rts
 
     // ; Load new font for menus
     load_gfx_font_latin:
@@ -849,6 +865,14 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
     // ; New logo Injection Point
     //origin $00016BD8 
     //    jmp  load_gfx_logo_br
+
+    origin ROM_MENU_BOX_ATTRIBUTES
+        jsr load_menubox_latin
+        bra pc()+23
+
+    origin ROM_MENU_TEXTSPEED_BOX_ATTRIBUTES
+        jsr load_menubox_textspeed_latin
+        bra pc()+23
 }
 
 eof:

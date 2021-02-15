@@ -11,17 +11,25 @@ text_menu_01:
 text_menu_02:
     menu_text("FALAR MAGIA"				)
 	menu_text("ITEM  EQUIPAR"			)
-	menu_text("HEROI OLHAR"				)
+	menu_text("HERÓI OLHAR"				)
 	menu_text("ABRIR PEGAR"				)
 	end()
 text_menu_03:
-    db "  VELOCIDADE ",$E5,$E3," DOS DIALOGOS"
+    menu_textspeed("  VELOCIDADE ")
+	db $E5,$E3
+	menu_textspeed(" DOS DIÁLOGOS")
 	db BREAKLINE
-	db "             ",$E5,$E3,"     RÁPIDO"
+	menu_textspeed("             ")
+	db $E5,$E3
+	menu_textspeed("     RÁPIDO")
 	db BREAKLINE	
-	db "             ",$E5,$E3,"     NORMAL"
+	menu_textspeed("             ")
+	db $E5,$E3
+	menu_textspeed("     NORMAL")
 	db BREAKLINE		
-	db "             ",$E5,$E3,"     LENTO"		
+	menu_textspeed("             ")
+	db $E5,$E3
+	menu_textspeed("     LENTO")
 	end()
 text_menu_04:
 	menu_text("SIM"					)
