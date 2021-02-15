@@ -751,8 +751,8 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
         jmp  load_gfx_font_latin
 
     // ; New logo Injection Point
-    origin $00016BD8 
-        jmp  load_gfx_logo_br
+    //origin $00016BD8 
+    //    jmp  load_gfx_logo_br
 }
 
 eof:
