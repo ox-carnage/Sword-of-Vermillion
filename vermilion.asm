@@ -60,7 +60,7 @@ constant CONFIG_DIALOGUE_BOX_HEIGHT($05)
 
 origin ROM_START
     // ; Original File
-    insert "bin/Sword of Vermilion (UE) [!].gen"
+    insert "bin/vermilion.bin"
     
     // ; Includes
     include "asm/macros.asm"
