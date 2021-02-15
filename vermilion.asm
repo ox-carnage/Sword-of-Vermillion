@@ -681,7 +681,7 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
         dl $85608561
         dl $85628563
         dl $85648565
-        dl $856684E0
+        dl $85668567
         dl $84E084E0
         dl $84E084E0
         dw $84E0
@@ -699,7 +699,7 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
         dl $85708571
         dl $85728573
         dl $85748575
-        dl $857684E0
+        dl $85768577
         dl $84E084E0
         dl $84E084E0
         dw $84E0
