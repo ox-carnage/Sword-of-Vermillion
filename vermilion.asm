@@ -20,7 +20,7 @@ arch    md.cpu
 endian  msb
 
 // ; Patched Output
-output  "bin/Sword of Vermillion (BR) [!] V3.0.bin",create
+output  "bin/vermilion_br.bin",create
 
 // ; Configuration
 constant CONFIG_LANGUAGE(PORTUGUESE)
