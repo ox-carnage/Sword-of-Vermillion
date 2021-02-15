@@ -820,8 +820,8 @@ db $00
 if (CONFIG_LANGUAGE == PORTUGUESE) {
     origin  $120000
     gfx_font_latin:
-        insert "gfx/br/font.bin"
-        //insert "gfx/br/font_2.bin"
+        //insert "gfx/br/font.bin"
+        insert "gfx/br/font_2.bin"
     gfx_font_latin_end:
 
     tilemap_logo_br:
