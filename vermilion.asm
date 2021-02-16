@@ -85,10 +85,21 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
     define   CONFIG_ROM_NAME("VERMILION: A ESPADA DO CAVALEIRO VERMELHO       ")
     define   CONFIG_ROM_REGION("JUE")
 
-    constant CONFIG_DIALOGUE_BOX_X($08)
+    constant CONFIG_DIALOGUE_BOX_X($07)
     constant CONFIG_DIALOGUE_BOX_Y($15)
     constant CONFIG_DIALOGUE_BOX_WIDTH($1A)
     constant CONFIG_DIALOGUE_BOX_HEIGHT($05)
+
+    constant CONFIG_MENU_BOX_X($02)
+    constant CONFIG_MENU_BOX_Y($02)
+    constant CONFIG_MENU_BOX_WIDTH($10)
+    constant CONFIG_MENU_BOX_HEIGHT($0A)
+
+    constant CONFIG_MENU_BOX_CLEAR_X(CONFIG_MENU_BOX_X)
+    constant CONFIG_MENU_BOX_CLEAR_Y(CONFIG_MENU_BOX_Y)
+    constant CONFIG_MENU_BOX_CLEAR_WIDTH(CONFIG_MENU_BOX_WIDTH)
+    constant CONFIG_MENU_BOX_CLEAR_HEIGHT(CONFIG_MENU_BOX_HEIGHT)
+
 
     constant VWF_FONT_RENDER($A800)
 
@@ -129,6 +140,14 @@ origin ROM_MENU_CLEAR_BOX_ATTRIBUTES
     move.w  #CONFIG_MENU_BOX_CLEAR_WIDTH,(BOX_CLEAR_WIDTH).w                        // ; Width
     move.w  #CONFIG_MENU_BOX_CLEAR_HEIGHT,(BOX_CLEAR_HEIGHT).w                      // ; Height
 
+// ; Menu BOX Buffer
+origin $0001227A
+    lea     ($FF7980).l,a0
+    move.w  #CONFIG_MENU_BOX_CLEAR_X,($FFC224).w
+    move.w  #CONFIG_MENU_BOX_CLEAR_Y,($FFC226).w
+    move.w  #CONFIG_MENU_BOX_CLEAR_WIDTH,($FFC22C).w
+    move.w  #CONFIG_MENU_BOX_CLEAR_HEIGHT,($FFC22E).w
+
 // ; Draw Text Speed box
 origin ROM_MENU_TEXTSPEED_BOX_ATTRIBUTES
     move.w  #CONFIG_MENU_TEXTSPEED_BOX_X,(BOX_POSITION_X).w                         // ; X   
@@ -159,6 +178,15 @@ origin ROM_DIALOGUE_BOX_ATTRIBUTES
     move.w  #CONFIG_DIALOGUE_BOX_Y,(BOX_POSITION_Y).w                               // ; Y
     move.w  #CONFIG_DIALOGUE_BOX_WIDTH,(BOX_WIDTH).w                                // ; Width
     move.w  #CONFIG_DIALOGUE_BOX_HEIGHT,(BOX_HEIGHT).w                              // ; Height
+
+if (CONFIG_LANGUAGE == PORTUGUESE) {
+    origin $00003214
+        move.w  #6,($FFC246).w
+    origin $000120E2
+        lea     ($FF7940).l,a0
+    origin $0001227A 
+        lea     ($FF7940).l,a0
+}
 
 
 // ; VWF
