@@ -685,15 +685,3 @@ origin $00034CEA
 
 
 
-
-
-
-
-
-
-
-
-
-
-origin $0002D520
-	dl text_dialogue_174
