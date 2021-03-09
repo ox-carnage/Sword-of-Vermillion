@@ -1159,7 +1159,7 @@ text_dialogue_238:
     end()
 text_dialogue_239:
     dialogue_text("Pare de me incomodar enquanto"     )
-    dialogue_text(" estou comendo!"                	  )
+    dialogue_text("estou comendo!"                	  )
     end()
 text_dialogue_240:
     dialogue_text("Pull up a seat"                    )

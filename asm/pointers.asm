@@ -1,6 +1,6 @@
 
 
-// Rings
+// Ringss
 origin $00021B32
     dl item_name_01
     dl item_name_02
