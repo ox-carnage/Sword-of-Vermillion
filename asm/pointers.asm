@@ -659,11 +659,11 @@ origin $00034B9E
 	dl text_dialogue_255
 origin $00021122
 	dl text_dialogue_256
-origin $0008E0C
+origin $00008E0C
 	dl text_dialogue_257
-origin $0008DFE
+origin $00008DFE
 	dl text_dialogue_258
-origin $0008DF4
+origin $00008DF4
 	dl text_dialogue_259
 origin $00034CEA
 	dl text_dialogue_260
