@@ -1,20 +1,5 @@
-// **************************************************
-// *      [SMD] Sword of Vermilion				    *
-// *         Patch de Tradução v3.0                 *
-// **************************************************
-// * Tradutor: OX-Carnage                           *
-// **************************************************
-// * Modificações:                                  *
-// *  - Textos da introdução do jogo                *
-// ***************************************************
-// * Informações:                                    *
-// *  - 30 caracteres por linha                      *
-// *  - Máximo de 3 linhas por caixa de dialogo      *
-// *  - A cada 3 linhas de textos, insere uma janela *
-// *  - Sem limitação de próxima janela				 *
-// ***************************************************
-		
-origin $110000
+	
+origin $000A0D92
 
 text_dialogue_00:
 	dialogue_text("Não há ninguém aqui para conversar...")
@@ -491,112 +476,22 @@ text_dialogue_117:
 	dialogue_text("Você baniu o mal de")
  	dialogue_text("nossa terra!")
 	end()
-text_dialogue_118:
-	dialogue_text("Seja bem-vindo seu tolo!")
-	dialogue_text("Tsarkon esta na Caverna Thule")
-	new_page()
-	dialogue_text("ao extremo leste.")
-	new_page()
-	dialogue_text("Ele me pediu para lhe dar um ")
-	dialogue_text("presente para você.  ")
-	new_page()
-	dialogue_text("Esta cidade como seu tumulo!")
-	dialogue_text("Prepare-se para morrer!ø.")
-	end()  
-text_dialogue_119:
-	dialogue_text("÷èVocê pode ter me derrotado,")
-	dialogue_text("mas você nunca irá")
-	new_page()
-	dialogue_text("derrotar Tsarkon!ø.S")
-	end()
-text_dialogue_120:
-	dialogue_text("÷, se o rei Erik pudesse te ver ")
-	dialogue_text("agora, sei que ele estaria muito ")
-	new_page()
-	dialogue_text("orgulhoso de Você! ")
-	new_page()
-	dialogue_text("Eu nunca quis me casar com Tsarkon,")
-	dialogue_text("quando eu recusei de ser a sua")
-	new_page()
-	dialogue_text("esposa ele me transformou em pedra.")
-	new_page()
-	dialogue_text("Mas a sua bravura me libertou ")
-	dialogue_text("desta terrível maldição.")
-	end()
-text_dialogue_121:
-	dialogue_text("Por favor, fique na ")
-	dialogue_text("frente do trono e ")
-	new_page()
-	dialogue_text("use os anéis.")
-	new_page()
-	dialogue_text("O dia que ira curar as feridas")
-	dialogue_text("abertas por Tsarkon esta chegando.")
-	end()
-text_dialogue_122:
-	dialogue_text("Agora você deve ficar na")
-	dialogue_text("frente do trono e usar ")
-	new_page()
-	dialogue_text("os anéis.")
-	new_page()
-	dialogue_text("Somente você pode banir os ")
-	dialogue_text("demônios dos últimos 123 anos.")
-	end()
-text_dialogue_123:
-	dialogue_text("Agora que os anéis do bem e do")
-	dialogue_text("mal estão unidos, o mundo pode")
-	new_page()
-	dialogue_text("voltar a ser como era antes.")
-	new_page()
-	dialogue_text("Corra para o trono")
-	dialogue_text("e use os anéis!")
-	end()
-text_dialogue_124:
-	dialogue_text("Depende de você criar o ")
-	dialogue_text("mundo que Erik e Tsarkon queriam.")
-	new_page()
-	dialogue_text("Coloque-se na frente do")
-	dialogue_text("trono e use os anéis.")
-	end()
-text_dialogue_125:
-	dialogue_text("Uma pessoa tão boa")
-	dialogue_text("não deveria morrer.")
-	end()
-text_dialogue_126:
-	dialogue_text("Esse anel! O rei de")
-	dialogue_text("Parma tem um igual!")
-	end()
 text_dialogue_127:
 	dialogue_text("Seu pai está chamando por você!")
 	end()
-text_dialogue_128:
-	dialogue_text("Há um anel em uma caverna ")
-	dialogue_text("ao sul daqui. ")
-	dialogue_text("Aqui está um mapa para guiá-lo.ù..`.p")
-text_dialogue_129:
-	dialogue_text("Estou surpreso por você ")
-	dialogue_text("ter voltado vivo!")
-	end()
+
+
 text_dialogue_130:
-	dialogue_text("Não esqueça de comprar uma ")
-	dialogue_text("armadura, uma arma e um escudo")
-	new_page()
-	dialogue_text("antes de deixar a vila..")
-	end()
+	
 text_dialogue_131:
-	dialogue_text("Agora sua busca começa com ")
-	dialogue_text("determinação! Aqui está um mapa")
-	dialogue_text("com a rota que leva a Parma.ù..A.P.Q.`.p")
+
 text_dialogue_132:
 	dialogue_text("Todos nós lamentamos pelo Blade!")
 	end()
 text_dialogue_133:
-	dialogue_text("Tenha cuidado! O mal habita em todos")
-	dialogue_text("os lugares fora dos muros de nossa vila!")
-	end()
+
 text_dialogue_134:
-	dialogue_text("Não perca tempo em nenhum lugar ")
-	dialogue_text("que não esteja em seu mapa.")
-	end()
+	
 text_dialogue_135:
 	dialogue_text("Itens valiosos podem ser encontrados")
 	dialogue_text("em partes remotas das cavernas e florestas.")
@@ -611,9 +506,7 @@ text_dialogue_136:
 	dialogue_text("Seu pai está prestes a morrer, vá logo...")
 	end()
 text_dialogue_137:
-	dialogue_text("Todos os que o conheceram sentirão")
-	dialogue_text("a falta da Blade.")
-	end()
+	
 text_dialogue_138:
 	dialogue_text("Você encntrou o anel!")
 	dialogue_text("Cuide bem dele.")
@@ -623,51 +516,31 @@ text_dialogue_139:
 	dialogue_text("está quase morreno.")
 	end()
 text_dialogue_140:
-	dialogue_text("Todos nós compartilhamos ")
-	dialogue_text("da sua tristeza.")
-	end()
+	
 text_dialogue_141:
 	dialogue_text("Blade está morrendo... vá rápido!")
 	end()
 text_dialogue_142:
-	dialogue_text("Certifique-se de ter um mapa ")
-	dialogue_text("antes de deixar uma cidade ou vila!")
-	end()
-text_dialogue_143:
-	dialogue_text("Para ganhar dinheiro, você ")	
-	dialogue_text("deve derrotar monstros.")
-	end()
+	
+
 text_dialogue_144:
 	dialogue_text("Rápido! Corra para o lado do seu pai")
 	dialogue_text("antes que seja tarde!")
 	end()
 text_dialogue_145:
-	dialogue_text("Visite igrejas com frequência!")
-	dialogue_text("Lá você poderá salvar suas viagens ")
-	new_page()
-	dialogue_text("para uso posterior.")
-	end()
+	
 text_dialogue_146:
 	dialogue_text("Corra para casa, ÷!")
 	dialogue_text("Seu pai precisa desperadamente te ver!")
 	end()
 text_dialogue_147:
-	dialogue_text("Seu pai finalmente descansa ")
-	dialogue_text("em paz aqui.")
-	end()
+
 text_dialogue_148:
 	dialogue_text("Tenha cuidado, meu jovem! ")
 	dialogue_text("O mundo é um lugar perigoso.")
 	end()
 text_dialogue_149:
-	dialogue_text("O mal contaminou o coração dos ")
-	dialogue_text("soldados de Cartagena. ")
-	new_page()
-	dialogue_text("Mesmo parecendo ser seres")
-	dialogue_text("humanos, por dentro são ")
-	new_page()
-	dialogue_text("monstros horríveis!")
-	end()
+	
 text_dialogue_150:
 	dialogue_text("Oh, este anel...")
 	new_page()

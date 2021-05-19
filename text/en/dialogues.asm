@@ -1,21 +1,5 @@
-// **************************************************
-// *      [SMD] Sword of Vermilion				    *
-// *         Patch de Tradução v3.0                 *
-// **************************************************
-// * Tradutor: OX-Carnage                           *
-// **************************************************
-// * Modificações:                                  *
-// *  - Textos da introdução do jogo                *
-// ***************************************************
-// * Informações:                                    *
-// *  - 30 caracteres por linha                      *
-// *  - Máximo de 3 linhas por caixa de dialogo      *
-// *  - A cada 3 linhas de textos, insere uma janela *
-// *  - Sem limitação de próxima janela				 *
-// ***************************************************
-	
-		
-origin $000A0A81 // ---> Endereço de onde sera gravado os blocos de textos.
+
+origin $000A0D92 // ---> Endereço de onde sera gravado os blocos de textos.
 
 text_dialogue_00:
 	dialogue_text("There's no one"  				)
@@ -554,19 +538,16 @@ text_dialogue_128:
 	dialogue_text("There's a ring in a cave"			)
 	dialogue_text("south of here."					)
 	dialogue_text("Here's a map to guide you.ù..`.p"	)
-text_dialogue_129:
-	dialogue_text("I'm surprised you"					)
-	dialogue_text("came back alive!"					)
-	end()
+
+
+
 text_dialogue_130:
 	dialogue_text("Be sure to buy armor, a"			)
 	dialogue_text("weapon, and a shield before"		)
 	dialogue_text("you leave the village."			)
 	end()
-text_dialogue_131:
-	dialogue_text("Now your quest begins in"			)
-	dialogue_text("earnest! Here is a map of"			)
-	dialogue_text("the route to Parma.ù..A.P.Q.`.p"	)
+
+
 text_dialogue_132:
 	dialogue_text("We're all very"					)
 	dialogue_text("sorry about Blade."				)
@@ -576,10 +557,7 @@ text_dialogue_133:
 	dialogue_text("everywhere outside our"			)
 	dialogue_text("village walls!"					)
 	end()
-text_dialogue_134:
-	dialogue_text("Don't loiter any place"			)
-	dialogue_text("that isn't on your map."			)
-	end()
+	
 text_dialogue_135:
 	dialogue_text("Valuable items can be"				)
 	dialogue_text("found in remote parts"				)
@@ -643,14 +621,7 @@ text_dialogue_148:
 	dialogue_text("Beware, young man! The"			)
 	dialogue_text("world is a dangerous place."		)
 	end()
-text_dialogue_149:
-	dialogue_text("Evil has infected the"				)
-	dialogue_text("soldiers of Cartahena."			)
-	dialogue_text("Though they appear to be"			)
-	new_page()
-	dialogue_text("human, inside they are"			)
-	dialogue_text("horrible monsters!"				)
-	end()
+
 text_dialogue_150:
 	dialogue_text("Oh, this ring ..."					)
 	new_page()

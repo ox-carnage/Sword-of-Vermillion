@@ -221,6 +221,65 @@ origin $00011F0A
     dl text_menu_17
 
 // Dialogues
+origin $0002D424
+	dl text_dialogue_00
+	dl text_dialogue_01
+	dl text_dialogue_02
+	dl text_dialogue_01
+	dl text_dialogue_03
+	dl text_dialogue_03
+	dl text_dialogue_04
+	dl text_dialogue_05
+	dl text_dialogue_05
+	dl text_dialogue_06
+	dl text_dialogue_07
+	dl text_dialogue_08
+	dl text_dialogue_08
+	dl text_dialogue_09
+	dl text_dialogue_00
+	dl text_dialogue_10
+	dl text_dialogue_11
+	dl text_dialogue_12
+	dl text_dialogue_13
+	dl text_dialogue_13
+	dl text_dialogue_14
+	dl text_dialogue_15
+	dl text_dialogue_16
+	dl text_dialogue_17
+	dl text_dialogue_18
+	dl text_dialogue_19
+	dl text_dialogue_19
+	dl text_dialogue_09
+	dl text_dialogue_20
+	dl text_dialogue_21
+	dl text_dialogue_22
+	dl text_dialogue_23
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 origin $01CEEE
  	move.l #text_dialogue_00,($FFC204).w	
 origin $00011F20
@@ -460,10 +519,8 @@ origin $000272AC
 	dl text_dialogue_115
 	dl text_dialogue_116
 	dl text_dialogue_117
-origin $0002C07C
-	dl text_dialogue_118
-origin $00007DF0
-	dl text_dialogue_119
+
+
 origin $0002C0A0
 	dl text_dialogue_120
 origin $0002C090
@@ -504,8 +561,7 @@ origin $0002D4A0
 	dl text_dialogue_138
 origin $0002D42C
 	dl text_dialogue_132
-origin $0002D464
-	dl text_dialogue_133
+
 origin $0002D49C
 	dl text_dialogue_134
 origin $0002D434
