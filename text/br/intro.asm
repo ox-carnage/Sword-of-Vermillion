@@ -1,6 +1,6 @@
 
 		
-origin $000A1043 // ---> Endereço de onde sera gravado os blocos de textos.
+origin $0009FFA1 // ---> Endereço de onde sera gravado os blocos de textos.
 
 text_intro_01:
 	intro_text("Tempos atrás, o Rei"  					)

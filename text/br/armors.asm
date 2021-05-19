@@ -1,20 +1,3 @@
-// **************************************************
-// *      [SMD] Sword of Vermilion				    *
-// *         Patch de Tradução v3.                 *
-// **************************************************
-// * Tradutor: OX-Carnage                           *
-// **************************************************
-// * Modificações:                                  *
-// *  - Textos dos Itens                            *
-// ***************************************************
-// * Informações:                                    *
-// *  - 3 caracteres por linha                      *
-// *  - Máximo de 3 linhas por caixa de dialogo      *
-// *  - A cada 3 linhas de textos, insere uma janela *
-// *  - Sem limitação de próxima janela				 *
-// ***************************************************
-
-	
 	
 origin $000A02B1 // ----> Endereço de onde será gravado os textos
 armor_name_01:
