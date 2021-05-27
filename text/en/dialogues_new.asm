@@ -125,7 +125,10 @@ text_dialogue_23:
 	db $01
 	db $70
 	end()
-
+text_dialogue_24:
+	dialogue_text("We're all very"					)
+	dialogue_text("sorry about Blade."				)
+	end()
 
 
 

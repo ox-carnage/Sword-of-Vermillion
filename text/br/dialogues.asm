@@ -486,8 +486,7 @@ text_dialogue_130:
 text_dialogue_131:
 
 text_dialogue_132:
-	dialogue_text("Todos nós lamentamos pelo Blade!")
-	end()
+	
 text_dialogue_133:
 
 text_dialogue_134:
@@ -564,8 +563,7 @@ text_dialogue_153:
 	dialogue_text("Bastas apena você as ouvi-las.")
 	end()
 text_dialogue_154:
-	dialogue_text("Onde você esteve?")
-	dialogue_text("Seu pai está chamando por você.")
+	
 	end()
 text_dialogue_155:
 	dialogue_text("Infelizmente, o bravo Blade está morto!")
@@ -575,8 +573,7 @@ text_dialogue_156:
 	dialogue_text("de você.")
 	end()
 text_dialogue_157:
-	dialogue_text("A saúde de Blade piorou rapidamente...")
-	dialogue_text("Não há o que se fazer!")
+	
 	end()
 text_dialogue_158:
 	dialogue_text("Vá! Você deve encontrar o anel!")

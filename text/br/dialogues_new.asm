@@ -118,7 +118,9 @@ text_dialogue_23:
 	db $01
 	db $70
 	end()
-
+text_dialogue_24:
+	dialogue_text("Todos nós lamentamos pelo Blade!")
+	end()
 
 
 

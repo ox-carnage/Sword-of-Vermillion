@@ -1,0 +1,580 @@
+text_dialogues_35:
+    dialogue_text("There's no one")
+    dialogue_text("here to talk to.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("nothing")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("All Rings")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Welcome to my shop.")
+    dialogue_text("Does anything interest you?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("What would you like to buy?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("What do you want to sell?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Is ")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text(" OK?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("all right?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Thank you.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Anything else for you today?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Thank you for your business!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Hmmph! You think I'm")
+    dialogue_text("giving this stuff away?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Do you have")
+    dialogue_text("anything to sell?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Maybe next time!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Sorry, sir, but I have")
+    dialogue_text("no need for that.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Books of Spells")
+    dialogue_text("are my specialty.")
+    dialogue_text("May I help you?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You can buy weapons,")
+    dialogue_text("armor, and shields here.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("I don't want to buy")
+    dialogue_text("that--it's cursed!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Welcome!")
+    dialogue_text("We rent rooms")
+    dialogue_text("for the night.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Relax and enjoy a")
+    dialogue_text("well-deserved rest.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You look much better")
+    dialogue_text("this morning!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("I'm sorry, but if you")
+    dialogue_text("can't pay, you'll have")
+    dialogue_text("to sleep in the street!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("My services cost money,")
+    dialogue_text("you know. You can't stay")
+    dialogue_text("if you don't pay!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You have nothing to use!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("readied ")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("removed ")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You don't have the")
+    dialogue_text("proper equipment!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("What do you want to ready?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You readied that earlier.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You can't drop")
+    dialogue_text("a cursed item!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You can't exchange")
+    dialogue_text("a cursed item.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It's cursed!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You searched carefully,")
+    dialogue_text("but you didn't notice")
+    dialogue_text("anything unusual.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Someone is standing in")
+    dialogue_text("front of you!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It's a treasure chest!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Stop worrying, the")
+    dialogue_text("herbs are still there!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Stop worrying, the")
+    dialogue_text("truffles are still there!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("I can tell your fortune,")
+    dialogue_text("if your money is good.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The fee is ")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You must pay first!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("If you can't pay,")
+    dialogue_text("I won't tell your fortune.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("If you have no questions,")
+    dialogue_text("then why are you here?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("How may we help you?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You haven't been poisoned.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You must give ")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text(" to charity.")
+    dialogue_text("Do you agree?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("I'm sorry. I can't cure")
+    dialogue_text("you. Your donation is")
+    dialogue_text("appreciated, though.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The poison has been")
+    dialogue_text("purged from your body.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Don't even think of taking")
+    dialogue_text("back your donation.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("There is no curse on you.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The curse has been removed.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Save under")
+    dialogue_text("which number?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Your game was saved")
+    dialogue_text("successfully!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Never give up. Every obstacle")
+    dialogue_text("can be overcome!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Go ahead--it's")
+    dialogue_text("not poisonous!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The poison is too")
+    dialogue_text("strong for that cure.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Arise, brave warrior! Our")
+    dialogue_text("world needs you! But half")
+    dialogue_text("your money goes to the poor.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("As you awaken, you seem to")
+    dialogue_text("hear a stern voice inside")
+    dialogue_text("your head say:")
+    new_page()
+    dialogue_text(""Don't gamble with your")
+    dialogue_text("life like that again. Too")
+    dialogue_text("much depends on you!"")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Don't be careless! The")
+    dialogue_text("world is depending on you!")
+    new_page()
+    dialogue_text("You should start over")
+    dialogue_text("from the beginning.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Whew! For a moment there, I")
+    dialogue_text("was afraid I'd killed you.")
+    new_page()
+    dialogue_text("You deserved it though! Now")
+    dialogue_text("don't come back until you've")
+    dialogue_text("rescued our men.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Casting from the Book of")
+    dialogue_text("Inaudios Spells helps")
+    dialogue_text("you to evade monsters.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The effects of the Inaudios")
+    dialogue_text("Spell have worn off.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You suddenly feel weak.")
+    dialogue_text("You were poisoned")
+    dialogue_text("during the battle!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Some of your magic points")
+    dialogue_text("have been restored.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("All of your magic points")
+    dialogue_text("have been restored.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Your lost hit points have")
+    dialogue_text("been partially regained.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Your lost hit points have")
+    dialogue_text("been regained.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("All of your lost hit points")
+    dialogue_text("have been regained.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The powder spills all over")
+    dialogue_text("you. Wrenching pain courses")
+    dialogue_text("through your body.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("If you use that in town,")
+    dialogue_text("the townspeople aren't")
+    dialogue_text("going to like it one bit!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The monsters will have")
+    dialogue_text("a hard time finding you.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("That won't work here.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("We have maps of")
+    dialogue_text("the whole world.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("A glowing map of this area")
+    dialogue_text("appears in the mirror.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Brrrnnngg!")
+    dialogue_text("It was very noisy!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Brrrnnngg!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Oh, no! It slipped from")
+    dialogue_text("your hand! What a waste--it")
+    dialogue_text("might have been valuable.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Looking for good "knock,")
+    dialogue_text("knock" jokes, maybe?")
+    dialogue_text("Sorry, no such thing!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It gave out a loud roar and")
+    dialogue_text("shot brilliant streamers of")
+    dialogue_text("color into the sky.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("When she was younger, she")
+    dialogue_text("must have been beautiful.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The old man took it.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("He looks mean.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The old woman took it.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You ate a little bit of it.")
+    dialogue_text("It tastes like roast duck.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("This is an incredible")
+    dialogue_text("treasure! Get it out of")
+    dialogue_text("here before you lose it.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The jar breaks! Strange")
+    dialogue_text("fragrances fill the air and")
+    dialogue_text("tickle your nose.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It tastes very sweet.")
+    dialogue_text("The magical power makes")
+    dialogue_text("your hands tingle.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It is very bitter.")
+    dialogue_text("Your body suddenly")
+    dialogue_text("feels wobbly and weak.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("As soon as you read it, it")
+    dialogue_text("disappears and you can't")
+    dialogue_text("recall what it said.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It broke! A strange power")
+    dialogue_text("ripples through your body.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You don't feel anything.")
+    dialogue_text("What could have happened?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It tastes horrible, but")
+    dialogue_text("your body feels very light.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Power surges through you.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The sixteen rings leave")
+    dialogue_text("your hands and rise up")
+    dialogue_text("into the sky.")
+    new_page()
+    dialogue_text("Thousands of brilliant")
+    dialogue_text("stars gleam down upon you.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The rings take their place")
+    dialogue_text("among the firmament, once")
+    dialogue_text("again beyond man's grasp.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("There is nothing to take.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It is white and")
+    dialogue_text("very beautiful.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It is deep red;")
+    dialogue_text("it sparkles in the light.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It is bright blue")
+    dialogue_text("and beautiful!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("There's no keyhole here!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It doesn't have a door,")
+    dialogue_text("so how can you use it?")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The key unlocked it.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("The key doesn't fit.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You sense that your")
+    dialogue_text("efforts are futile.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("It's locked.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text(""Blade rests here in peace"")
+    dialogue_text("is written on his tombstone.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You can't take it,")
+    dialogue_text("it's a box!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You took the treasure.ù($01)null($06)
+    end()
+text_dialogue_35:
+    dialogue_text("You opened the chest.")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Bad(poison)")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Bad(curse)")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Best")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Good")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("EXP. ")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Thank you!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("Long live King ÷!")
+    end()
+    null
+text_dialogue_35:
+    dialogue_text("You've banished")
+    dialogue_text("evil from our land!")
+    end()
+    null

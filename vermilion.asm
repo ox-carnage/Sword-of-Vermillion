@@ -111,7 +111,7 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
     include "text/br/shields.asm"
     include "text/br/spells.asm"
     include "text/br/kingdom.asm"
-    include "text/br/dialogues.asm"
+    include "text/br/dialogues_new_1.asm"
 }
 
 include "asm/pointers.asm"

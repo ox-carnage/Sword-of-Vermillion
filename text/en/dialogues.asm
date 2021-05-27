@@ -548,10 +548,7 @@ text_dialogue_130:
 	end()
 
 
-text_dialogue_132:
-	dialogue_text("We're all very"					)
-	dialogue_text("sorry about Blade."				)
-	end()
+
 text_dialogue_133:
 	dialogue_text("Be careful! Evil roams"			)
 	dialogue_text("everywhere outside our"			)
