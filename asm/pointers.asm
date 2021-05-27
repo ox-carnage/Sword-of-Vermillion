@@ -221,456 +221,412 @@ origin $00011F0A
     dl text_menu_17
 
 // Dialogues
-origin $01CEEE
- 	move.l #text_dialogue_00,($FFC204).w	
-origin $00011F20
-	dl text_dialogue_01              
-origin $00011F2C
+origin $0001A3B8
+	dl text_dialogue_00
+origin $0001A3CF
+	dl text_dialogue_01
+origin $0001A3DE
 	dl text_dialogue_02
-origin $00026028
+origin $00017FB8
 	dl text_dialogue_03
-origin $00025FF8
+origin $00017FDA
 	dl text_dialogue_04
-origin $00026010
+origin $00018010
 	dl text_dialogue_05
-origin $0001C302
+origin $00017FF0
 	dl text_dialogue_06
-//// Possivel frase Is 
-origin $001B374
-	dl text_dialogue_06
-origin $001BEAA
-	dl text_dialogue_06
-origin $00026004
+origin $00018000
 	dl text_dialogue_07
-origin $0002601C
+origin $00018424
 	dl text_dialogue_08
-origin $00025FB0
+origin $000183BC
 	dl text_dialogue_09
-origin $00025FBC
+origin $000183EE
 	dl text_dialogue_10
-origin $00025FC8
+origin $00012FE2
 	dl text_dialogue_11
-origin $00025FEC
+origin $0001DCFA
 	dl text_dialogue_12
-origin $00025FD4
+origin $0001DCEE
 	dl text_dialogue_13
-origin $00025FA4
+origin $0001DDBA
 	dl text_dialogue_14
-origin $00025FE0
+origin $0001DCE2
 	dl text_dialogue_15
-origin $00026030
+origin $0001A73A
 	dl text_dialogue_16
-origin $0002602C
-	dl text_dialogue_17
-origin $0001C33C
-	dl text_dialogue_18
-origin $0001B364
+origin $0001DEC8
 	dl text_dialogue_19
-origin $0001C83C
+origin $0001DEBC
 	dl text_dialogue_20
-origin $0001C92C
+origin $0001DE1A
 	dl text_dialogue_21
-origin $0001C858
+origin $0001E6EC
 	dl text_dialogue_22
-origin $0001C862
+origin $0001E778
 	dl text_dialogue_23
-origin $0001D458
+origin $0001E5B4
 	dl text_dialogue_24
-origin $0001D26C
+origin $0001E686
+	dl text_dialogue_24
+origin $0001A73A
 	dl text_dialogue_25
-origin $0001D2F6
+origin $0001E97A
 	dl text_dialogue_26
-origin $0001D1AA
+origin $0001E9C0
 	dl text_dialogue_27
-origin $0001D196
+origin $00025928
 	dl text_dialogue_28
-origin $0001D29E
+origin $00025942
 	dl text_dialogue_29
-origin $0001D468
+origin $00018998
 	dl text_dialogue_30
-origin $0001D34A
+origin $0001ABE0
 	dl text_dialogue_31
-origin $0001D354
+origin $000187BC
 	dl text_dialogue_32
-origin $0001E0AC
+origin $00018454
 	dl text_dialogue_33
-origin $0001E05A
+origin $0001A5CA
 	dl text_dialogue_34
-origin $0001E066
+origin $0001B9DA
 	dl text_dialogue_35
-origin $0001E072
-	dl text_dialogue_36
-origin $0001E07E
+origin $0001CEEE
+ 	move.l #text_dialogue_36,($FFC204).w
+origin $00011B26
 	dl text_dialogue_37
-origin $0001B3BE
+origin $00011F2C
 	dl text_dialogue_38
-origin $0001B3CE
+origin $00026028
 	dl text_dialogue_39
-origin $0001B3F8
+origin $00025FF8
 	dl text_dialogue_40
-origin $0001C662
+origin $00026010
 	dl text_dialogue_41
-origin $0001C66C
+origin $0001B374
 	dl text_dialogue_42
-origin $0001B2BE
+origin $00026004
 	dl text_dialogue_43
-origin $0001CAAE
+origin $0002601C
 	dl text_dialogue_44
-origin $0001CA06
+origin $00025FB0
 	dl text_dialogue_45
-origin $0001CA2C
+origin $00025FBC
 	dl text_dialogue_46
-origin $0001CD0C
+origin $00025FC8
 	dl text_dialogue_47
-origin $00018898
+origin $00025FEC
 	dl text_dialogue_48
-origin $0001CC1C
+origin $00025FD4
 	dl text_dialogue_49
-origin $0001CA4E
+origin $00025FA4
 	dl text_dialogue_50
-origin $0001ABCC
+origin $00025FE0
 	dl text_dialogue_51
-origin $0001CABE
-	dl text_dialogue_52   //Frase The poison has been/purged from your body
-origin $0001CDBA
-	dl text_dialogue_53   // Frase Don't even think of taking/back your donation.
-origin $0001C9EA
+origin $00026030
+	dl text_dialogue_52
+origin $0002602C
+	dl text_dialogue_53
+origin $0001C33C
 	dl text_dialogue_54
-origin $000188A6
+origin $0001B364
 	dl text_dialogue_55
-origin $000188B6
+origin $0001C83C
 	dl text_dialogue_56
-origin $00001D4A
+origin $0001C92C
 	dl text_dialogue_57
-origin $00001D28
+origin $0001C858
 	dl text_dialogue_58
-origin $00001D36
+origin $0001C862
 	dl text_dialogue_59
-origin $00001DD2
+origin $0001D458
 	dl text_dialogue_60
-origin $00018744
+origin $0001D26C
 	dl text_dialogue_61
-origin $00002D30
+origin $0001D2F6
 	dl text_dialogue_62
-origin $00002D52
+origin $0001D1AA
 	dl text_dialogue_63
-origin $0001AC16
+origin $0001D196
 	dl text_dialogue_64
-origin $0001AC2E
+origin $0001D29E
 	dl text_dialogue_65
-origin $0001AC56
+origin $0001D468
 	dl text_dialogue_66
-origin $0001882E
+origin $0001D34A
 	dl text_dialogue_67
-origin $00018824
+origin $0001D354
 	dl text_dialogue_68
-origin $0001AA8C
+origin $0001E0AC
 	dl text_dialogue_69
-origin $0001AA7C
+origin $0001E05A
 	dl text_dialogue_70
-origin $0001AA68
+origin $0001E066
 	dl text_dialogue_71
-origin $0001AA54
+origin $0001E072
 	dl text_dialogue_72
-origin $0001ACA6
+origin $0001E07E
 	dl text_dialogue_73
-origin $0001ACEE
+origin $0001B3BE
 	dl text_dialogue_74
-origin $0001AE70
+origin $0001B3CE
 	dl text_dialogue_75
-origin $0001AE80
+origin $0001B3F8
 	dl text_dialogue_76
-origin $0001AEA2
+origin $0001C662
 	dl text_dialogue_77
-origin $0001AEB0
+origin $0001C66C
 	dl text_dialogue_78
-origin $00026CBE
+origin $0001B2BE
 	dl text_dialogue_79
-origin $0001AF20
+origin $0001CAAE
 	dl text_dialogue_80
-origin $0001AF30
+origin $0001CA06
 	dl text_dialogue_81
-origin $0001AFA4
+origin $0001CA2C
 	dl text_dialogue_82
-origin $0001AFB4
+origin $0001CD0C
 	dl text_dialogue_83
-origin $0001AFE4
+origin $00018898
 	dl text_dialogue_84
-origin $0001AFDA
+origin $0001CC1C
 	dl text_dialogue_85
-origin $0001AAAE
+origin $0001CA4E
 	dl text_dialogue_86
-origin $0001AB30
+origin $0001ABCC
 	dl text_dialogue_87
-origin $0001AB4E
+origin $0001CABE
 	dl text_dialogue_88
-origin $0001AB06
+origin $0001CDBA
 	dl text_dialogue_89
-origin $0001AB7A
+origin $0001C9EA
 	dl text_dialogue_90
-origin $0001ABA6
+origin $000188A6
 	dl text_dialogue_91
-origin $0001AADA
+origin $000188B6
 	dl text_dialogue_92
-origin $0001B018
+origin $0001D4A
 	dl text_dialogue_93
-origin $0001B054
+origin $0001D28
 	dl text_dialogue_94
-origin $0001B06E
+origin $0001D36
 	dl text_dialogue_95
-origin $0001E508
+origin $0001DD2
 	dl text_dialogue_96
-origin $0001B078
+origin $00018744
 	dl text_dialogue_97
-origin $0001B082
+origin $0002D30
 	dl text_dialogue_98
-origin $0001B08C
+origin $0002D52
 	dl text_dialogue_99
-origin $0001B140
+origin $0001AC16
 	dl text_dialogue_100
-origin $0001B14A
+origin $0001AC2E
 	dl text_dialogue_101
-origin $0001B130
+origin $0001AC56
 	dl text_dialogue_102
-origin $0001B154
+origin $0001882E
 	dl text_dialogue_103
-origin $0001B15E
+origin $00018824
 	dl text_dialogue_104
-origin $0001DCD6
+origin $0001AA8C
 	dl text_dialogue_105
-origin $0001E168
+origin $0001AA7C
 	dl text_dialogue_106
-origin $0001E592
+origin $0001AA68
 	dl text_dialogue_107
-//origin $187B188
-//	dl text_dialogue_108
-origin $0001DDDE
+origin $0001AA54
+	dl text_dialogue_108
+origin $00026BAE
 	dl text_dialogue_109
-origin $0001197C
+origin $00026BD0
 	dl text_dialogue_110
-origin $0001198C
+origin $0001AE70
 	dl text_dialogue_111
-origin $000119A6
+origin $0001AE80
 	dl text_dialogue_112
-origin $0001199E
+origin $0001AEA2
 	dl text_dialogue_113
-origin $0000D0F8
+origin $0001AEB0
 	dl text_dialogue_114
-origin $000272AC 
+origin $0001AEBE
 	dl text_dialogue_115
+origin $0001AF20
 	dl text_dialogue_116
+origin $00026D3E
 	dl text_dialogue_117
-origin $0002C07C
+origin $0001AFA4
 	dl text_dialogue_118
-origin $00007DF0
+origin $0001AFB4
 	dl text_dialogue_119
-origin $0002C0A0
+origin $0001AFE4
 	dl text_dialogue_120
-origin $0002C090
+origin $0001AFDA
 	dl text_dialogue_121
-origin $0002C094
+origin $0001AAAE
 	dl text_dialogue_122
-origin $0002C098
+origin $0001AB30
 	dl text_dialogue_123
-origin $0002C09C
+origin $0001AB4E
 	dl text_dialogue_124
-origin $0002D424
+origin $0001AB06
 	dl text_dialogue_125
-origin $0002D45C
-	dl text_dialogue_125
-origin $0002D494
+origin $0001AB7A
 	dl text_dialogue_126
-origin $0002D428
+origin $0001ABA6
 	dl text_dialogue_127
-origin $0002D430
-	dl text_dialogue_127
-origin $0002D460
+origin $0001AADA
 	dl text_dialogue_128
-origin $0002D498
+origin $0001B018
 	dl text_dialogue_129
-origin $0002D468
+origin $0001B054
 	dl text_dialogue_130
-	dl text_dialogue_137
-	dl text_dialogue_140
-	dl text_dialogue_142
-	dl text_dialogue_143
-	dl text_dialogue_145
-	dl text_dialogue_147
-	dl text_dialogue_149
-	dl text_dialogue_152
-origin $0002D4A0
+origin $0001B06E
 	dl text_dialogue_131
-	dl text_dialogue_135
-	dl text_dialogue_138
-origin $0002D42C
+origin $0001E508
 	dl text_dialogue_132
-origin $0002D464
+origin $0001B078
 	dl text_dialogue_133
-origin $0002D49C
+origin $0001B082
 	dl text_dialogue_134
-origin $0002D434
+origin $000270E8
+	dl text_dialogue_135
+origin $0001B140
 	dl text_dialogue_136
-	dl text_dialogue_146
+origin $0001B14A
+	dl text_dialogue_137
+origin $0001B130
+	dl text_dialogue_138
+origin $0001B154
 	dl text_dialogue_139
-	dl text_dialogue_144
+origin $0001B15E
+	dl text_dialogue_140
+origin $0001DCD6
 	dl text_dialogue_141
+origin $0001E168
+	dl text_dialogue_142
+origin $0001E592
+	dl text_dialogue_143
+origin $0001DDDE
+	dl text_dialogue_144
+origin $0001197C
+	dl text_dialogue_145
+origin $0001198C
+	dl text_dialogue_146
+origin $000119A6
+	dl text_dialogue_147
+origin $0001199E
 	dl text_dialogue_148
-
-
-origin $0002D4C0
+origin $0000D0F8
+	dl text_dialogue_149
+origin $000272AC
 	dl text_dialogue_150
 	dl text_dialogue_151
+	dl text_dialogue_152
+origin $0002C07C
 	dl text_dialogue_153
+origin $0007DF0
 	dl text_dialogue_154
+origin $0002C0A0
 	dl text_dialogue_155
+origin $0002C090
 	dl text_dialogue_156
 	dl text_dialogue_157
-	dl text_dialogue_160
-origin $00007038
 	dl text_dialogue_158
-	dl text_dialogue_161
-origin $00020CB4
+	dl text_dialogue_159
+origin $0002D424
+	dl text_dialogue_160
 	dl text_dialogue_162
-origin $00008D20
-	dl text_dialogue_163
-origin $0002D504
-	dl text_dialogue_164
-origin $0002D514
-	dl text_dialogue_165
-origin $0002D528
-	dl text_dialogue_166
-origin $0002D530
 	dl text_dialogue_167
-origin $0002E400
-	dl text_dialogue_168
-origin $0002E3F0
+origin $0002D494
+	dl text_dialogue_161
+	dl text_dialogue_164
 	dl text_dialogue_169
-origin $0002E3E0
+	dl text_dialogue_166
 	dl text_dialogue_170
-origin $0002D4FC
-	dl text_dialogue_171
-	dl text_dialogue_172
-origin $0002D51C
-	dl text_dialogue_173	
-	dl text_dialogue_174
-origin $000290AC
-	dl text_dialogue_175
-	dl text_dialogue_187
-	dl text_dialogue_191
-	dl text_dialogue_194
-	dl text_dialogue_196
-	dl text_dialogue_198
-	dl text_dialogue_176
-origin $000290DC
+origin $0002D4AC
+	dl text_dialogue_173
 	dl text_dialogue_177
-origin $0001F3B0
 	dl text_dialogue_178
-origin $0001F3E4
-	dl text_dialogue_179
-	dl text_dialogue_185
-origin $000290F4
 	dl text_dialogue_180
+	dl text_dialogue_182
+	dl text_dialogue_185
+	dl text_dialogue_186
 	dl text_dialogue_188
+	dl text_dialogue_189
+	dl text_dialogue_190
+	dl text_dialogue_191
 	dl text_dialogue_192
 	dl text_dialogue_195
-	dl text_dialogue_199
-origin $00007130
+origin $0002D460
+	dl text_dialogue_163	
+	dl text_dialogue_168
+	dl text_dialogue_165
+	dl text_dialogue_172
+origin $0002D474
+	dl text_dialogue_175
+origin $0002D434
+	dl text_dialogue_171
+origin $0002D43C
+	dl text_dialogue_174		
+	dl text_dialogue_176
+origin $0002D448
+	dl text_dialogue_179
 	dl text_dialogue_181
-origin $00029128
-	dl text_dialogue_182
-	dl text_dialogue_186
-origin $0001F3B4
 	dl text_dialogue_183
-origin $00007114
-	dl text_dialogue_188
-origin $000071C0
-	dl text_dialogue_188
-origin $00029110
-	dl text_dialogue_189
+origin $0002D458
+	dl text_dialogue_187
+origin $0002D488
+	dl text_dialogue_184
+origin $0007038
 	dl text_dialogue_193
-origin $0002911C
+origin $0002D4E4
+	dl text_dialogue_194
+	dl text_dialogue_196
+origin $00020CB4
 	dl text_dialogue_197
-origin $0002909C
-	dl text_dialogue_190
-
-origin $0002FB6A
+origin $0008D20
+	dl text_dialogue_198
+origin $0002D504
+	dl text_dialogue_199
+origin $0002D514
 	dl text_dialogue_200
-origin $0002FB7A
+origin $0002D528
 	dl text_dialogue_201
-origin $0002FB94
+origin $0002D530
 	dl text_dialogue_202
-origin $0002FB84
+origin $0002E400
 	dl text_dialogue_203
-origin $0002B6D6
+origin $0002E3F0
 	dl text_dialogue_204
-	dl text_dialogue_206
-	dl text_dialogue_209
+origin $0002E3E0
 	dl text_dialogue_205
+origin $0002D4FC
+	dl text_dialogue_206
 	dl text_dialogue_207
-	dl text_dialogue_210
-origin $0002B6F2
+origin $0002D51C
 	dl text_dialogue_208
-origin $00034016
-	dl text_dialogue_211
-	dl text_dialogue_212
-	dl text_dialogue_214
-	dl text_dialogue_216
-	dl text_dialogue_220
-	dl text_dialogue_221
-	dl text_dialogue_224
-	dl text_dialogue_226
-	dl text_dialogue_228
-	dl text_dialogue_231
-	dl text_dialogue_218
-origin $00034046
-	dl text_dialogue_213
-	dl text_dialogue_215
-	dl text_dialogue_217
-	dl text_dialogue_222
-origin $0003406A
-	dl text_dialogue_219
-origin $000340AA
-	dl text_dialogue_223
-	dl text_dialogue_225
-	dl text_dialogue_227
-	dl text_dialogue_230
-	dl text_dialogue_233
-	dl text_dialogue_234
-	dl text_dialogue_235
-	dl text_dialogue_237
-	dl text_dialogue_238
-	dl text_dialogue_236
-origin $00034062
-	dl text_dialogue_229
-	dl text_dialogue_232
-origin $000340E2
-	dl text_dialogue_239
-origin $0003410A
-	dl text_dialogue_240
-	dl text_dialogue_241
-	dl text_dialogue_246
-	dl text_dialogue_248
-	dl text_dialogue_249
-	dl text_dialogue_249
-	dl text_dialogue_250
-	dl text_dialogue_252
-	dl text_dialogue_254
-origin $00034B9E
-	dl text_dialogue_255
-origin $00021122
-	dl text_dialogue_256
-origin $00008E0C
-	dl text_dialogue_257
-origin $00008DFE
-	dl text_dialogue_258
-origin $00008DF4
-	dl text_dialogue_259
-origin $00034CEA
-	dl text_dialogue_260
-	dl text_dialogue_262
-	dl text_dialogue_262
-	dl text_dialogue_264
-	dl text_dialogue_267
+	dl text_dialogue_209
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
