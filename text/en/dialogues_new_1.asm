@@ -11,7 +11,7 @@ text_dialogue_01:
 	<NULL>
 text_dialogue_02:
 	dialogue_text("Which item do you")
-	dialogue_text("want to use?")
+	dialogue_text("want too use?")
 	end()
 	<NULL>
 text_dialogue_03:
