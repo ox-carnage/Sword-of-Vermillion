@@ -7,93 +7,16 @@ text_dialogue_00:
 text_dialogue_01:
 	dialogue_text("nada")
 	end()
-text_dialogue_02:
-	dialogue_text("Todos os Anéis")
-	end()
-text_dialogue_03:
-	dialogue_text("Bem-vindo à minha loja.")
-	dialogue_text("Há algo que lhe interesse?")
-	end()
-text_dialogue_04:
-	dialogue_text("O que você gostaria de comprar?")
-	end() 
-text_dialogue_05:
-	dialogue_text("O que você quer vender?")
-	end() 
-text_dialogue_06:
-	dialogue_text("É  ")
-	end() 
-text_dialogue_07:
-	dialogue_text(" OK? ")
-	end() 
-text_dialogue_08:
-	dialogue_text("tudo bem? ")
-	end() 
-text_dialogue_09:
-	dialogue_text("Muito obrigado.")
+
+
+
+
+
+
+
 	end() 
 text_dialogue_10:
-	dialogue_text("Mais alguma coisa para")
-	dialogue_text("você hoje?")
-	end() 
-text_dialogue_11:
-	dialogue_text("Obrigado, foi um prazer ")
-	dialogue_text("fazer negócios com você!")
-	end() 
-text_dialogue_12:
-	dialogue_text("Hmmph! Você acha que eu")
- 	dialogue_text("estou dando estas coisas?")
-	end() 
-text_dialogue_13:
-	dialogue_text("Você tem alguma coisa")
- 	dialogue_text("para vender?")
-	end() 
-text_dialogue_14:
-	dialogue_text("Talvez na próxima vez!")
-	end() 
-text_dialogue_15:
-	dialogue_text("Desculpe, senhor, mas eu")
- 	dialogue_text("não preciso disso.")
-	end() 
-text_dialogue_16:
-	dialogue_text("Livros de Feitiços")
- 	dialogue_text("é minha especialidade.")
- 	dialogue_text("Posso ajudá-los? ")
-	end() 
-text_dialogue_17:
-	dialogue_text("Você pode comprar armas,")		
- 	dialogue_text("e escudos aqui. ")
-	end()
-text_dialogue_18:
-	dialogue_text("Eu não quero comprar")
- 	dialogue_text("isso--está amaldiçoado! ")
-	end()
-text_dialogue_19:
-	dialogue_text("Bem-vindo!")
- 	dialogue_text("Alugamos quartos")
- 	dialogue_text("para a noite. ")
-	end()
-text_dialogue_20:
-	dialogue_text("Relaxe e desfrute de")
- 	dialogue_text("um descanso merecido.")
-	end() 
-text_dialogue_21:
-	dialogue_text("Você está bem melhor")
- 	dialogue_text("esta manhã!")
-	end()
-text_dialogue_22:
-	dialogue_text("Sinto muito, mas se você")
- 	dialogue_text("não puder pagar, você terá")
- 	dialogue_text("que dormir na rua!")
-	end()
-text_dialogue_23:
-	dialogue_text("Você sabe que meus serviços")
- 	dialogue_text("custam dinheiro. Se você ")
- 	dialogue_text("não pode pagar, não pode ficar!")
-	end()
-text_dialogue_24:
-	dialogue_text("Você não tem nada para usar!")
-	end()
+	
 text_dialogue_25:
 	dialogue_text("preparado  ")
 	end() 

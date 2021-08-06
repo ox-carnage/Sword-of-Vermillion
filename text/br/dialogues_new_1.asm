@@ -27,38 +27,36 @@ text_dialogue_06:
 	dialogue_text("Qual Livro você quer preparar para o combate?")
 	end()
 text_dialogue_07:
-	dialogue_text("You have no Books of Spells")
-	dialogue_text("that can be used in combat.")
+	dialogue_text("Você não tem livros de feitiços ")
+	dialogue_text("que possam ser usados em combate.")
 	end()
 text_dialogue_08:
-	dialogue_text("That Book of Spells")
-	dialogue_text("can't be used in combat.")
+	dialogue_text("Esse Livro de Feitiços não pode ser usado em combate.")
 	end()
 	NULL
 text_dialogue_09:
-	dialogue_text("The Book of ")
+	dialogue_text("O Livro de ")
 	end()
 	NULL
 text_dialogue_10:
-	dialogue_text(" Spells")
-	dialogue_text("is ready for use in battle!")
+	dialogue_text(" Feitiços")
+	dialogue_text("está pronto para ser usado em batalha!")
 	end()
 text_dialogue_11:
-	dialogue_text("CAN'T USE")
+	dialogue_text("NÃO PODE USAR")
 	end()
 text_dialogue_12:
-	dialogue_text("But it's already open!")
+	dialogue_text("Mas já está aberto!")
 	end()
 	NULL
 text_dialogue_13:
-	dialogue_text("There's nothing")
-	dialogue_text("to open here!")
+	dialogue_text("Não há nada para pegar aqui!")
 	end()
 text_dialogue_14:
-	dialogue_text("Sorry, you can't open that!")
+	dialogue_text("Desculpe, você não pode abrir isso!")
 	end()
 text_dialogue_15:
-	dialogue_text("You already opened that!")
+	dialogue_text("Você já abriu isso!")
 	end()
 	NULL
 text_dialogue_16:
@@ -67,76 +65,73 @@ text_dialogue_16:
 	end()
 	NULL
 text_dialogue_17:
-	dialogue_text("There's money inside.")
+	dialogue_text("Há dinheiro dentro.")
 	end()
 text_dialogue_18:
-	dialogue_text("There's a map inside!")
+	dialogue_text("Existe um mapa aqui dentro!")
 	end()
 text_dialogue_19:
-	dialogue_text("There's ")
+	dialogue_text("Existe ")
 	end()
 	NULL
 text_dialogue_20:
-	dialogue_text(" inside!")
+	dialogue_text(" dentro!")
 	end()
 	NULL
 text_dialogue_21:
-	dialogue_text("You can't carry any more!")
-	dialogue_text("Do you want to drop")
-	dialogue_text("something?")
+	dialogue_text("Você não pode carregar mais itens!")
+	dialogue_text("Dejesa soltar alguma coisa?")
 	end()
 	NULL
 text_dialogue_22:
-	dialogue_text("OK, so you don't")
-	dialogue_text("want to carry")
+	dialogue_text("OK, então você não quer carregar mais")
 	end()
 	NULL
 text_dialogue_23:
-	dialogue_text("takes ")
+	dialogue_text("pegar ")
 	end()
 	NULL
 text_dialogue_24:
-	dialogue_text("uses the")
+	dialogue_text("usar o")
 	end()
 	NULL
 text_dialogue_25:
-	dialogue_text("Put ")
+	dialogue_text("Colocar ")
 	end()
 	NULL
 text_dialogue_26:
-	dialogue_text(" down")
+	dialogue_text(" baixo")
 	end()
 text_dialogue_27:
-	dialogue_text("discards the")
+	dialogue_text("descartar o")
 	end()
 	NULL
 text_dialogue_28:
-	dialogue_text("You can't use that here.")
+	dialogue_text("Você não pode usar isso aqui.")
 	end()
 	NULL
 text_dialogue_29:
-	dialogue_text("Sorry, but you're cursed.")
+	dialogue_text("Desculpe, mas você está amaldiçoado.")
 	end()
 text_dialogue_30:
-	dialogue_text("you don't have enough")
-	dialogue_text("Magic Points.")
+	dialogue_text("você não tem Pontos Mágicos o suficiente.")
 	end()
 text_dialogue_31:
-	dialogue_text("Nothing happened!")
+	dialogue_text("Nada aconteceu!")
 	end()
 text_dialogue_32:
-	dialogue_text("If you use it in a bright")
-	dialogue_text("place, nothing happens.")
+	dialogue_text("Se você utilizar em um lugar iluminado")
+    dialogue_text("nada vai acontecer.")
 	end()
 text_dialogue_33:
-	dialogue_text("The area has become bright.")
+	dialogue_text("A área se tornou iluminada.")
 	end()
 text_dialogue_34:
-	dialogue_text("You can't put that down.")
+	dialogue_text("Você não pode soltar isso.")
 	end()
 	NULL
 text_dialogue_35:
-	dialogue_text("You can't carry any more.")
+	dialogue_text("Você não pode mais carregar.")
 	end()
 text_dialogue_36:
     dialogue_text("Não há ninguém aqui para conversar...")
@@ -147,112 +142,96 @@ text_dialogue_37:
     end()
     NULL
 text_dialogue_38:
-    dialogue_text("All Rings")
-    end()
-    NULL
+    dialogue_text("Todos os Anéis")
+	end()
 text_dialogue_39:
-    dialogue_text("Welcome to my shop.")
-    dialogue_text("Does anything interest you?")
-    end()
+	dialogue_text("Bem-vindo à minha loja.")
+	dialogue_text("Há algo que lhe interesse?")
+	end()
     NULL
 text_dialogue_40:
-    dialogue_text("What would you like to buy?")
-    end()
+    dialogue_text("O que você gostaria de comprar?")
+	end() 
     NULL
 text_dialogue_41:
-    dialogue_text("What do you want to sell?")
+	dialogue_text("O que você quer vender?")
     end()
     NULL
 text_dialogue_42:
-    dialogue_text("Is ")
-    end()
-    NULL
-text_dialogue_43:
-    dialogue_text(" OK?")
-    end()
-    NULL
+    dialogue_text("É  ")
+	end() 
 text_dialogue_44:
-    dialogue_text("all right?")
-    end()
-    NULL
+	dialogue_text(" OK? ")
+	end() 
 text_dialogue_45:
-    dialogue_text("Thank you.")
-    end()
-    NULL
+	dialogue_text("tudo bem? ")
+	end() 
 text_dialogue_46:
-    dialogue_text("Anything else for you today?")
-    end()
+	dialogue_text("Muito obrigado.")
+	end() 
     NULL
 text_dialogue_47:
-    dialogue_text("Thank you for your business!")
-    end()
-    NULL
+    dialogue_text("Mais alguma coisa para")
+	dialogue_text("você hoje?")
+	end() 
 text_dialogue_48:
-    dialogue_text("Hmmph! You think I'm")
-    dialogue_text("giving this stuff away?")
-    end()
-    NULL
+	dialogue_text("Obrigado, foi um prazer ")
+	dialogue_text("fazer negócios com você!")
+	end() 
 text_dialogue_49:
-    dialogue_text("Do you have")
-    dialogue_text("anything to sell?")
-    end()
-    NULL
+	dialogue_text("Hmmph! Você acha que eu")
+ 	dialogue_text("estou dando estas coisas?")
+	end() 
 text_dialogue_50:
-    dialogue_text("Maybe next time!")
-    end()
-    NULL
+	dialogue_text("Você tem alguma coisa")
+ 	dialogue_text("para vender?")
+	end() 
 text_dialogue_51:
-    dialogue_text("Sorry, sir, but I have")
-    dialogue_text("no need for that.")
-    end()
-    NULL
+	dialogue_text("Talvez na próxima vez!")
+	end() 
 text_dialogue_52:
-    dialogue_text("Books of Spells")
-    dialogue_text("are my specialty.")
-    dialogue_text("May I help you?")
-    end()
-    NULL
+	dialogue_text("Desculpe, senhor, mas eu")
+ 	dialogue_text("não preciso disso.")
+	end() 
 text_dialogue_53:
-    dialogue_text("You can buy weapons,")
-    dialogue_text("armor, and shields here.")
-    end()
-    NULL
+	dialogue_text("Livros de Feitiços")
+ 	dialogue_text("é minha especialidade.")
+ 	dialogue_text("Posso ajudá-los? ")
+	end() 
 text_dialogue_54:
-    dialogue_text("I don't want to buy")
-    dialogue_text("that--it's cursed!")
-    end()
-    NULL
+	dialogue_text("Você pode comprar armas,")		
+ 	dialogue_text("e escudos aqui. ")
+	end()
 text_dialogue_55:
-    dialogue_text("Welcome!")
-    dialogue_text("We rent rooms")
-    dialogue_text("for the night.")
-    end()
-    NULL
+	dialogue_text("Eu não quero comprar")
+ 	dialogue_text("isso--está amaldiçoado! ")
+	end()
 text_dialogue_56:
-    dialogue_text("Relax and enjoy a")
-    dialogue_text("well-deserved rest.")
-    end()
-    NULL
+	dialogue_text("Bem-vindo!")
+ 	dialogue_text("Alugamos quartos")
+ 	dialogue_text("para a noite. ")
+	end()
 text_dialogue_57:
-    dialogue_text("You look much better")
-    dialogue_text("this morning!")
-    end()
-    NULL
+	dialogue_text("Relaxe e desfrute de")
+ 	dialogue_text("um descanso merecido.")
+	end() 
 text_dialogue_58:
-    dialogue_text("I'm sorry, but if you")
-    dialogue_text("can't pay, you'll have")
-    dialogue_text("to sleep in the street!")
-    end()
-    NULL
+	dialogue_text("Você está bem melhor")
+ 	dialogue_text("esta manhã!")
+	end()
 text_dialogue_59:
-    dialogue_text("My services cost money,")
-    dialogue_text("you know. You can't stay")
-    dialogue_text("if you don't pay!")
-    end()
-    NULL
+	dialogue_text("Sinto muito, mas se você")
+ 	dialogue_text("não puder pagar, você terá")
+ 	dialogue_text("que dormir na rua!")
+	end()
 text_dialogue_60:
-    dialogue_text("You have nothing to use!")
-    end()
+	dialogue_text("Você sabe que meus serviços")
+ 	dialogue_text("custam dinheiro. Se você ")
+ 	dialogue_text("não pode pagar, não pode ficar!")
+	end()
+text_dialogue_61:
+	dialogue_text("Você não tem nada para usar!")
+	end()
     NULL
 text_dialogue_61:
     dialogue_text("readied ")
@@ -416,7 +395,7 @@ text_dialogue_94:
     new_page()
     dialogue_text("Don't gamble with your")
     dialogue_text("life like that again. Too")
-    dialogue_text(""much depends on you!"")
+    dialogue_text(" "much depends on you!" ")
     end()
     NULL
 text_dialogue_95:
