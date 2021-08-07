@@ -164,7 +164,7 @@ text_dialogue_44:
 	dialogue_text(" OK? ")
 	end() 
 text_dialogue_45:
-	dialogue_text("tudo bem? ")
+	dialogue_text("tudo bem? ") j
 	end() 
 text_dialogue_46:
 	dialogue_text("Muito obrigado.")
