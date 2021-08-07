@@ -1,5 +1,6 @@
 {
     "editor.rulers": [
         60
-    ]
+    ],
+    "git.autofetch": "all"
 }
