@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "..\\..\\..\\SNES\\Dragon-Ball-Z--Hyper-Dimension"
 		}
 	],
 	"settings": {}
