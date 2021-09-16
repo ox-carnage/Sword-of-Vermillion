@@ -14,32 +14,7 @@ text_dialogue_01:
 
 
 
-	end() 
-text_dialogue_10:
-	
-text_dialogue_25:
-	dialogue_text("preparado  ")
-	end() 
-text_dialogue_26:
-	dialogue_text("removido  ")
-	end()
-text_dialogue_27:
-	dialogue_text("Você não tem o equipamento")
- 	dialogue_text("adequado!")
-	end()
-text_dialogue_28:
-	dialogue_text("O que você quer preparar?")
-	end() 
-text_dialogue_29:
-	dialogue_text("Você já preparou isso antes.")
-	end()
-text_dialogue_30:
-	dialogue_text("Você não pode deixar ")
- 	dialogue_text("cair um item amaldiçoado! ")
-	end()
-text_dialogue_31:
-	dialogue_text("Você não pode trocar")
- 	dialogue_text("um item amaldiçoado. ")
+
 	end()
 text_dialogue_32:
 	dialogue_text("Está amaldiçoado! ")	

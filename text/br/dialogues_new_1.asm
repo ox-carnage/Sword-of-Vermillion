@@ -234,38 +234,37 @@ text_dialogue_61:
 	end()
     NULL
 text_dialogue_62:
-    dialogue_text("readied ")
+    dialogue_text("preparado ")
     end()
     NULL
 text_dialogue_63:
-    dialogue_text("removed ")
+    dialogue_text("removido ")
     end()
     NULL
 text_dialogue_64:
-    dialogue_text("You don't have the")
-    dialogue_text("proper equipment!")
-    end()
+    dialogue_text("Você não tem o equipamento adequado!")
+ 	end()
     NULL
 text_dialogue_65:
-    dialogue_text("What do you want to ready?")
+    dialogue_text("O que você quer preparar?")
     end()
     NULL
 text_dialogue_66:
-    dialogue_text("You readied that earlier.")
+    dialogue_text("Você já preparou isso antes.")
     end()
     NULL
 text_dialogue_67:
-    dialogue_text("You can't drop")
-    dialogue_text("a cursed item!")
+    dialogue_text("Você não pode deixar ")
+ 	dialogue_text("cair um item amaldiçoado! ")
     end()
     NULL
 text_dialogue_68:
-    dialogue_text("You can't exchange")
-    dialogue_text("a cursed item.")
+    dialogue_text("Você não pode trocar")
+ 	dialogue_text("um item amaldiçoado. ")
     end()
     NULL
 text_dialogue_69:
-    dialogue_text("It's cursed!")
+    dialogue_text("Está amaldiçoado!")
     end()
     NULL
 text_dialogue_70:
@@ -908,7 +907,7 @@ text_dialogue_208:
 	end()
 text_dialogue_209:
     dialogue_text("As pessoas têm muitas historias para contar.")
-	dialogue_text("Bastas apena você as ouvi-las.")
+	dialogue_text("Bastas apenas você querer ouvi-las.")
 	end()
     NULL
 text_dialogue_210:
@@ -933,8 +932,7 @@ text_dialogue_214:
     dialogue_text("Vá! Você deve encontrar o anel!")
 	end()
 text_dialogue_215:
-    dialogue_text("Seu pai está em seu túmulo")
-	dialogue_text("agora.")
+    dialogue_text("Seu pai está em seu túmulo agora.")
 	end()
     NULL
 text_dialogue_216:
