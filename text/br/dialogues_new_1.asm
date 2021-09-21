@@ -1032,7 +1032,7 @@ text_dialogue_230:
 	end()
     NULL
 text_dialogue_231:
-    dialogue_text("Lamento pelo seu pobre pai.")
+    dialogue_text("Lamento pelo seu pobre pai...")
     end()
     NULL
 text_dialogue_232:
