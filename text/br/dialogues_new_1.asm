@@ -481,62 +481,55 @@ text_dialogue_114:
 	end()
     NULL
 text_dialogue_115:
-    dialogue_text(""Looking for good "knock,")
-    dialogue_text(""knock" jokes, maybe?")
-    dialogue_text("Sorry, no such thing!")
+    dialogue_text("Talvez procurando boas piadas de "toc, toc?"")
+ 	dialogue_text("Desculpe, não existe tal coisa!")
     end()
     NULL
 text_dialogue_116:
-    dialogue_text("It gave out a loud roar and")
-    dialogue_text("shot brilliant streamers of")
-    dialogue_text("color into the sky.")
-    end()
+    dialogue_text("Ele deu um rugido alto e lançou brilhantes ")
+ 	dialogue_text("faixas coloridas para o céu. ")
+ 	end()
     NULL
 text_dialogue_117:
-    dialogue_text("When she was younger, she")
-    dialogue_text("must have been beautiful.")
+    dialogue_text("Quando ela era mais jovem, ela deveria ")
+ 	dialogue_text("ser muito bonita.")
     end()
     NULL
 text_dialogue_118:
-    dialogue_text("The old man took it.")
+    dialogue_text("O velho pegou. ")
     end()
     NULL
 text_dialogue_119:
-    dialogue_text("He looks mean.")
+    dialogue_text("Ele parece mau. ")
     end()
     NULL
 text_dialogue_120:
-    dialogue_text("The old woman took it.")
+    dialogue_text("A velha mulher pegou.")
     end()
     NULL
 text_dialogue_121:
-    dialogue_text("You ate a little bit of it.")
-    dialogue_text("It tastes like roast duck.")
-    end()
+    dialogue_text("Você comeu um pouco. Tem gosto de pato assado.")
+ 	end()
     NULL
 text_dialogue_122:
-    dialogue_text("This is an incredible")
-    dialogue_text("treasure! Get it out of")
-    dialogue_text("here before you lose it.")
-    end()
+    dialogue_text("Esse e um tesouro incrível.")
+ 	dialogue_text("Leve-o daqui antes que Você o perca.")
+ 	end()
     NULL
 text_dialogue_123:
-    dialogue_text("The jar breaks! Strange")
-    dialogue_text("fragrances fill the air and")
-    dialogue_text("tickle your nose.")
-    end()
+    dialogue_text("Depois de quebrar as jarras, um ")
+ 	dialogue_text("delicioso perfume ficou no ar.")
+ 	end()
     NULL
 text_dialogue_124:
-    dialogue_text("It tastes very sweet.")
-    dialogue_text("The magical power makes")
-    dialogue_text("your hands tingle.")
-    end()
+    dialogue_text("Tem um sabor muito doce.")
+ 	dialogue_text("O poder mágico faz suas mãos formigarem.")
+ 	end()
     NULL
 text_dialogue_125:
-    dialogue_text("It is very bitter.")
-    dialogue_text("Your body suddenly")
-    dialogue_text("feels wobbly and weak.")
-    end()
+    dialogue_text("É muito amargo.")
+ 	dialogue_text("De repente você se sente fraco e tonto.")
+ 	end()
     NULL
 text_dialogue_126:
     dialogue_text("As soon as you read it, it")
