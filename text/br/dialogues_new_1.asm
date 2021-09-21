@@ -268,228 +268,207 @@ text_dialogue_69:
     end()
     NULL
 text_dialogue_70:
-    dialogue_text("You searched carefully,")
-    dialogue_text("but you didn't notice")
-    dialogue_text("anything unusual.")
-    end()
+    dialogue_text("Você procurou cuidadosamente, mas")
+ 	dialogue_text("você não notou alguma coisa fora do comum.")
+ 	end()
     NULL
 text_dialogue_71:
-    dialogue_text("Someone is standing in")
-    dialogue_text("front of you!")
-    end()
+    dialogue_text("Alguém está parado na sua frente!")
+ 	end()
     NULL
 text_dialogue_72:
-    dialogue_text("It's a treasure chest!")
+    dialogue_text("É um baú do tesouro!")
     end()
     NULL
 text_dialogue_73:
-    dialogue_text("Stop worrying, the")
-    dialogue_text("herbs are still there!")
-    end()
+    dialogue_text("Pare de preocupar, as ervas ainda estão lá!")
+ 	end()
     NULL
 text_dialogue_74:
-    dialogue_text("Stop worrying, the")
-    dialogue_text("truffles are still there!")
-    end()
+    dialogue_text("Pare de preocupar, as trufas ainda estão lá!")
+ 	end()
     NULL
 text_dialogue_75:
-    dialogue_text("I can tell your fortune,")
-    dialogue_text("if your money is good.")
+    dialogue_text("Eu posso ler a sua sorte.")
+ 	dialogue_text("Isso se o dinheiro for bom.")
     end()
     NULL
 text_dialogue_76:
-    dialogue_text("The fee is ")
+    dialogue_text("A taxa é  ")
     end()
     NULL
 text_dialogue_77:
-    dialogue_text("You must pay first!")
+    dialogue_text("Você deve pagar primeiro! ")
     end()
     NULL
 text_dialogue_78:
-    dialogue_text("If you can't pay,")
-    dialogue_text("I won't tell your fortune.")
-    end()
+    dialogue_text("Se você não pode pagar, então eu")
+ 	dialogue_text("não vou ler a sua sorte!")
+	end()
     NULL
 text_dialogue_79:
-    dialogue_text("If you have no questions,")
-    dialogue_text("then why are you here?")
+    dialogue_text("Se você não tem perguntas, então por que")
+ 	dialogue_text("está aqui?")
     end()
     NULL
 text_dialogue_80:
-    dialogue_text("How may we help you?")
+    dialogue_text("Como podemos ajudá-los?")
     end()
     NULL
 text_dialogue_81:
-    dialogue_text("You haven't been poisoned.")
+    dialogue_text("Você não foi envenenado.") 
     end()
     NULL
 text_dialogue_82:
-    dialogue_text("You must give ")
+    dialogue_text("Você deve doar  ")
     end()
     NULL
 text_dialogue_83:
-    dialogue_text(" to charity.")
-    dialogue_text("Do you agree?")
+    dialogue_text(" para caridade. Você concorda?")
     end()
     NULL
 text_dialogue_84:
-    dialogue_text("I'm sorry. I can't cure")
-    dialogue_text("you. Your donation is")
-    dialogue_text("appreciated, though.")
-    end()
+    dialogue_text("Sinto Muito. Eu não posso curar você.")
+ 	dialogue_text("Mas de qualquer forma, a sua doação e muito")
+ 	dialogue_text("bem-vinda.")
+	end()
     NULL
 text_dialogue_85:
-    dialogue_text("The poison has been")
-    dialogue_text("purged from your body.")
-    end()
+    dialogue_text("O veneno foi retirado de seu corpo.")
+ 	end()
     NULL
 text_dialogue_86:
-    dialogue_text("Don't even think of taking")
-    dialogue_text("back your donation.")
-    end()
+    dialogue_text("Nem pense em pegar de voltar a sua doação.")
+ 	end()
     NULL
 text_dialogue_87:
-    dialogue_text("There is no curse on you.")
+    dialogue_text("Não há maldição sobre você.")
     end()
     NULL
 text_dialogue_88:
-    dialogue_text("The curse has been removed.")
+    dialogue_text("A maldição foi removida.")
     end()
     NULL
 text_dialogue_89:
-    dialogue_text("Save under")
-    dialogue_text("which number?")
+    dialogue_text("Salvar em qual")
+ 	dialogue_text("número?")
     end()
     NULL
 text_dialogue_90:
-    dialogue_text("Your game was saved")
-    dialogue_text("successfully!")
+    dialogue_text("Seu jogo foi salvo")
+ 	dialogue_text("com sucesso! ")
     end()
     NULL
 text_dialogue_91:
-    dialogue_text("Never give up. Every obstacle")
-    dialogue_text("can be overcome!")
-    end()
+    dialogue_text("Nunca desista.")
+ 	dialogue_text("Cada obstáculo pode ser superado!")
+	end()
     NULL
 text_dialogue_92:
-    dialogue_text("Go ahead--it's")
-    dialogue_text("not poisonous!")
-    end()
+    dialogue_text("Vá em frente--não é venenoso! ")
+ 	end()
     NULL
 text_dialogue_93:
-    dialogue_text("The poison is too")
-    dialogue_text("strong for that cure.")
-    end()
+    dialogue_text("O veneno é muito forte para essa cura.")
+ 	end()
     NULL
 text_dialogue_94:
-    dialogue_text("Arise, brave warrior! Our")
-    dialogue_text("world needs you! But half")
-    dialogue_text("your money goes to the poor.")
+    dialogue_text("Levanta-te, bravo guerreiro nosso mundo")
+ 	dialogue_text("precisa de você! Para a sua recuperação")
+ 	dialogue_text("usarei boa parte de seu dinheiro  ") 
+	new_page()
+	dialogue_text("e doarei para os pobres.")
     end()
     NULL
 text_dialogue_95:
-    dialogue_text("As you awaken, you seem to")
-    dialogue_text("hear a stern voice inside")
-    dialogue_text("your head say:")
-    new_page()
-    dialogue_text("Don't gamble with your")
-    dialogue_text("life like that again. Too")
-    dialogue_text(" "much depends on you!" ")
-    end()
+    dialogue_text("Ao acordar, você parece ouvir uma voz que")
+ 	dialogue_text("vem de dentro de sua cabeça parecendo dizer:")
+ 	new_page()
+	dialogue_text("Nunca mais "brinque" com sua vida assim ")
+ 	dialogue_text("novamente. Muitos depende de Você!")
+ 	end()
     NULL
 text_dialogue_96:
-    dialogue_text("Don't be careless! The")
-    dialogue_text("world is depending on you!")
-    new_page()
-    dialogue_text("You should start over")
-    dialogue_text("from the beginning.")
+    dialogue_text("Não seja descuidado! ")
+ 	dialogue_text("O mundo depende de você!")
+	new_page()
+	dialogue_text("Você deve começar de novo do início.")
     end()
     NULL
 text_dialogue_97:
-    dialogue_text("Whew! For a moment there, I")
-    dialogue_text("was afraid I'd killed you.")
-    new_page()
-    dialogue_text("You deserved it though! Now")
-    dialogue_text("don't come back until you've")
-    dialogue_text("rescued our men.")
-    end()
+    dialogue_text("Ufa! Por um momento, eu pensei que havia")
+ 	dialogue_text("matado Você.")
+	new_page()
+	dialogue_text("Você merece ir embora! Agora não volte")
+ 	dialogue_text("enquanto não tiver resgatado nossos homens.")
+ 	end()
     NULL
 text_dialogue_98:
-    dialogue_text("Casting from the Book of")
-    dialogue_text("Inaudios Spells helps")
-    dialogue_text("you to evade monsters.")
+    dialogue_text("Lançar feitiços do Livro de Inaudios")
+ 	dialogue_text("ajuda você a evitar monstros.")
     end()
     NULL
 text_dialogue_99:
-    dialogue_text("The effects of the Inaudios")
-    dialogue_text("Spell have worn off.")
-    end()
+    dialogue_text("Os efeitos do Feitiço Inaudios desapareceram.")
+ 	end()
     NULL
 text_dialogue_100:
-    dialogue_text("You suddenly feel weak.")
-    dialogue_text("You were poisoned")
-    dialogue_text("during the battle!")
-    end()
+    dialogue_text("Você de repente se sente fraco.")
+ 	dialogue_text("Você foi envenenado durante a batalha!")
+ 	end()
     NULL
 text_dialogue_101:
-    dialogue_text("Some of your magic points")
-    dialogue_text("have been restored.")
+    dialogue_text("Alguns de seus pontos mágicos foram restaurados.")
     end()
     NULL
 text_dialogue_102:
-    dialogue_text("All of your magic points")
-    dialogue_text("have been restored.")
-    end()
+    dialogue_text("Todos os seus pontos mágicos foram restaurados.")
+ 	end()
     NULL
 text_dialogue_103:
-    dialogue_text("Your lost hit points have")
-    dialogue_text("been partially regained.")
+    dialogue_text("Seus pontos de vida perdidos foram parcialmente")
+    dialogue_text("recuperados.")
     end()
     NULL
 text_dialogue_104:
-    dialogue_text("Your lost hit points have")
-    dialogue_text("been regained.")
+    dialogue_text("Seus pontos de vida perdidos foram parcialmente")
+ 	dialogue_text("recuperado.")
     end()
     NULL
 text_dialogue_105:
-    dialogue_text("All of your lost hit points")
-    dialogue_text("have been regained.")
+    dialogue_text("odos os seus pontos de vida perdidos foram")
+ 	dialogue_text("recuperadas.")
     end()
     NULL
 text_dialogue_106:
-    dialogue_text("The powder spills all over")
-    dialogue_text("you. Wrenching pain courses")
-    dialogue_text("through your body.")
-    end()
+    dialogue_text("O pó se derrama em você. ")
+ 	dialogue_text("Uma dor violenta percorre seu corpo. ")
+ 	end()
     NULL
 text_dialogue_107:
-    dialogue_text("If you use that in town,")
-    dialogue_text("the townspeople aren't")
-    dialogue_text("going to like it one bit!")
-    end()
+    dialogue_text("Se você usar isso na cidade, as pessoas da")
+ 	dialogue_text("cidade não vão gostar nem um pouco! ")
+ 	end()
     NULL
 text_dialogue_108:
-    dialogue_text("The monsters will have")
-    dialogue_text("a hard time finding you.")
-    end()
+    dialogue_text("Os monstros terão dificuldade em encontrar você.")
+ 	end()
     NULL
 text_dialogue_109:
-    dialogue_text("That won't work here.")
+    dialogue_text("Isso não vai funcionar aqui.")
     end()
     NULL
 text_dialogue_110:
-    dialogue_text("We have maps of")
-    dialogue_text("the whole world.")
-    end()
+    dialogue_text("Temos mapas do mundo inteiro aqui.")
+ 	end()
     NULL
 text_dialogue_111:
-    dialogue_text("A glowing map of this area")
-    dialogue_text("appears in the mirror.")
-    end()
+    dialogue_text("Um mapa brilhante desta área aparece no espelho.")
+ 	end()
     NULL
 text_dialogue_112:
     dialogue_text("Brrrnnngg!")
-    dialogue_text("It was very noisy!")
+ 	dialogue_text("Era muito barulhento! ")
     end()
     NULL
 text_dialogue_113:
@@ -497,10 +476,9 @@ text_dialogue_113:
     end()
     NULL
 text_dialogue_114:
-    dialogue_text("Oh, no! It slipped from")
-    dialogue_text("your hand! What a waste--it")
-    dialogue_text("might have been valuable.")
-    end()
+    dialogue_text("Oh, não! Ele caiu de sua mão! ")
+ 	dialogue_text("Que desperdício poderia ter sido valiosa. ")
+	end()
     NULL
 text_dialogue_115:
     dialogue_text(""Looking for good "knock,")
