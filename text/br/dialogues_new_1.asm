@@ -9,7 +9,7 @@ text_dialogue_01:
 	end()
 	NULL
 text_dialogue_02:
-	dialogue_text("Qual item você deseja usar?")
+	dialogue_text("Qual item você deseja usar.?")
 	end()
 	NULL
 text_dialogue_03:
