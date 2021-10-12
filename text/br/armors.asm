@@ -5,7 +5,7 @@ armor_name_01:
 armor_name_02:
 	text("Armadura de Bronze")
 armor_name_03:
-	text("Armadura de Metal")
+	text("Armadura de Metal"g)
 armor_name_04:	
 	text("Armadura de Escama")
 armor_name_05:
