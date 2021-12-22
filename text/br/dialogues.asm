@@ -11,10 +11,6 @@ text_dialogue_01:
 
 
 
-
-
-
-
 	end()
 text_dialogue_32:
 	dialogue_text("Está amaldiçoado! ")	

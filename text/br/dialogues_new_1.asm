@@ -532,93 +532,86 @@ text_dialogue_125:
  	end()
     NULL
 text_dialogue_126:
-    dialogue_text("As soon as you read it, it")
-    dialogue_text("disappears and you can't")
-    dialogue_text("recall what it said.")
+    dialogue_text("Assim que Você pega-lo ele desaparecerá")
+ 	dialogue_text("e Você não se lembrara mais de nada.")
     end()
     NULL
 text_dialogue_127:
-    dialogue_text("It broke! A strange power")
-    dialogue_text("ripples through your body.")
+    dialogue_text("Quebrou! Um estranho poder ondula ")
+ 	dialogue_text("pelo seu corpo.")
     end()
     NULL
 text_dialogue_128:
-    dialogue_text("You don't feel anything.")
-    dialogue_text("What could have happened?")
+    dialogue_text("Você não sente nada.")
+ 	dialogue_text("O que poderia ter acontecido?")
     end()
     NULL
 text_dialogue_129:
-    dialogue_text("It tastes horrible, but")
-    dialogue_text("your body feels very light.")
+    dialogue_text("Tem um sabor horrível, mas seu corpo")
+ 	dialogue_text("parece muito mais leve.")
     end()
     NULL
 text_dialogue_130:
-    dialogue_text("Power surges through you.")
+    dialogue_text("O poder sobe através de você.")
     end()
     NULL
 text_dialogue_131:
-    dialogue_text("The sixteen rings leave")
-    dialogue_text("your hands and rise up")
-    dialogue_text("into the sky.")
-    new_page()
-    dialogue_text("Thousands of brilliant")
-    dialogue_text("stars gleam down upon you.")
+    dialogue_text("Os dezesseis anéis deixam suas mãos")
+ 	dialogue_text("e se erguem rumo ao céu. ")
+	new_page()
+	dialogue_text("Milhares de estrelas brilhantes")
+ 	dialogue_text("brilham sobre você.")
     end()
     NULL
 text_dialogue_132:
-    dialogue_text("The rings take their place")
-    dialogue_text("among the firmament, once")
-    dialogue_text("again beyond man's grasp.")
+    dialogue_text("Os anéis tomam seu lugar entre o firmamento ")
+ 	dialogue_text("mais uma vez fora do alcance do homem.")
     end()
     NULL
 text_dialogue_133:
-    dialogue_text("There is nothing to take.")
+    dialogue_text("Não há nada para levar.")
     end()
     NULL
 text_dialogue_134:
-    dialogue_text("It is white and")
-    dialogue_text("very beautiful.")
+    dialogue_text("É branco e muito bonito. ")
     end()
     NULL
 text_dialogue_135:
-    dialogue_text("It is deep red;")
-    dialogue_text("it sparkles in the light.")
+    dialogue_text("É vermelho escuro e brilha na luz.")
     end()
     NULL
 text_dialogue_136:
-    dialogue_text("It is bright blue")
-    dialogue_text("and beautiful!")
+    dialogue_text("É azul brilhante e bonito!")
     end()
     NULL
 text_dialogue_137:
-    dialogue_text("There's no keyhole here!")
+    dialogue_text("Não há buraco de fechadura aqui!")
     end()
     NULL
 text_dialogue_138:
-    dialogue_text("It doesn't have a door,")
-    dialogue_text("so how can you use it?")
+    dialogue_text("Ela não tem porta, então como você"
+    dialogue_text("pode usá-la?")
     end()
     NULL
 text_dialogue_139:
-    dialogue_text("The key unlocked it.")
+    dialogue_text("A chave o destrancou. ")
     end()
     NULL
 text_dialogue_140:
-    dialogue_text("The key doesn't fit.")
+    dialogue_text("A chave não cabe.")
     end()
     NULL
 text_dialogue_141:
-    dialogue_text("You sense that your")
-    dialogue_text("efforts are futile.")
+    dialogue_text("Você sente que seus esforços são inúteis.")
     end()
     NULL
 text_dialogue_142:
-    dialogue_text("It's locked.")
+    dialogue_text("Está trancado. ")
     end()
     NULL
 text_dialogue_143:
-    dialogue_text(""Blade rests here in peace"")
-    dialogue_text("is written on his tombstone.")
+    dialogue_text(" Aqui diz: "Blade descansa em paz." ")
+ 	dialogue_text("Isso é o que está escrito em sua lápide.")
     end()
     NULL
 text_dialogue_144:
