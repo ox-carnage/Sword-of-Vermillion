@@ -133,26 +133,6 @@ text_dialogue_24:
 
 
 
-text_dialogue_00:
-	dialogue_text("Seja bem-vindo seu tolo!"					)
-	dialogue_text("Tsarkon esta na Caverna Thule"				)
-	new_page()
-	dialogue_text("Ela fica ao extremo leste."					)
-	dialogue_text("Ele me pediu para lhe dar um presente"		)
-	dialogue_text("para você.  "								)
-	new_page()
-	dialogue_text("Esta cidade como seu tumulo!"				)
-	dialogue_text("Prepare-se para morrer!ø.÷è"					)
-text_dialogue_01:	
-	dialogue_text("÷èVocê pode ter me derrotado,"				)
-	dialogue_text("mas você nunca irá"							)
-	new_page()
-	dialogue_text("derrotar Tsarkon!"							)
-	db $F8
-	db $02
-	db $F7
-	db $E8
-	end()
 text_dialogue_02:
 	dialogue_text("Por favor, fique na frente do trono"			)
 	dialogue_text("e use os anéis"								)

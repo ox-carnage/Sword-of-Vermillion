@@ -60,7 +60,7 @@ constant CONFIG_DIALOGUE_BOX_HEIGHT($05)
 
 origin ROM_START
     // ; Original File
-    insert "bin/vermilion.bin"
+    insert "bin/Sword of Vermilion.gen"
     
     // ; Includes
     include "asm/macros.asm"
@@ -82,7 +82,7 @@ if (CONFIG_LANGUAGE == ENGLISH) {
 
 if (CONFIG_LANGUAGE == PORTUGUESE) {
 
-    define   CONFIG_ROM_NAME("VERMILION: A ESPADA DO CAVALEIRO VERMELHO       ")
+    define   CONFIG_ROM_NAME("VERMILION: A ESPADA DO CAVALEIRO VERMELHO")
     define   CONFIG_ROM_REGION("JUE")
 
     constant CONFIG_DIALOGUE_BOX_X($07)
@@ -111,7 +111,7 @@ if (CONFIG_LANGUAGE == PORTUGUESE) {
     include "text/br/shields.asm"
     include "text/br/spells.asm"
     include "text/br/kingdom.asm"
-    include "text/br/dialogues_new_1.asm"
+    include "text/br/dialogues.asm"
 }
 
 include "asm/pointers.asm"
