@@ -50,7 +50,7 @@ text_dialogue_12:
 	end()
 	NULL
 text_dialogue_13:
-	dialogue_text("Não há nada para pegar aqui!")
+	dialogue_text("Não há nada para abrir aqui!")
 	end()
 text_dialogue_14:
 	dialogue_text("Desculpe, você não pode abrir isso!")
@@ -479,7 +479,7 @@ text_dialogue_113:
 	end()
     NULL
 text_dialogue_114:
-    dialogue_text("Talvez procurando boas piadas de "toc, toc?"")
+    dialogue_text("Talvez procurando boas piadas de ""toc, toc?""")
  	dialogue_text("Desculpe, não existe tal coisa!")
     end()
     NULL
@@ -567,7 +567,7 @@ text_dialogue_131:
     end()
     NULL
 text_dialogue_132:
-    dialogue_text("Não há nada para levar.")
+    dialogue_text("Não há nada para pegar.")
     end()
     NULL
 text_dialogue_133:
@@ -587,7 +587,7 @@ text_dialogue_136:
     end()
     NULL
 text_dialogue_137:
-    dialogue_text("Ela não tem porta, então como você"
+    dialogue_text("Ela não tem porta, então como você")
     dialogue_text("pode usá-la?")
     end()
     NULL
@@ -704,7 +704,8 @@ text_dialogue_159:
     end()
     NULL
 text_dialogue_160:
-    dialogue_text("Uma pessoa tão boa assim, não deveria morrer.")
+    dialogue_text("Uma pessoa tão boa assim, não")
+    dialogue_text("deveria morrer.")
     end()
 text_dialogue_161:
     dialogue_text("Esse anel!")
@@ -727,7 +728,7 @@ text_dialogue_164:
     NULL
 text_dialogue_165:
     dialogue_text("Não esqueça de comprar uma armadura, uma")
-    dialogue_text("arma e um escudo antes de deixar a vila".)
+    dialogue_text("arma e um escudo antes de deixar a vila.")
     end()
     NULL
 text_dialogue_166:
@@ -821,7 +822,6 @@ text_dialogue_183:
     dialogue_text("Tenha cuidado, meu jovem! ")
 	dialogue_text("O mundo é um lugar perigoso.")
 	end()
-    NULL
 text_dialogue_184:
     dialogue_text("O mal contaminou o coração dos ")
 	dialogue_text("soldados de Cartagena. ")
@@ -842,7 +842,9 @@ text_dialogue_186:
     NULL
 text_dialogue_187:
     dialogue_text("Blade já foi um guerreiro muito poderoso,")
-	dialogue_text("mas as feridas de longos anos nunca cicatrizaram.")
+	dialogue_text("mas as feridas de longos anos nunca")
+    new_page()
+    dialogue_text("cicatrizaram.")
 	end()
 text_dialogue_188:
     dialogue_text("As pessoas têm muitas historias para contar.")
